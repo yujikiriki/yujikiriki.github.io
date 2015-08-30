@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bliki | No, su proyecto no necesita BPMS</title>
+    <link rel="stylesheet" href="https://bitacora.s3.amazonaws.com/css/foundation.css" />
+    <script src="https://bitacora.s3.amazonaws.com/js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+<!-- Page begins  -->
+  <div class="row bottom-border">
+    <div class="large-11 columns">
+      <h1><small><a href="https://bitacora.s3.amazonaws.com/index.html">_bliki</a></small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-8 columns">
+      <div class="row">
+        <div class="large-12 columns">
+          <br/>
+          <h2>NO, SU PROYECTO NO NECESITA BPMS</h2>
+          <h6 class="subheader">Por: <a href="http://yujikiriki.com/me.html">Yuji Kiriki</a></h6>
+          <h6 class="subheader">Publicado: April 24, 2012</h6>
+          <h6 class="subheader">Número de palabras: 2087</h6>
+          <h6 class="subheader">Categorías: </h6>
+        </div>
+      </div>
+      <br/><br/>
+      <p>Sí, tenía que empezar con un buen título, algo llamativo y tentador, algo que invitara a participar. Ojalá este tema genere polémica y de la buena, de esa que no solo se trata de trolliar y nada más, de esa que tanto nos hace falta para cultivar criterio.</p>
+
+<p>Durante las jornadas comerciales que realizo para conocer clientes, me he encontrado más de una vez tratando de explicarles por qué ellos sí deberían hacer BPM y por qué no deberían tener un BPMS. Esta entrada a la bitácora trata precisamente de eso, de esclarecer y dejar mis argumentos de porqué, después de decenas de procesos de negocio analizados y/o implementados en mi vida, considero que estos adefesios, mal llamados Sistemas BPM, son inútiles para cualquier proceso de negocio de cualquier organización.</p>
+
+<h3 id="la-complejidad-de-negocio">La complejidad de negocio</h3>
+
+<p>Para esta entrada la complejidad de negocio se traduce a la densidad de las relaciones que se establecen al combinar actores, objetivos de negocio, procedimientos, actividades humanas y comportamiento de negocio (que incluyen las reglas de negocio) en un sistema. Entre más relaciones o nodos existan, más complejo será el sistema.</p>
+
+<p>Me encanta ver los Demos de las herramientas BPMS que hacen los proveedores de tecnología: tres actividades humanas, un par de roles, escalamientos con base en unas reglas quemadas en alguna estructura de decisión y listo. “Y mire…” dice el Consultor BPM de alguno de esos proveedores “¡también le generamos las pantallas que necesita su aplicación!”, “¡No necesita DBA! ¡No necesita desarrolladores expertos!” “¡El analista de negocio es quien gobierna las reglas!”. Subestiman la complejidad del mundo real y de ahí, pocas veces, hay éxito o vuelta atrás.</p>
+
+<h3 id="las-promesas-rotas">Las promesas rotas</h3>
+<p>Lamentablemente el desarrollador no se tiene que enfrentar a esos procesos de mentiras. Él tiene que modelar procesos llenos de comportamiento de negocio, de imprecisiones y flujos excepcionales que casi son regla general.</p>
+
+<p>La primera decisión que toma el desarrollador es montar todo su proceso de negocio, hasta un nivel procedimental y empieza a generar pantallas. Poco a poco se va dando cuenta que a su editor de procesos cada vez le va costando más abrir ese proyecto y poco a poco la complejidad que está tratando de modelar se va volviendo inmanejable. Luego, después de semanas de estar descubriendo las funcionalidades de su editor de procesos se dispone a realizar su primer despliegue del proceso, con pantallas generadas y todo. Su computador de desarrollo se demora un rato desplegando, pero bueno, después de unos minutos la aplicación queda desplegada.</p>
+
+<p>El desarrollador, contento, se da cuenta que la cosa como que sí funciona y piensa inocentemente “menos mal que el ambiente de producción tiene 8 instancias en cluster con procesadores de última generación y memoria casi ilimitada”.</p>
+
+<p>Pasan las semanas, los analistas de negocio siguen y siguen solicitando modificaciones y flujos alternativos al proceso hasta que al fin llegan a una definición de proceso adecuada para  producción. Cabe aclarar que muchas de las “variaciones” y “validaciones” del proceso son decisiones que son tomadas por un motor de reglas de negocio y otras son accesos a procedimientos almacenados o a tablas de la base de datos. Obviamente, para poder acceder a estos “servicios” hay webservices SOAP pero pues, en algunos casos le toco meter lógica escrita en Java dentro de la ejecución del proceso. “Pero pues…” piensa el desarrollador “si la herramienta lo permite debe ser porque se puede y no está mal, ¿no?”.</p>
+
+<p>El desarrollador confiado va y despliega su super proceso (ya no apaga el computador de desarrollo porque el IDE se está demorando mucho en cargar el proyecto) en el ambiente de calidad que consiste en dos máquinas con el BPMS en cluster y después de unos 25 minutos el proceso despliega sin problemas. “Definitivamente los BPMS son lo máximo” piensa feliz el desarrollador. Va, revisa las pantallas generadas y están al pelo. Unas toco forzarlas a punta de machetazos en Javascript, pero ahí están, generaditas por el BPMS. El desarrollador no necesitó preguntarle a nadie por un modelo de datos, ni le toco ser experto en transacciones para poder sacar adelante un proyecto BPM. Mucho duro.</p>
+
+<p>Las pruebas inician en el ambiente de calidad y al principio la cosa anda bien. Algunas correcciones, algunas pantallas a las que toca hacerle un par de machetazos más, una que otra lógica adicional insertada en el modelo del proceso, uno que otro acceso desde algún lado bien creativo y listo, pasamos pruebas funcionales y el desarrollador es la meca técnica de los sistemas BPM. El único usuario que estaba haciendo pruebas aprueba el paso a producción de la aplicación BPM.</p>
+
+<p>En producción la cosa se ve un poco difícil. Esas 8 instancias tienen dificultad de desplegar ese super proceso. Afortunadamente el de infraestructura es un duro y a punta de comandos por debajo y asignando un heap de 32 gigas, la aplicación sube. Una revisión del dump de la JVM diagnostica que no se presentan mayores problemas. Al desarrollador lo nombran Arquitecto Líder de Desarrollo de Aplicaciones Orientadas a Procesos y por ahí una universidad le confiere el título de Maestro en Construcción de Software Orientado a Procesos.</p>
+
+<p><img style="margin-left: auto; margin-right: auto;" src="../../../imgs/exito.png" width="254px" height="204" /></p>
+
+<p>La primera semana de operación, los de infraestructura se dan cuenta que las 32 gigas asignadas no son suficientes y que requieren asignarle al menos el doble para que la plataforma funcione. La segunda semana la base de datos empieza a generar bloqueos y contención produciendo fallas generalizadas y quejas por parte de los usuarios porque la aplicación “está lenta”. Infraestructura llega al límite de su presupuesto, la aplicación actualmente se come más de 128 gigas en memoria, la base de datos no da abasto, se reportan errores por sesiones duplicadas, datos duplicados, fallas en la consistencia, reportes que se demoraban 2 segundos actualmente toman días en terminarse. Entra el pánico. Hay caos. El vicepresidente llama al Arquitecto Líder de Desarrollo de Aplicaciones Orientadas a Procesos con Maestría y le pregunta “¿qué hacemos?”.</p>
+
+<p>El que era una vez desarrollador y se “ensuciaba las manos” escribiendo código le responde: “llamemos al proveedor porque yo no se qué hacer. Los errores hablan de bloqueos en bases de datos y yo nunca diseñé una base de datos para la aplicación. También me sale que las transacciones toman mucho tiempo y no se de que se trata todo eso de las transacciones si tampoco me tocó diseñar alguna…”.
+Al llamar al proveedor, estos mandan un experto de Alemania o de Bélgica o de EEUU hasta Colombia (ahí ellos se sintieron importantes, obviamente) y la conclusión a la que llega es que “no usaron las mejores prácticas” y “la herramienta fue mal utilizada”. Ahí todos quedan fríos. Después de miles de dolares en licencias y entrenamiento, le dicen al Vice que la aplicación que construyeron es inviable y que ellos no le dan soporte debido a que quedó mal construida. ¿Culpa del Arquitecto? ¿Culpa del Vice? ¿Culpa del desarrollador? ¿La culpa es de la vaca?</p>
+
+<h3 id="una-evaluacin-tcnica-conciensuda">Una evaluación técnica conciensuda</h3>
+<p>La historia que les acabo de contar es de cualquier cliente, de todos los que han comprado un BPM y estoy seguro que ustedes, los lectores, conocerán más de un caso similar. No faltará el que me salte y diga que él sí tiene un proceso funcionando perfectamente, por eso quiero hacer una evaluación técnica de un BPMS desde un punto funcional y como estructura arquitectónica.</p>
+
+<p><strong>1. Como estructura arquitectónica, demasiada responsabilidad.</strong></p>
+
+<p>Si ustedes lo analizan por un segundo, lo que los proveedores de tecnología nos tratan de vender es una herramienta que es capaz de modelar procesos, ejecutar procesos, orquestar actividades humanas, gestionar el ciclo de vida de las tareas (reclamarlas, liberarlas, asignarlas, escalarlas, etc ), generar eventos para la generación de indicadores de gestión, generar pantallas, acceder a servicios web, procedimientos almacenados, tablas, modelar reglas en tablas de decisión, ejecutar lógica implementada en Java, C#, o lo que sea, generación de alarmas, generación de notificaciones vía correo electrónica, mandar a imprimir, mostrar en tableros de control los indicadores de manera automática, etc. Todas esas funcionalidades en una sola estructura arquitectónica. Eso a uno le huele a acoplamiento, y del más feo.</p>
+
+<p>Acoplamiento no solo por la exagerada cantidad de responsabilidades que tiene que asumir esa estructura para las aplicaciones que fueron desarrolladas o generadas dentro del BPMS sino que genera dependencia a las estructuras externas que requieren el uso del BPMS, tales como administración del ciclo de vida de un proceso o una tarea humana.</p>
+
+<p><strong>2. Funcionalidad: generar indicadores.</strong></p>
+
+<p>Esta es tal vez una de las mayores expectativas por parte de los usuarios o analistas de negocio. Ver como a medida que se va ejecutando el proceso de negocio se generan indicadores de gestión. Muchas veces he encontrado que haciendo un adecuado análisis y diseño del modelo del dominio vía DDD, uno descubre que realmente a lo que le quieren hacer seguimiento es al ciclo de vida de la solicitud o de los documentos que orbitan alrededor de la ejecución del proceso. Algunos lo llaman hoja de ruta del proceso, pero al final del día es eso: llevar registro de todo lo que pasa. 
+Cuando llego a ese momento me pregunto ¿acaso los BPMS son la única forma de obtener ese tipo de información? ¿Es un modelo exclusivo? ¿Acaso no hay alternativas técnicas más adecuadas de generar eventos tal vez más ricos y útiles a través de otros mecanismos más desacoplados? ¿Cuántos Indicadores Clave de Desempeño son realmente útiles? ¿de 5 a 7 por proceso?</p>
+
+<p><strong>3. Funcionalidad: flexibilidad de negocio.</strong></p>
+
+<p>Eso sólo pasaría si el proceso de negocio es tan genérico y tan generalizado que sencillamente pierde su sentido semántico de negocio. Si ese es el caso ¿Entonces para qué se está usando un BPMS si es para modelar un proceso que no tiene nada de semántica de negocio? 
+Al final del día, esa flexibilidad la estará soportando en estructuras que sí contengan esa semántica. ¿Para qué agregarle una capa más a su aplicación entonces? ¿Por los indicadores? ¿Por la orquestación de tareas humanas? Todo eso se puede hacer de maneras alternativas, mucho más ligeras y fáciles de mantener.</p>
+
+<p><strong>4. Funcionalidad: “no se necesita ser experto”, “los analistas de negocio serán dueños de sus reglas y procesos” y puede “generar código”.</strong></p>
+
+<p>Son las tres frases típicas de vendedor mediocre y mentiroso. Cuando las escuche ¡HUYA! ¿Por qué? Después de años de estar trabajando en este medio, me he dado cuenta de que esa es la expectativa de cualquier Gerente; que la tecnología reemplace por completo a esos seres costosos y que se demoran demasiado haciendo las cosas, los bien llamados desarrolladores. 
+La tecnología está lejos, muy lejos de automatizar la construcción de software. Sí, podemos generar cositas, amañar DSLs o crear metamodelos muy cercanos al modelo de dominio de una empresa, pero de un problema en particular,  ¡no de cualquier problema!.</p>
+
+<p>Ahora, ¿se imaginan que un usuario de proceso, un analista de negocio, se ponga a jugar con las reglas de negocio de una aplicación sin hacer pruebas unitarias, sin pasar por etapas de calidad mínimas, sin poder saber realmente el impacto técnico que esa decisión tenga? “¡Ah!“, dirá el vendedor del proveedor de tecnología, “pero es que él puede simular…” Y ¿Si? ¿Es que acaso simular es suficiente? ¿Con eso el negocio queda tranquilo? ¿Podría una organización quedar tranquila sabiendo que por ejemplo las evaluaciones de riesgo de un crédito están siendo implementadas por una persona que no es experta en desarrollo de software?</p>
+
+<h3 id="conclusin">Conclusión</h3>
+<p>Al final del día y como siempre, lo que importa no es la tecnología. Lo que importa son las prácticas que se interiorizan. Un BPMS trae consigo más problemas que soluciones a su negocio. Nadie ha dicho y ni podría aseverar que para poder implementar BPM, desde el punto de vista de la ingeniería industrial, requiere un BPMS. BPM como mecanismo de administración de procesos es maravilloso y muy acertado, pero para implementarlo y soportarlo en tecnología no se requiere bajo ninguna circunstancia un sistema BPM. Bueno, a no ser que sus procesos sean tan sencillos como los que utilizan en las capacitaciones técnicas de las herramientas o en los Demos que muy amablemente nos hacen los proveedores de tecnología.</p>
+
+<p>Los BPMS fueron aciertos comerciales increíbles para los proveedores de tecnología. Vendieron la falsa idea de que una metodología tan seria, profunda y útil como BPM podía comprarse como se compra un Word o Excel. Y no señoras, señoritas y señores, eso no pasa en el mundo real.</p>
+
+    </div>
+    <div class="large-4 columns left-border">
+        <p class="panel">
+          <p class="hide-for-small-only"><span class="subheader">Entradas</span></p>
+          <ul class="side-nav no-bullet">
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2015/09/01/T%C3%ADtulo%20escandaloso_sobre%20los_desarrolladores_colombianos.html">Título escandaloso sobre los desarrolladores colombianos*</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2014/11/18/futuros_y_actores.html">Futuros y actores en Scala y Akka</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2014/03/09/consistencia.html">Consistencia</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/09/21/soa_agil.html">SOA ágil</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/05/07/bus_de_eventos_de_dominio.html">Bus de eventos de dominio</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/04/13/simpatia_semantica.html">Simpatía semántica</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/02/23/pareto_arquitectura_y_scrum.html">Arquitectura, DDD y Scrum.</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2012/04/24/no_bpms.html">No, su proyecto no necesita BPMS</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2011/10/17/patron_estados_observados.html">Patrón de estados observados</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2011/07/22/soa_no_es_esb.html">SOA != ESB</a></li>
+                    
+          </ul>
+        </p>
+        <p class="hide-for-small-only"><span class="subheader">Social </span></p>
+          <ul class="side-nav no-bullet">
+            <li>» <a class="hide-for-small-only" href="https://bitacora.s3.amazonaws.com/me.html">El autor</a></li>
+            <li>» <a class="hide-for-small-only" href="http://twitter.com/ykiriki">@ykiriki</a></li>
+            <li>» <a class="hide-for-small-only" href="/atom.xml">Atom 1.0</a></li>
+          </ul>
+        </p>        
+    </div>    
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <div id="disqus_thread"></div>bitacora/
+        <script type="text/javascript">
+          var disqus_shortname = 'bitcora';
+          var disqus_identifier = 'http://yujikiriki.com/2012/04/24/no_bpms';
+          var disqus_url = 'http://yujikiriki.com/2012/04/24/no_bpms.html';
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
+    </div>
+  </div>
+<!-- Foundation dependencies -->
+    <script src="https://bitacora.s3.amazonaws.com/js/vendor/jquery.js"></script>
+    <script src="https://bitacora.s3.amazonaws.com/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+<!-- Google analytics -->
+<!-- 
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24796665-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+   -->    
+  </body>
+</html>

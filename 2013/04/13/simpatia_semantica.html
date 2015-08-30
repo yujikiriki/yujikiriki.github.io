@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bliki | Simpatía semántica</title>
+    <link rel="stylesheet" href="https://bitacora.s3.amazonaws.com/css/foundation.css" />
+    <script src="https://bitacora.s3.amazonaws.com/js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+<!-- Page begins  -->
+  <div class="row bottom-border">
+    <div class="large-11 columns">
+      <h1><small><a href="https://bitacora.s3.amazonaws.com/index.html">_bliki</a></small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-8 columns">
+      <div class="row">
+        <div class="large-12 columns">
+          <br/>
+          <h2>SIMPATíA SEMáNTICA</h2>
+          <h6 class="subheader">Por: <a href="">Yuji Kiriki</a></h6>
+          <h6 class="subheader">Publicado: April 13, 2013</h6>
+          <h6 class="subheader">Número de palabras: 1140</h6>
+          <h6 class="subheader">Categorías: </h6>
+        </div>
+      </div>
+      <br/><br/>
+      <p>Durante una discusión tratando de explicar las responsabilidades de un equipo de desarrollo en los proyectos logramos llegar a definir cuál debería ser el objetivo cuando iniciamos el entendimiento de la problemática a resolver.</p>
+
+<p>Para poder explicar la definición, necesito que el lector entienda dos conceptos: <strong>ImpedanciaObjeto-Relación</strong> y <strong>SimpatíaMecánica</strong>.</p>
+
+<p>La <a href="http://en.wikipedia.org/wiki/Object-relational_impedance_mismatch">ImpedanciaObjeto-Relación</a> es el conjunto de dificultades técnicas y conceptuales que se encuentran cuando una base de datos relacional es utilizada por una aplicación escrita en un lenguaje orientado a objetos. Esta situación se encuentra, particularmente, cuando la definición de objetos y clases se quiere traducir en términos de tablas relacionales.</p>
+
+<p>Aprovechando la definición de <strong>ImpedanciaObjeto-Relación</strong> puedo entonces introducir el concepto de ImpedanciaSemántica. ImpedanciaSemántica es la diferencia o distancia resultante al traducir un concepto encontrado en el <strong>MundoReal</strong> al modelo de dominio. El dominio resultante puede ser código fuente o un diagrama UML.</p>
+
+<p>La <a href="http://mechanical-sympathy.blogspot.com/2011/07/why-mechanical-sympathy.html">SimpatíaMecánica</a> de <a href="http://channel9.msdn.com/posts/YOW-2012-Martin-Thompson-Mechanical-Sympathy-and-High-Performance-Coding">Martin Thompson</a> consiste aprovechar consientemente las condiciones particulares del hardware por las aplicaciones de software para obtener los mejores resultados en un atributo de calidad: consistencia, desempeño, disponibilidad, etc.</p>
+
+<p>Entendiendo los anteriores conceptos queda muy fácil definir la <strong>SimpatíaSemántica</strong>: consiste en minimizar la ImpedanciaSemántica entre el mundo real y la aplicación de software buscando aprovechar el funcionamiento el mundo real para aumentar el valor generado por la aplicación de software resultante.</p>
+
+<p>La <strong>SimpatíaSemántica</strong> consta de tres hitos a los cuales se llegan a traves de tres transformaciones o Funciones, responsabilidad del equipo desarrollador.</p>
+
+<p><img style="margin-left: auto; margin-right: auto;" src="../../../imgs/semantic_sympathy.png" width="526px" height="372" /></p>
+
+<p>La anterior es una esquematización de la labor del equipo de desarrollo cuando inicia un proyecto de software. Por lo general el equipo parte de una problemática encontrada en el mundo real. Esta problemática la esboza en un modelo el cual representa una <strong>Abstracción</strong> del mundo real. La <strong>Abstracción</strong> es luego traducida en código fuente el cual al compilarse y desplegarse en el ambiente de producción resuelve la problemática identificada en el mundo real generando valor de negocio.</p>
+
+<p>Así, la labor del equipo puede dividirse en tres transformaciones:</p>
+
+<ol>
+  <li>Del mundo real a la abstracción del mundo real.</li>
+  <li>De la abstracción del mundo real al código fuente.</li>
+  <li>Del código fuente a la aplicación de software productiva.</li>
+</ol>
+
+<h3 id="f--mundoreal--dominio">F : MundoReal =&gt; Dominio</h3>
+
+<p>La primera función se puede entender como una transformación del conocimiento y mecanismos encontrados en el <strong>MundoReal</strong> al diseño de una <strong>Abstracción</strong> del mismo en su semántica.</p>
+
+<p>Se habla en términos de una <strong>Abstracción</strong> debido a que el equipo de desarrollo no modela todo el <strong>MundoReal</strong>. Por ejemplo: por lo general y dependiendo de la problemática a resolver sacamos de nuestras abstracciones la gravedad o la fricción o cualquier otro fenómeno físico existente en el <strong>MundoReal</strong>. Como equipo de desarrollo nos concentramos es en describir los mecanismos en términos de la semántica suficientes para caracterizar la problemática y solucionarla.</p>
+
+<p>El hecho de que esta <strong>Abstracción</strong> haga uso de la misma semántica del <strong>MundoReal</strong> garantiza el aumento de la <strong>SimpatíaSemántica</strong> entre el dominio de la Función (el <strong>MundoReal</strong>) y el rango de la Función (la <strong>Abstracción</strong>).</p>
+
+<p>Esta simpatía es deseable y provechosa en la medida en la que la <strong>Abstracción</strong> modela los mecanismos y relaciones entre definiciones encontradas en el <strong>MundoReal</strong> permitiendo que un cambio en este sea fácilmente replicable en la <strong>Abstracción</strong>.</p>
+
+<p>Esta facilidad redundará en la <strong>CapacidadDeEvolución</strong> y <strong>CapacidadDeMantenimiento</strong> que tendrá la aplicación de software. Así mismo redundará en la cantidad positiva de valor generado por la aplicación.</p>
+
+<p>En términos DDDesign la <strong>Abstracción</strong> no es más que el <strong>LenguajeUbícuo</strong>, el <strong>ModeloDeDominio</strong> y el conocimiento de negocio adquirido por el equipo de desarrollo.</p>
+
+<h3 id="f--dominio--cdigo">F’ : Dominio =&gt; Código</h3>
+
+<p>Dado que la <strong>Abstracción</strong> se puede reducir al <strong>ModeloDeDominio</strong>, el <strong>LenguajeUbícuo</strong> y el conocimiento de negocio adquirido por el equipo de desarrollo, podemos hacer uso de los patrones tácticos de DDDesign para iniciar la construcción del <strong>CódigoFuente</strong>.</p>
+
+<p>Es necesario destacar que en la medida en la que el equipo de desarrollo conozca de manera más profunda el <strong>MundoReal</strong> y tenga más cerca al experto de negocio esta transformación tendrá mayor <strong>SimpatíaSemántica</strong>. En casos en los que estas condiciones no se dan, por ejemplo, el Arquitecto PowerPoint o el Líder de Requerimientos, es inevitable que la <strong>SimpatíaSemántica</strong> se vea impactada negativamente.</p>
+
+<p>Entre mayor sea la <strong>SimpatíaSemántica</strong> entre la <strong>Abstracción</strong> y el <strong>CódigoFuente</strong>, por transitividad, será mayor la <strong>SimpatíaSemántica</strong> entre el <strong>MundoReal</strong> y el <strong>CódigoFuente</strong>.</p>
+
+<p>Si se logra una alta Simpatía entre el <strong>MundoReal</strong> y el <strong>CódigoFuente</strong> llegaremos a aplicaciones de software enriquecidas por los conceptos y mecanismos encontrados en el <strong>MundoReal</strong> a tal punto que el <strong>MundoReal</strong> se convierte en fuente de inspiración para resolver problemas de consistencia transaccional, distribución de cargas o cualquier otro atributo de calidad.</p>
+
+<p>Esta transformación depende en gran medida de la calidad de código que se escriba. Así mismo dependerá de las habilidades en los distintos paradigmas de programación que tenga el equipo. Por ejemplo, el paradigma OO es un candidato intuitivo para hacer este tipo de transformación. No obstante si el equipo es diestro en el paradigma funcional podrá encontrar formas de modelar la <strong>Abstracción</strong> en funciones que pueden llegar a modelar de manera más precisa (o con mayor <strong>SimpatíaSemántica</strong>) un comportamiento de la <strong>Abstracción</strong>.</p>
+
+<h3 id="f-cdigofuente--generacindevalor">F’’: CódigoFuente =&gt; GeneraciónDeValor</h3>
+
+<p>Si se siguió el proceso descrito en las secciones anteriores buscando en cada hito respetar y promover la <strong>SimpatíaSemántica</strong> se puede llegar a aseverar que la aplicación de software es rica en comportamientos y semática del MundReal.</p>
+
+<p>También se puede afirmar que inclusive la UI de la aplicación se construyó en términos del <strong>MundoReal</strong> resultando en una UI intuitiva.</p>
+
+<p>Si el usuario llega a solicitar una modificación a un funcionamiento podemos también pensar que esta modificación obedece a un cambio en el <strong>MundoReal</strong> y, como construimos nuestra aplicación siendo semánticamente simpática, podemos afirmar que este cambio será sencillo, predecible y fácilmente replicable impactando positivamente el valor agregado generado por la aplicación de software en el <strong>MundoReal</strong>.</p>
+
+<p>El valor agregado entonces no se limitará a haber resuelto la problemática sino también a reducir el costo de propiedad, mantenimiento y evolución de la aplicación.</p>
+
+<h3 id="conclusin">Conclusión</h3>
+
+<p>Todo este discurso nace de la necesidad de explicar cuál es la función de un equipo de desarrollo. Si estan de acuerdo conmigo, este proceso requiere de un gran esfuerzo intelectual, de comunicación y disciplina; habilidades y competencias que no son comunes en la industria.</p>
+
+<p>Definí la <strong>SimpatíaSemántica</strong> con el propósito de encapsular en una sola definición las decisiones técnicas orientadas por el <strong>MundoReal</strong> y el proceso cognitivo mismo de un equipo de desarrollo cuando construye una aplicación de software porque, hacer software no es solo usar tecnologías. Hacer software no es solo comunicación a través de una metodología ágil y sus ceremonias. Hacer software no es solo hacer CRUD sobre datos.</p>
+
+<p>Hacer software es generar valor al <strong>MundoReal</strong> y la <strong>SimpatíaSemántica</strong> es un mecanismo para alcanzar y medir ese valor.</p>
+
+    </div>
+    <div class="large-4 columns left-border">
+        <p class="panel">
+          <p class="hide-for-small-only"><span class="subheader">Entradas</span></p>
+          <ul class="side-nav no-bullet">
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2015/09/01/T%C3%ADtulo%20escandaloso_sobre%20los_desarrolladores_colombianos.html">Título escandaloso sobre los desarrolladores colombianos*</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2014/11/18/futuros_y_actores.html">Futuros y actores en Scala y Akka</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2014/03/09/consistencia.html">Consistencia</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/09/21/soa_agil.html">SOA ágil</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/05/07/bus_de_eventos_de_dominio.html">Bus de eventos de dominio</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/04/13/simpatia_semantica.html">Simpatía semántica</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/02/23/pareto_arquitectura_y_scrum.html">Arquitectura, DDD y Scrum.</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2012/04/24/no_bpms.html">No, su proyecto no necesita BPMS</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2011/10/17/patron_estados_observados.html">Patrón de estados observados</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2011/07/22/soa_no_es_esb.html">SOA != ESB</a></li>
+                    
+          </ul>
+        </p>
+        <p class="hide-for-small-only"><span class="subheader">Social </span></p>
+          <ul class="side-nav no-bullet">
+            <li>» <a class="hide-for-small-only" href="https://bitacora.s3.amazonaws.com/me.html">El autor</a></li>
+            <li>» <a class="hide-for-small-only" href="http://twitter.com/ykiriki">@ykiriki</a></li>
+            <li>» <a class="hide-for-small-only" href="/atom.xml">Atom 1.0</a></li>
+          </ul>
+        </p>        
+    </div>    
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <div id="disqus_thread"></div>bitacora/
+        <script type="text/javascript">
+          var disqus_shortname = 'bitcora';
+          var disqus_identifier = 'http://yujikiriki.com/2013/04/13/simpatia_semantica';
+          var disqus_url = 'http://yujikiriki.com/2013/04/13/simpatia_semantica.html';
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
+    </div>
+  </div>
+<!-- Foundation dependencies -->
+    <script src="https://bitacora.s3.amazonaws.com/js/vendor/jquery.js"></script>
+    <script src="https://bitacora.s3.amazonaws.com/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+<!-- Google analytics -->
+<!-- 
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24796665-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+   -->    
+  </body>
+</html>

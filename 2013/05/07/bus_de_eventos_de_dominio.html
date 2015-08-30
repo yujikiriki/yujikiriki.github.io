@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bliki | Bus de eventos de dominio</title>
+    <link rel="stylesheet" href="https://bitacora.s3.amazonaws.com/css/foundation.css" />
+    <script src="https://bitacora.s3.amazonaws.com/js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+<!-- Page begins  -->
+  <div class="row bottom-border">
+    <div class="large-11 columns">
+      <h1><small><a href="https://bitacora.s3.amazonaws.com/index.html">_bliki</a></small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-8 columns">
+      <div class="row">
+        <div class="large-12 columns">
+          <br/>
+          <h2>BUS DE EVENTOS DE DOMINIO</h2>
+          <h6 class="subheader">Por: <a href="https://s3.amazonaws.com/bitacora/me.html">Yuji Kiriki</a></h6>
+          <h6 class="subheader">Publicado: May 07, 2013</h6>
+          <h6 class="subheader">Número de palabras: 978</h6>
+          <h6 class="subheader">Categorías: </h6>
+        </div>
+      </div>
+      <br/><br/>
+      <p>El Agregado puede ser el patrón táctico más importante de #DDDesign pues nos permite fijar limites transaccionales a nuestras entidades de negocio. Es interesante cómo aplicando sabiamente este patrón se facilita la construcción de aplicaciones que soportan considerables volumenes de concurrencia.</p>
+
+<p>Sin embargo me he encontrado más de una vez con la dificultad de representar las relaciones existentes entre Entidades que pertenecen a Agregados distintos dado que no deberían conocerse; al menos no directamente. Esta dificultad aumenta cuando además un cambio de estado en un Agregado tiene consecuencias (side-effects) en otros Agregados.</p>
+
+<p>Vaughn Vernon explica en su <a href="https://vaughnvernon.co/?p=139">artículo</a> que este tipo de relaciones se pueden modelar de varias maneras dependiendo del escenario. El acercamiento más interesante es cuando explica como podemos hacer uso (o abuso) de la consistencia eventual para permear cambios ocurridos en un Agregado a otro a través de Eventos de Dominio.</p>
+
+<p>En teoría la solución planteada por Vernon es bastante fácil de aplicar y creo que pueden haber decenas de opciones para implementarla. No obstante en esta entrada de la bitácora les presento una a la que llegué haciendo uso de un bus de eventos lo cual, me permitió no solo implementar un sencillo patrón <a href="http://www.eaipatterns.com/PublishSubscribeChannel.html">Publicar-Suscribir</a> en memoria sino que cuando llegó el momento pude de manera sencilla implementar protocolos de recuperación para fomentar la consistencia entre Agregados.</p>
+
+<p>Es importante recordar que un Agregado es responsable sólo de una transacción que manifiesta consistencia de ACID y no de CAP, mientras que una transacción de un Agregado que afecta otro agregado es “CAP consistente” y no “ACID consistente”. Por ejemplo, a un Agregado se le exige que la integridad de todos los elementos involucrados en la transacción sea garantizada o linealmente trazable. Sin embargo las transacciones que cobijan más de un Agregado deberían ser capaces de soportar la consistencia más débil (Consistencia Eventual) dado que transaccionalmente no son dependientes consecuencia de la definición del Modelo de Dominio. (Este párrafo debe ser ampliado en una futura entrada)</p>
+
+<p>A continuación les presento una esquematización de cómo comunicamos Agregados a través de los buses de eventos.</p>
+
+<p><img style="margin-left: auto; margin-right: auto;" src="../../../imgs/event_bus.png" width="526px" height="372px" /></p>
+
+<p>Como se describe en el diagrama, cada Agregado tiene acceso al Bus de Eventos y si un Agregado está interesado en los eventos del otro, define un Suscriptor al Bus de Eventos del Agregado que generará los Eventos de Dominios interesantes permitiendo una gran capacidad de evolución y composición de comportamiento.</p>
+
+<h3 id="el-bus-de-eventos">El bus de eventos</h3>
+
+<p>No es más que una abstracción a través de la cual se logra desacoplar publicadores de mensajes y suscriptores a esos mensajes. Una implementación sencilla la encontré en la librería de <a href="http://code.google.com/p/guava-libraries/wiki/EventBusExplained">Guava</a>  y es la que usé en la implementación de ese proyecto. Cabe anotar que este bus de eventos es siempre inyectado como Singleton a las entidades que van a publicar eventos vía <a href="http://code.google.com/p/google-guice/wiki/Scopes">Guice</a>. Soy consiente que Singleton es una aberración de OO pero en este caso aplica bien y sin consecuencias en concurrencia.</p>
+
+<p>El bus de eventos resuelve de manera más sencilla lo que se busca al implementar el patrón Observador de GoF generando menor grado de acoplamiento pues implementa el patrón de Indirección de GRASP promoviendo alta cohesión y reutilización.</p>
+
+<h3 id="los-eventos-de-dominio">Los eventos de dominio</h3>
+
+<p>Cada vez que un Agregado ejecuta una transacción implica que se está realizando un cambio en el estado de alguna Entidad perteneciente al Agregado. Muchas veces esta modificación de estado implica cambios de estado en otras Entidades que no pertenecen al Agregado. Para soportar esta situación se puede hacer uso de Eventos de Dominio que representen estos hechos (cosas que pasaron) y publicarlas al Bus de Eventos.</p>
+
+<p>El Bus de Eventos notificará a los Suscriptores interesados en esos eventos quienes a su vez iniciarán una transacción en el Agregado al cual pertenecen, respetando así los límites transaccionales fijados. Piensen en estos Eventos de Dominio como <a href="http://martinfowler.com/eaaCatalog/dataTransferObject.html">DTOs</a> que representan consecuencias de cambios en Entidades dentro de Agregados. En consecuencia administramos transacciones eventualmente consistentes entre Agregados en memoria y sin hacer uso de tecnologías grasosas e ineficientes.</p>
+
+<p>Una descripción más detallada de los Eventos de Domino la pueden encontrar en el libro de Vaughn Vernon “Implementing Domain-Driven Design” en el capítulo 8.</p>
+
+<h3 id="posibilidades">Posibilidades</h3>
+
+<p>Una vez hemos desacoplado los Agregados a través del Bus de Eventos podemos ir modificando los atributos transaccionales de los Eventos de Dominio. Por ejemplo, imaginen que alguna transacción de un Agregado consecuencia de una modificación en otro Agregado se toma demasiado tiempo. Fácilmente podemos crear un Suscriptor que una vez reciba la notificación de un nuevo Evento persista este evento en una <a href="http://martinfowler.com/eaaDev/EventSourcing.html">Fuente de Eventos</a> y luego trate de iniciar la transacción. Si falla o se demora, podremos administrar muy granularmente los reintentos (exponential backoff por ejemplo) o la cantidad de recursos involucrados en la transacción.</p>
+
+<p>Igualmente, al estar utilizando el mecanismo de consistencia más débil, podemos evitarnos el uso de candados transaccionales o cualquier vicio de sincronización de procesos.</p>
+
+<p>También existe la posibilidad de tener bitácoras de auditoría de transacciones con solo crear Suscriptores genéricos que estén interesados en todo tipo de eventos para luego persistirlos. Fijense que esta última nos abre una puerta muy interesante: la evolutividad de mi aplicación es sencilla gracias al alto desacoplamiento que me permite tener el patrón Publicar-Suscribir.</p>
+
+<h3 id="un-poco-ms-all">Un poco más allá</h3>
+
+<p>De acá quedan abiertas muchas posibilidades. Por ejemplo aplicar otros patrones de Enterprise Integration Patterns a nuestro dominio. También crear Fuentes de Eventos consultables idempotentes por otros Aggregates para que estos se mantegan consistentes sin la necesidad de crear suscriptores, volviendo así autónomos algunos Agregado de nuestro dominio y, si mis Agregados son autónomos, puedo terminar construyendo Contextos Delimitados autónomos.</p>
+
+<p>Se podría pensar también que estos eventos no deberían estar limitados al dominio sino que es posible que estos puedan trascender inclusive Contextos Delimitados regalandonos una implementación de aplicaciones orientadas a eventos.</p>
+
+<p>¡Me encantaría saber qué opinan!</p>
+
+    </div>
+    <div class="large-4 columns left-border">
+        <p class="panel">
+          <p class="hide-for-small-only"><span class="subheader">Entradas</span></p>
+          <ul class="side-nav no-bullet">
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2015/09/01/T%C3%ADtulo%20escandaloso_sobre%20los_desarrolladores_colombianos.html">Título escandaloso sobre los desarrolladores colombianos*</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2014/11/18/futuros_y_actores.html">Futuros y actores en Scala y Akka</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2014/03/09/consistencia.html">Consistencia</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/09/21/soa_agil.html">SOA ágil</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/05/07/bus_de_eventos_de_dominio.html">Bus de eventos de dominio</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/04/13/simpatia_semantica.html">Simpatía semántica</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/02/23/pareto_arquitectura_y_scrum.html">Arquitectura, DDD y Scrum.</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2012/04/24/no_bpms.html">No, su proyecto no necesita BPMS</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2011/10/17/patron_estados_observados.html">Patrón de estados observados</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2011/07/22/soa_no_es_esb.html">SOA != ESB</a></li>
+                    
+          </ul>
+        </p>
+        <p class="hide-for-small-only"><span class="subheader">Social </span></p>
+          <ul class="side-nav no-bullet">
+            <li>» <a class="hide-for-small-only" href="https://bitacora.s3.amazonaws.com/me.html">El autor</a></li>
+            <li>» <a class="hide-for-small-only" href="http://twitter.com/ykiriki">@ykiriki</a></li>
+            <li>» <a class="hide-for-small-only" href="/atom.xml">Atom 1.0</a></li>
+          </ul>
+        </p>        
+    </div>    
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <div id="disqus_thread"></div>bitacora/
+        <script type="text/javascript">
+          var disqus_shortname = 'bitcora';
+          var disqus_identifier = 'http://yujikiriki.com/2013/05/07/bus_de_eventos_de_dominio';
+          var disqus_url = 'http://yujikiriki.com/2013/05/07/bus_de_eventos_de_dominio.html';
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
+    </div>
+  </div>
+<!-- Foundation dependencies -->
+    <script src="https://bitacora.s3.amazonaws.com/js/vendor/jquery.js"></script>
+    <script src="https://bitacora.s3.amazonaws.com/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+<!-- Google analytics -->
+<!-- 
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24796665-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+   -->    
+  </body>
+</html>

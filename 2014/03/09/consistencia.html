@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bliki | Consistencia</title>
+    <link rel="stylesheet" href="https://bitacora.s3.amazonaws.com/css/foundation.css" />
+    <script src="https://bitacora.s3.amazonaws.com/js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+<!-- Page begins  -->
+  <div class="row bottom-border">
+    <div class="large-11 columns">
+      <h1><small><a href="https://bitacora.s3.amazonaws.com/index.html">_bliki</a></small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-8 columns">
+      <div class="row">
+        <div class="large-12 columns">
+          <br/>
+          <h2>CONSISTENCIA</h2>
+          <h6 class="subheader">Por: <a href="https://s3.amazonaws.com/bitacora/me.html">Yuji Kiriki</a></h6>
+          <h6 class="subheader">Publicado: March 09, 2014</h6>
+          <h6 class="subheader">Número de palabras: 341</h6>
+          <h6 class="subheader">Categorías: </h6>
+        </div>
+      </div>
+      <br/><br/>
+      <p>Entender cómo funciona la consistencia en un sistema distribuido es quizas la herramienta más versatil para diseñar e implementar aplicaciones de software tolerantes a fallas, escalables y de desempeño adecuado.</p>
+
+<p>Pienso que es importante escribir sobre la consistencia debido a que su entendimiento común puede facilitar y enriquecer discusiones de diseño y arquitectura entre las personas. Su mal entendimiento puede llevar a un equipo de trabajo creer en soluciones místicas gobernadas por leyes “superiores” a la matemática.</p>
+
+<p>La intención de esta entrada es tratar de resumir un considerable número de papers, artículos y blogs que he leído durante los últimos meses, esperando hacer justicia a los distintos autores.</p>
+
+<h3 id="definicin">Definición</h3>
+
+<p>Para esta entrada la consistencia no será considerada un atributo de calidad de un sistema dado que, basandose en el catalogo de atributos de calidad del <em>Software Engineering Institute</em> (SEI) en su reporte técnico CMU/SEI-95-TR-021 de 1995, esta no se encuentra definida.</p>
+
+<p>Que la consistencia no sea tratada como atributo de calidad tiene sentido pues según vayamos ahondando en su definición, lo que coloquialmente buscamos y consideramos “consistencia” es realmente que un sistema manifieste propiedades de integridad y confidencialidad de la información. No obstante, si se detalla de definición de integridad se puede concluir que la integridad asume la consistencia.</p>
+
+<p>Lo que sí podemos decir es que la consistencia trata sobre las operaciones (transacciones) que se realizan sobre un dato o sobre un conjunto de datos, según el modelo de consistencia del que se está hablando.</p>
+
+<p>Cuando se habla sobre la consistencia se debe hablar sobre los distintos modelos de consistencia, más que sobre la consistencia <em>per se</em>. En general se reconocen dos tipos de modelo de consistencia: modelo de consistencia fuerte y modelo de consistencia debil.</p>
+
+<p>Un modelo de consistencia establece un contrato entre el desarrollador de un sistema y el sistema donde, si el desarrollador sigue las reglas del sistema, el sistema le garantizará que los resultados de las operaciones realizadas sobre sus datos sea predecible<a href="http://en.wikipedia.org/wiki/Consistency_model">1</a>.</p>
+
+<p>Hablar sobre los modelos de consistenia más populares: causal, secuencial, serializable, eventual, etc.</p>
+
+    </div>
+    <div class="large-4 columns left-border">
+        <p class="panel">
+          <p class="hide-for-small-only"><span class="subheader">Entradas</span></p>
+          <ul class="side-nav no-bullet">
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2015/09/01/T%C3%ADtulo%20escandaloso_sobre%20los_desarrolladores_colombianos.html">Título escandaloso sobre los desarrolladores colombianos*</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2014/11/18/futuros_y_actores.html">Futuros y actores en Scala y Akka</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2014/03/09/consistencia.html">Consistencia</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/09/21/soa_agil.html">SOA ágil</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/05/07/bus_de_eventos_de_dominio.html">Bus de eventos de dominio</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/04/13/simpatia_semantica.html">Simpatía semántica</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/02/23/pareto_arquitectura_y_scrum.html">Arquitectura, DDD y Scrum.</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2012/04/24/no_bpms.html">No, su proyecto no necesita BPMS</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2011/10/17/patron_estados_observados.html">Patrón de estados observados</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2011/07/22/soa_no_es_esb.html">SOA != ESB</a></li>
+                    
+          </ul>
+        </p>
+        <p class="hide-for-small-only"><span class="subheader">Social </span></p>
+          <ul class="side-nav no-bullet">
+            <li>» <a class="hide-for-small-only" href="https://bitacora.s3.amazonaws.com/me.html">El autor</a></li>
+            <li>» <a class="hide-for-small-only" href="http://twitter.com/ykiriki">@ykiriki</a></li>
+            <li>» <a class="hide-for-small-only" href="/atom.xml">Atom 1.0</a></li>
+          </ul>
+        </p>        
+    </div>    
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <div id="disqus_thread"></div>bitacora/
+        <script type="text/javascript">
+          var disqus_shortname = 'bitcora';
+          var disqus_identifier = 'http://yujikiriki.com/2014/03/09/consistencia';
+          var disqus_url = 'http://yujikiriki.com/2014/03/09/consistencia.html';
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
+    </div>
+  </div>
+<!-- Foundation dependencies -->
+    <script src="https://bitacora.s3.amazonaws.com/js/vendor/jquery.js"></script>
+    <script src="https://bitacora.s3.amazonaws.com/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+<!-- Google analytics -->
+<!-- 
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24796665-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+   -->    
+  </body>
+</html>

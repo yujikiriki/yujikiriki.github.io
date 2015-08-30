@@ -1,0 +1,205 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bliki | SOA ágil</title>
+    <link rel="stylesheet" href="https://bitacora.s3.amazonaws.com/css/foundation.css" />
+    <script src="https://bitacora.s3.amazonaws.com/js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+<!-- Page begins  -->
+  <div class="row bottom-border">
+    <div class="large-11 columns">
+      <h1><small><a href="https://bitacora.s3.amazonaws.com/index.html">_bliki</a></small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-8 columns">
+      <div class="row">
+        <div class="large-12 columns">
+          <br/>
+          <h2>SOA áGIL</h2>
+          <h6 class="subheader">Por: <a href="https://s3.amazonaws.com/bitacora/me.html">Yuji Kiriki</a></h6>
+          <h6 class="subheader">Publicado: September 21, 2013</h6>
+          <h6 class="subheader">Número de palabras: 2196</h6>
+          <h6 class="subheader">Categorías: </h6>
+        </div>
+      </div>
+      <br/><br/>
+      <p>La comunidad de metodologías ágiles en Colombia, particularmente la de Medellín, logró convocar a más de 600 personas en un mismo lugar para compartir conocimiento y experiencias fundamentadas en los 12 principios del manifiesto ágil. Tuve la fortuna de asistir y de escuchar varias charlas y presentaciones las cuales por su calidad superaron mis expectativas.</p>
+
+<p>Hubo una en particular cuyo nombre me llamó muchísimo la atención: “SOA ágil”. A pesar de los esfuerzos del expositor, pienso que la charla dejó muchos vacíos pues percibí que sus ideas estaban sesgadas por analogías a una reconocida metodología de un proveedor de tecnología.</p>
+
+<p>Esta entrada la debía de tiempo atrás y gracias a una invitación me animé a escribirla. La idea de esta entrada es dejar escritas ideas que he venido recopilando para luego unirlas y así poder proponer lo que considero puede ser un buen aproximamiento a una “SOA ágil”.</p>
+
+<h3 id="algunas-notas-de-historia">Algunas notas de historia</h3>
+
+<p>En el año 2006 Jim Webber introdujo el concepto de <em><a href="http://www.infoq.com/interviews/jim-webber-qcon-london">Guerilla SOA</a></em> la cual proponía, para ese entonces, la <em>subversiva</em> idea de eliminar los largos ejércitos de consultores, los <em>middleware</em> grasosos, los cronogramas de años, y el acercamiento <strong>STOP THE WORLD</strong> de los proyectos “SOA” típicos de ese entonces.</p>
+
+<p>Su idea se fundamentaba en el hecho de que ese acercamiento a SOA es demasiado pesado. Propuso una forma de hacerlo más ligera y sin depender de productos o <em>middleware</em> particulares para obtener resultados visibles en corto tiempo y que generaran valor de negocio medible.</p>
+
+<p>Según Webber <em>Guerilla SOA</em> es ligera cuando los equipos de ejecución de tales proyectos son pequeños y si se focalizan en una capacidad de negocio a la vez, entregando resultados de manera incremental e iterativa. Así mismo, el hecho de eliminar las grasosas cajas negras como BPMS o ESB encontró que REST (en esa época la bautizó MEST) cumplía de mejor manera las los atributos de calidad que el cliente esperaba y respondiendo rápido a sus exigencias.</p>
+
+<p>Unos meses después, en Septiembre del 2007, me <a href="http://highscalability.com/amazon-architecture">encontré</a> con que Amazon hacía uso de una arquitectura basada en servicios y que seguía los principios no solo de <em>Guerilla SOA</em> sino que proponía algunas ideas radicales para su época tales como: un equipo pequeño por servicio (de 8 a 10 personas por servicio); que el 70% de sus servicios fuesen REST; una infraestructura en la que no se compartan recursos entre servicios (tales como bases de datos, eliminando así SPOF); entre muchas más que pueden encontrar en ese artículo.</p>
+
+<p>Pasaron unos años y en Junio del 2012 Netflix publicó una serie de <a href="http://techblog.netflix.com/2012/06/netflix-operations-part-i-going.html">artículos</a> donde cuentan cómo pasaron de una aplicación monolítica a todo un ecosistema de servicios que sobra decir, son distribuidos. Lo que más me llamó la atención de la serie fue cómo, el hecho de distribuir los servicios no solo impactó positivamente la velocidad de entrega de las capacidades de negocio requeridas sino a que los equipos se vieron forzados a dividirse por servicio y la infraestructura se particularizó por servicio.</p>
+
+<p>¿Y el mal llamado “Gobierno SOA”? Se dieron cuenta que tal cosa sólo iba en contravía de su objetivo estratégico como unidad de negocio que es entregar valor a la organización <strong>YA</strong>. ¿Qué hicieron? Abrazar el caos, volverlo parte de su operación y dejar de luchar contra ese hecho.</p>
+
+<p>Lo más increíble de cómo Netflix opera es que luego empezaron a abrir a la comunidad muchos de sus componentes clave para su arquitectura de servicios distribuidos. ¿Quién “gobierna” esos componentes? Un pequeño equipo. ¿Quién reutiliza los servicios de esos componentes? Quien lo necesite y quiera. ¿Y si necesito reutilizar uno de esos servicios pero con un par de diferencias? Cópielo, modifíquelo, publíquelo y manténgalo.</p>
+
+<p>Esa lógica pone en evidencia las caóticas cualidades de cualquier sistema distribuido y que, en vez de pelear contra ellas, las <strong>asume</strong> y las hace parte de su cotidianidad.</p>
+
+<p>En Marzo del 2012 leí por primera vez acerca de los micro-servicios, una idea propuesta e implementada por James Lewis. Dejo esta idea cronológicamente después de la serie de artículos de Netflix pues pienso que así, cuando mezcle las ideas, será más fácil para el lector entenderme.</p>
+
+<p>Los micro-servicios son una manera muy interesante de implementar una SOA. En pocas palabras un micro-servicio es una pequeña aplicación (en funcionalidad y en líneas de código) que cumple una sola función y la cual se comunica con otras pequeñas aplicaciones a través de un mecanismo común, tal y como funcionan las aplicaciones de Unix que se comunican a través de cadenas de caracteres.</p>
+
+<p>Piensen en los comandos <em>cat</em> y <em>grep</em> por ejemplo. Estas aplicaciones pueden componer su funcionamiento a través del <em>pipe</em> <code>"|"</code>. Solo que los micro-servicios en vez de comunicarse a través de cadenas de caracteres se comunican a través del intercambio de mensajes usando <strong>respetuosamente</strong> el protocolo HTTP.</p>
+
+<p>Una de las ideas más valiosas de los micro-servicios es que, en palabras de Lewis, si un micro-servicio necesita cambiar su comportamiento o tiene algún error de programación, es preferible rehacer el micro-servicio que modificarlo. Si necesita reutilizar un micro-servicio existente pero omitiendo o agregando un comportamiento particular, copie pegue modifique y publique un nuevo micro-servicio.</p>
+
+<p>A primera vista esa idea puede llevar al lector incauto a pensar que eso no respeta el principios de <em>“Don’t Repeat Yourself”</em> (DRY), pero en serio pregúntense ahora, evitar el “copy + paste” ¿es realmente DRY?</p>
+
+<p>Les pregunto ¿un cambio de comportamiento de un servicio existente, por mínimo que sea, no implica que es un comportamiento <em>distinto</em>? ¿Quién les mintió diciéndoles que factorizar comportamiento es la forma a través de la cual se logra mayor reutilización?</p>
+
+<p>En marzo de este año el equipo técnico de Gilt publicó un corto <a href="http://tech.gilt.com/post/46359463184/26-3-13-todays-noon-outage-and-what-were-doing-to">artículo</a> describiendo las causas de la indisponibilidad que presentó su aplicación y cómo esta los llevo a pensar e implementar “LOSA” (Lots of Small Applications). Para su momento la idea no es nueva y es muy parecida a lo que venía haciendo Webber, Amazon, Netflix y Lewis tiempo atrás: muchas aplicaciones altamente desacopladas y aisladas permitiendo caídas parciales (<a href="http://skife.org/architecture/fault-tolerance/2009/12/31/bulkheads.html">bulk pattern</a>) y protegiéndose así de indisponibilidades generales.</p>
+
+<h3 id="soa-gil">SOA ágil</h3>
+
+<p>Una SOA tiene una naturaleza caótica debido a que hereda todas las características de un sistema distribuido. Normalmente un sistema distribuido es caótico pues es difícil predecir cómo se va a comportar, particularmente ante fallas. De ser fácil, la industria no tendría que hacer extensivas pruebas de capacidad a las aplicaciones para saber cómo se van a comportar ante situaciones límite o de borde.</p>
+
+<p>Las fallas en este tipo de arquitectura se vuelven tan difíciles de predecir que Netflix diseño y publicó el proyecto <a href="http://techblog.netflix.com/2012/07/chaos-monkey-released-into-wild.html">Chaos Monkey</a> el cual permite simular fallas al azar para así poder diseñar e implementar mecanismos que les permita responder ante distintas eventualidades.</p>
+
+<p>Si a esta naturaleza caótica de una buena SOA le sumamos que el negocio necesita sacar productos o servicios nuevos antes que su competencia para no quebrar y nosotros como desarrolladores estamos constantemente agregando o modificando funcionalidades ¿Qué hacemos? ¿”Gobierno de servicios” con un UDDI por unas cuantas decenas de miles de dólares para estandarizar y reutilizar? ¿Qué es reutilizar realmente? ¿Más plata para el proveedor para que meta más servidores en “alta disponibilidad” sin saber que al ser mi aplicación tan monolítica no se va a aprovechar los recursos disponibles de manera eficiente? ¿Desplegar varios ESB en “alta disponibilidad” donde está significa comprar más hardware y software propietario?</p>
+
+<p>Aquí es donde entra la fresca, simple y ágil SOA. La idea es atacar con simplicidad el comportamiento de un sistema distribuido y abrazando confiado su entropía.</p>
+
+<p>Si se fijan en las referencias de la sección anterior todas buscan simplificar el modelo de implementación de sus servicios. Todas las ideas buscan eliminar puntos únicos de falla. Todas buscan responder eficaz y eficientemente a las necesidades del negocio. Todas buscan adaptarse al caos y asumirlo.</p>
+
+<p>Así, parándome en los hombros de gigantes, les propongo 8 heurísticas de una SOA ágil:</p>
+
+<h4 id="no-hay-gobierno">1. No hay gobierno</h4>
+
+<p>¿Qué es gobierno? ¿Comprar un producto? ¿Quiere salir con un producto nuevo de su empresa al mercado en el menor tiempo posible? No limite a su equipo de desarrollo en seguir políticas inútiles que no le ayudan a disminuir entropía sino que la aumenta y la burocratiza.</p>
+
+<p>El problema no es controlar. Lo que se debe buscar es estandarizar aspectos generales tales como seguridad y protocolos y deje que la innovación emerja. Más de esto en las siguientes heurísticas.</p>
+
+<h4 id="no-hay-restricciones-en-tecnologa">2. No hay restricciones en tecnología</h4>
+
+<p>Si se especializa un equipo por servicio ¿quién tiene el mejor criterio para saber cuáles son las tecnologías más adecuadas para su implementación? El equipo que lo va a desarrollar. No impida que su organización obtenga mejores resultados en consumo de recursos o en la velocidad en salir al mercado por viejas y acartonadas costumbres o por “tranquilidad”.</p>
+
+<h4 id="s-hay-restricciones-va-estilos-arquitectnicos">3. Sí hay restricciones vía estilos arquitectónicos</h4>
+
+<p>Las restricciones son necesarias como las reglas mínimas de un juego. Las restricciones propuestas por REST son la mejor alternativa para liberar de restricciones de tecnología a sus equipos de trabajo pues todos los servicios se acoplan a un protocolo y no a contratos RPC.</p>
+
+<p>Entrene a sus equipos en patrones arquitectónicos. Defina arquitecturas de referencia de uso opcional y publíquelos en una wiki. Si la wiki es buena y útil tendrá adopción.</p>
+
+<h4 id="no-hay-jerarqua-sino-equipos-con-responsabilidades-bien-definidas">4. No hay jerarquía sino equipos con responsabilidades bien definidas</h4>
+
+<p>Especialice y responsabilice a los equipos de trabajo por capacidad de negocio. No separe al desarrollo de la infraestructura. Logre que sus equipo de desarrollo se responsabilicen de la infraestructura. Permita que la arquitectura de su organización emerja. (En alguna otra ocasión escribiré sobre la “nube”, la idea más gaseosa de todos los tiempos)</p>
+
+<h4 id="fork-clone-pull-request">5. Fork, Clone, Pull request</h4>
+
+<p>¿Reutilización? Métase ya mismo a Github y disfrute de lo que en realidad es reutilización. Reutilización no es factorizar comportamiento, es especializarlo (algún día escribiré sobre este punto). Es usar librerías que voy encontrando por ahí y que están mantenidos por alguien con quien nunca he hablado. Lo importante es que el código está ahí para leerlo, tocarlo, modificarlo, copiarlo.</p>
+
+<p>Imagine por un segundo que su empresa tiene un Github pero en vez de proyectos se publican servicios pequeños. Luego, si otro equipo necesita ese servicio, sencillamente lo clona y lo usa. Si necesita reutilizar algo de ese servicio, le hace <em>fork</em> y reutiliza el pedazo que le interesa. Si descubre un <em>bug</em> lo puede reportar o inclusive reparar y proponer un <em>Pull Request</em>. Si necesita un servicio parecido a uno ya publicado, hágale fork, modifique y publique.</p>
+
+<h4 id="auto-organizacin">6. Auto-organización</h4>
+
+<p>Si no controla la exposición de servicios debe aprender que el caos tiende al orden. Por ejemplo, los servicios más transversales y utilizados por lo demás serán aquellos que maduren más rápido (como los proyectos Apache o Linux). Los servicios con mayor tendencia a reutilizarse emergerán solos y madurarán por su uso e importancia. Aún más interesante: si todos sus servicios publican métricas de su comportamiento usted los podrá identificar y priorizar por su uso y comportamiento más que porque un <em>Arquitecto Empresarial</em> lo decidió así.</p>
+
+<h4 id="distribuido">7. Distribuido.</h4>
+
+<p>SOA es distribuido. Los servicios son pequeñas aplicaciones que se comunican por red que modelan una capacidad de negocio. ¿Tiene una sola base de datos? No tiene SOA (sad panda). ¿Tiene integraciones por datos? No tiene SOA (sad panda). ¿Tiene una base de datos por servicio? ¡Sí tiene SOA! (happy panda) ¿Si se cae un servidor su empresa queda sin aplicación? No tiene SOA (sad panda). ¿Si se cae un servidor sólo se cae un servicio y el resto de su empresa sigue funcionando sin problemas? Sí tiene SOA (happy panda). Fácil.</p>
+
+<h4 id="reutilizacin-redundancia-replicacin-y-duplicidad">8. Reutilización, redundancia, replicación y duplicidad.</h4>
+
+<p>No sé quién nos metió en la cabeza que reutilizar es factorizar comportamiento (acoplamiento vertical, ¿alguien?). No sé quién nos vendió la idea de que replicar datos es tan malo como duplicarlos. No sé quién nos enseñó que la única manera de tener aplicaciones disponibles es a punta de plata comprando infraestructura redundante (pura fuerza bruta y cero ingeniería).</p>
+
+<p>Para este punto si lea, estudie, analice y observe como aplicaciones Web como Facebook, Amazon, Netflix, Instagram, Gmail, Google Maps, Simple Bank, entre muchísimas más funcionan. Estoy seguro que su empresa no está ni cerca de lo caótico y complejo ni del volumen de transacciones que estas aplicaciones soportan. ¡Y sin <em>middleware</em>!</p>
+
+<h3 id="cierre">Cierre</h3>
+
+<p>Soy consciente que no todas las heurísticas son fáciles de digerir. Obviamente por alguna razón del perverso universo usted no se sienta capaz de <em>políticamente</em> asumir el reto de tener una SOA ágil.</p>
+
+<p>Abrace el Caos. Deje que él mismo lleve a que su ecosistema de aplicaciones tienda al orden. Construya aplicaciones simples, pequeñas y autónomas desde su comportamiento hasta su infraestructura. No se mate buscando que estructura factorizar para después arrepentirse. No desperdicie plata en <em>middleware</em> innecesario que sólo le da tranquilidad al político y no al técnico. Permita que su equipo técnico innove. Permita que su arquitectura emerja restringiendo su estilo y orientandola a través de múltiples arquitecturas de referencia. Sea costo eficiente y use la ingeniería no la fuerza bruta. Respóndale rápido al negocio y apalanque el crecimiento de su empresa.</p>
+
+<p>¿Qué opinan?</p>
+
+    </div>
+    <div class="large-4 columns left-border">
+        <p class="panel">
+          <p class="hide-for-small-only"><span class="subheader">Entradas</span></p>
+          <ul class="side-nav no-bullet">
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2015/09/01/T%C3%ADtulo%20escandaloso_sobre%20los_desarrolladores_colombianos.html">Título escandaloso sobre los desarrolladores colombianos*</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2014/11/18/futuros_y_actores.html">Futuros y actores en Scala y Akka</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2014/03/09/consistencia.html">Consistencia</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/09/21/soa_agil.html">SOA ágil</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/05/07/bus_de_eventos_de_dominio.html">Bus de eventos de dominio</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/04/13/simpatia_semantica.html">Simpatía semántica</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2013/02/23/pareto_arquitectura_y_scrum.html">Arquitectura, DDD y Scrum.</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2012/04/24/no_bpms.html">No, su proyecto no necesita BPMS</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2011/10/17/patron_estados_observados.html">Patrón de estados observados</a></li>
+                  
+            <li>&#187; <a class="hide-for-small-only" href="/2011/07/22/soa_no_es_esb.html">SOA != ESB</a></li>
+                    
+          </ul>
+        </p>
+        <p class="hide-for-small-only"><span class="subheader">Social </span></p>
+          <ul class="side-nav no-bullet">
+            <li>» <a class="hide-for-small-only" href="https://bitacora.s3.amazonaws.com/me.html">El autor</a></li>
+            <li>» <a class="hide-for-small-only" href="http://twitter.com/ykiriki">@ykiriki</a></li>
+            <li>» <a class="hide-for-small-only" href="/atom.xml">Atom 1.0</a></li>
+          </ul>
+        </p>        
+    </div>    
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <div id="disqus_thread"></div>bitacora/
+        <script type="text/javascript">
+          var disqus_shortname = 'bitcora';
+          var disqus_identifier = 'http://yujikiriki.com/2013/09/21/soa_agil';
+          var disqus_url = 'http://yujikiriki.com/2013/09/21/soa_agil.html';
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
+    </div>
+  </div>
+<!-- Foundation dependencies -->
+    <script src="https://bitacora.s3.amazonaws.com/js/vendor/jquery.js"></script>
+    <script src="https://bitacora.s3.amazonaws.com/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+<!-- Google analytics -->
+<!-- 
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24796665-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+   -->    
+  </body>
+</html>
