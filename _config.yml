@@ -6,4 +6,4 @@ future: true
 lsi: false
 highlighter:	pygments
 markdown: kramdown
-url: http://yujikiriki.github.io/
+url: yujikiriki.github.io

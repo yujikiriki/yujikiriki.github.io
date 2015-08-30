@@ -1,11 +1,11 @@
 @font-face {
   font-family: Lato;
-  src: url('https://bitacora.s3.amazonaws.com/fonts/lato-regular-webfont.woff');
+  src: url('http://yujikiriki.github.io/fonts/lato-regular-webfont.woff');
 }
 
 @font-face {
   font-family: Open Sans;
-  src: url('https://bitacora.s3.amazonaws.com/fonts/OpenSans-Regular.ttf');
+  src: url('http://yujikiriki.github.io/fonts/OpenSans-Regular.ttf');
 }
 
 .left-border {
