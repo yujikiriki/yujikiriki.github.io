@@ -4,7 +4,7 @@
   <title>Bitácora</title>
   <link href="http://coyled.com/"/>
   <link type="application/atom+xml" rel="self" href="http://coyled.com/atom.xml"/>
-  <updated>2015-08-31T16:02:05-05:00</updated>
+  <updated>2015-08-31T18:50:32-05:00</updated>
   <id>http://yujikiriki.com/</id>
   <author>
     <name>Yuji Kiriki</name>
@@ -13,8 +13,8 @@
 
   
   <entry>
-    <id>http://b.yujikiriki.com/2015/09/01/colombian_dev</id>
-    <link type="text/html" rel="alternate" href="http://b.yujikiriki.com/2015/09/01/colombian_dev.html"/>
+    <id>http://b.yujikiriki.com/2015/09/01/Título escandaloso_sobre los_desarrolladores_colombianos</id>
+    <link type="text/html" rel="alternate" href="http://b.yujikiriki.com/2015/09/01/T%C3%ADtulo%20escandaloso_sobre%20los_desarrolladores_colombianos.html"/>
     <title>Título escandaloso sobre los desarrolladores colombianos*</title>
     <updated>2015-09-01T00:00:00-05:00</updated>
     <author>
