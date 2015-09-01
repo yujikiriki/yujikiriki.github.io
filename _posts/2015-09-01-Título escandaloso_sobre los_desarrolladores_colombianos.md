@@ -86,7 +86,7 @@ Llegan _startups_ extranjeras o llegan empresas extranjeras con sus grandes bill
 
 Con una billetera suficientemente grande es posible salir de compras y **especular** sobre cuánto debería o no debería ser el salario de un desarrollador colombiano. Así el salario mínimo en Colombia para 2015 sea de COP$644.350. Y obvio, acá en Colombia, cualquier persona de cualquier industria por un salario de un orden de magnitud más grande que el mínimo, hasta trabaja en una _startup_. 
 
-Lo que demuestra hasta acá el artículo del señor Buriticá es que con la distorción que una billetera llena de dolares puede causar, no se percibe que sí hay escasez de desarrolladores. Y es entendible pues, las restricciones sobre las que su empresa trabaja son muy diferentes a las nuestras como PyME.
+Lo que demuestra hasta acá el artículo del señor Buriticá es que con la distorsión que una billetera llena de dolares puede causar, no se percibe que sí hay escasez de desarrolladores. Y es entendible pues, las restricciones sobre las que su empresa trabaja son muy diferentes a las nuestras como PyME.
 
 Al estar él basándose en el hecho de haber formado un equipo a punta de salario y beneficios con capital extranjero, se ha puesto automáticamente por fuera de las condiciones que tenemos en la industria colombiana de software y, desde la barrera, cuestiona a los que estamos lidiando con el toro y dejando la piel en la cancha.
 
