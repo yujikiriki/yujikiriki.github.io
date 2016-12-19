@@ -51,7 +51,7 @@ Quizás sea por las restricciones en las que vivimos. Pero también a veces pien
 
 ## 3. Arquitectura empresarial
 
-Toda maestría en ingeniería de software que se respete en Colombia dicta una clase de Arquitectura Empresarial. Históricamente esto me ha parecido el esfuerzo académico más inútil todos.
+Toda maestría en ingeniería de software que se respete en Colombia dicta una clase de Arquitectura Empresarial. Históricamente esto me ha parecido el esfuerzo académico más inútil de todos.
 
 Al no tener problemas lo suficientemente complejos como para requerir esta disciplina, estos arquitectos empresariales se dedican entonces a estorbar _estrategicamente_ los proyectos que necesitan salir a producción con decisiones gaseosas y de poco valor.
 
