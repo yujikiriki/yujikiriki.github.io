@@ -7,7 +7,7 @@ author_url: https://s3.amazonaws.com/bitacora/me.html
 
 Las últimas semanas he tenido la oportunidad de participar activamente en la construcción de un producto estratégico para una [Fortune 500](http://beta.fortune.com/fortune500/) (F500). En esta entrada trato de dejar por escrito algunas ideas y hallazgos que pueden ser valiosas para alguien más.
 
-## Ecosistema
+## 1. Ecosistema
 Una de las primeras cosas que evidencié fue el cambio de _liga_. En Colombia, el cambio de tecnologías y de método ha sido un camino poco agradable de transitar.
 
 Culturas organizacionales basadas en el miedo han obstaculizado la capacidad de equivocarse y aprender en las empresas colombianas. Cada vez que hablo con un arquitecto "inquieto" lo primero que me dice es: "Es que Yuji, recuerde que esta empresa es muy grande, nosotros no podemos darnos el lujo de improvisar y equivocarnos".
@@ -37,7 +37,7 @@ En Colombia, en este particular, estamos _un poco muy jodidos_, pues el incitado
 
 Hay otras entonces que crean elegantes _Vicepresidencias de Innovación_, las cuales a veces terminan comprando cajas de nombres _trendy_ y basadas en OSS y en otros casos, con ejercitos de _Homeopatas Ágiles_ recomendando que todos los desarrolladores deben estar haciendo TDD, "Clean Code" y Scrum de Scrums basadas en SAFe y Pods. Pero de creación de valor, _nanay cucas_.
 
-## Escala
+## 2. Escala
 
 Empresas F500 pueden tener decenas de tiendas en decenas de paises (Walmart por poner un ejemplo). Solo imaginen la complejidad de ese problema. Son decenas de miles de tiendas, con manejo sofisticado de inventarios, distribución y venta. Campañas de mercadeo localizadas, impuestos particularizados por estado y por país. Sólo imaginen la complejidad de crear un sistema de puntos de lealtad para todas esas tiendas con reglas particulares por mercado/ubicación. Obvio, eso no va a correr sobre una base de datos Oracle. Pero vaya uno a decirle eso a un arquitecto gestionado con miedo, por obvias razones se asusta porque de pronto salirse de esa caja implica que lo van a echar; "es que no se puede porque somos muy grandes".
 
