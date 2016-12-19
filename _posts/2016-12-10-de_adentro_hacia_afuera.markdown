@@ -56,11 +56,11 @@ Toda maestría en ingeniería de software que se respete en Colombia dicta una c
 Al no tener problemas lo suficientemente complejos como para requerir esta disciplina, estos arquitectos empresariales se dedican entonces a estorbar _estrategicamente_ los proyectos que necesitan salir a producción con decisiones gaseosas y de poco valor.
 
 En esta F500 tengo la oportunidad de trabajar de cerca con un equipo de arquitectura empresarial. Los problemas que pueden llegar a resolver tienen la complejidad necesaria como para que este oficio tome valor.
-Sin embargo, todos, empezando por el más veterano y jefe de los demás, escriben código y desplegan componentes a producción, lo que les permite embalarse si llegan a tomar una mala decisión por gaseosa o "pedo-sa", más bien. Y creanme cuando les digo que Zachmann y TOGAF y demás es en lo último en lo que piensan.
+Sin embargo, todos, empezando por el más veterano y jefe de los demás, escriben código y desplegan componentes a producción, lo que les permite embalarse si llegan a tomar una mala decisión por gaseosa o "pedo-sa", más bien. Y créanme cuando les digo que Zachmann y TOGAF y demás es en lo último en lo que piensan.
 
 ## Notas finales
 
-Una de las primeras conclusiones que nacen es quizás que debemos cambiar el punto de referencia. Dejar de mirarnos el ombligo podría ser un buen principio, retandonos con lo que hacen las más tesas del mundo y no quedarnos mirando cómo no podemos porque somos "demasiado grandes".
+Una de las primeras conclusiones que nacen es quizás que debemos cambiar el punto de referencia. Dejar de mirarnos el ombligo podría ser un buen principio, retándonos con lo que hacen las más tesas del mundo y no quedarnos mirando cómo no podemos porque somos "demasiado grandes".
 
 También he podido concluir que las empresas colombianas tienen como ventaja haber crecido y haberse desarrollado en un ecosistema adverso, pues de alguna manera desarrollan capacidades que cuando el ecosistema es un poco más favorable, tienen la oportunidad de volverse dominantes de ese nuevo mercado.
 
