@@ -10,7 +10,7 @@ Las últimas semanas he tenido la oportunidad de participar activamente en la co
 ## Ecosistema
 Una de las primeras cosas que evidencié fue el cambio de _liga_. En Colombia, el cambio de tecnologías y de método ha sido un camino poco agradable de transitar.
 
-Culturas organizacionales basadas en el miedo han obstaculizado la capacidad de equivocarse y aprender de las empresas colombianas. Cada vez que hablo con un arquitecto "inquieto" lo primero que me dice es: "Es que Yuji, recuerde que esta empresa es muy grande, nosotros no podemos darnos el lujo de improvisar y equivocarnos".
+Culturas organizacionales basadas en el miedo han obstaculizado la capacidad de equivocarse y aprender en las empresas colombianas. Cada vez que hablo con un arquitecto "inquieto" lo primero que me dice es: "Es que Yuji, recuerde que esta empresa es muy grande, nosotros no podemos darnos el lujo de improvisar y equivocarnos".
 
 Nadie quiere arriesgarse porque lo echan. 
 
@@ -24,7 +24,7 @@ Esta orientación les facilita la toma de decisiones y la introducción de nueva
 ##### Gestión de proyectos
 Otro ejemplo está en la gestión de proyectos. En Colombia las empresas y los gerentes de proyectos están empecinados en usar la frase "es que la junta nos está pidiendo una fecha". No les están pidiendo un resultado. No les están pidiendo alcanzar un indicador de éxito medible con **datos reales** con el producto en producción. Solo les interesa una fecha, lo que quizás, he llegado a pensar, les facilita "gestionar"; que al final del día se convierte en presionar al que toque.
 
-pareciera que esta noción de toma de decisiones basada en datos y no fechas de entrega de esta F500 le ha permitido enfocarse en lo fundamental: crear valor. No en cumplir un cronograma para que no me echen y demostrar "un resultado". Y si hay problemas, es culpa de otro. 
+Pareciera que esta noción de toma de decisiones basada en datos y no fechas de entrega de esta F500, le ha permitido enfocarse en lo fundamental: **crear valor**. No en cumplir un cronograma para que no los echen y demostrar "un resultado", culpando a otro si hay problemas. 
 
 ##### Una hipótesis
 Estas empresas que fomentan la toma de riesgos crecen desmesuradamente. En la medida que toman riesgos, aprenden que lo fundamental es la creación de valor y la toma de decisiones basada en datos. Esto las lleva a ser altamente valoradas durante prolongados espacios de tiempo que lleva a que sus modelos de negocio se sofistiquen de manera tal que la escala de los problemas que deben atender son de una altísima complejidad. 
@@ -35,15 +35,15 @@ Al crecer y madurar el mercado, los desarrolladores de software encuentran mejor
 
 En Colombia, en este particular, estamos _un poco muy jodidos_, pues el incitador de esta lógica es empresas que se orientan a la generación de valor, no a la "Gestión del Miedo".
 
-Hay otras entonces que crean elegantes _Vicepresidencias de Innovación_, las cuales a veces terminan comprando cajas de nombres _trendy_ y basadas en OSS y en otros casos, con ejercitos de Homeopatas Ágiles recomendando que todos los desarrolladores deben estar haciendo TDD, "Clean Code" y Scrum de Scrums basadas en SAFe y Pods. Pero de creación de valor, _nanay cucas_.
+Hay otras entonces que crean elegantes _Vicepresidencias de Innovación_, las cuales a veces terminan comprando cajas de nombres _trendy_ y basadas en OSS y en otros casos, con ejercitos de _Homeopatas Ágiles_ recomendando que todos los desarrolladores deben estar haciendo TDD, "Clean Code" y Scrum de Scrums basadas en SAFe y Pods. Pero de creación de valor, _nanay cucas_.
 
 ## Escala
 
-Empresas F500 pueden tener decenas de tiendas en decenas de paises (Walmart por poner un ejemplo). Solo imaginen la complejidad de ese problema. Son decenas de miles de tiendas, con manejo sofisticado de inventarios, distribución y venta. Campañas de mercadeo localizadas, impuestos particularizados por estado y por país. Solo imaginen la complejidad de crear un sistema de puntos de lealtad para todas esas tiendas con reglas particulares por mercado/ubicación. Obvio, eso no va a correr sobre una base de datos Oracle. Pero vaya uno a decirle eso a un arquitecto gestionado con miedo, pues por obvias razones se asusta porque de pronto salirse de esa caja implica que lo van a echar porque "es que no se puede porque somos muy grandes".
+Empresas F500 pueden tener decenas de tiendas en decenas de paises (Walmart por poner un ejemplo). Solo imaginen la complejidad de ese problema. Son decenas de miles de tiendas, con manejo sofisticado de inventarios, distribución y venta. Campañas de mercadeo localizadas, impuestos particularizados por estado y por país. Sólo imaginen la complejidad de crear un sistema de puntos de lealtad para todas esas tiendas con reglas particulares por mercado/ubicación. Obvio, eso no va a correr sobre una base de datos Oracle. Pero vaya uno a decirle eso a un arquitecto gestionado con miedo, por obvias razones se asusta porque de pronto salirse de esa caja implica que lo van a echar; "es que no se puede porque somos muy grandes".
 
 Esta realidad me ha llevado a pensar que la escala de problemas que debemos resolver en Colombia son tan triviales que quizás con esa forma de pensar nos da y nos sobra. Por ejemplo, un reconocido banco envió comunicados a sus clientes notificando la indisponibilidad de su plataforma tecnológica tres domingos seguidos. Una obra de ingeniería que muy seguramente no es, necesariamente, colombiana.
 
-Esta realidad también me ha llevado a pensar que la falta de problemas de alta complejidad y la inexistencia de un ecosistema de empresas proveedoras de tecnología maduras ha impedido que el contexto mismo en el que se da esta realidad pueda cambiar.
+Esta realidad también me ha llevado a pensar que la falta de problemas de alta complejidad y la inexistencia de un ecosistema de empresas proveedoras maduras ha impedido que el contexto mismo en el que se da esta realidad pueda cambiar.
 
 Todo esto me lleva a concluir que en la medida en la que sigamos resolviendo problemas con mentalidad de país pobre y, en algunos casos, con un capital humano gestionado con el confort de la mediocridad, nos impide crear empresas lo suficientemente grandes que ofrezcan problemas suficientemente complejos que de alguna manera fomenten la creación de un ecosistema sano de oferta de servicios de primer mundo.
 
@@ -62,7 +62,7 @@ Sin embargo, todos, empezando por el más veterano y jefe de los demás, escribe
 
 Una de las primeras conclusiones que nacen es quizás que debemos cambiar el punto de referencia. Dejar de mirarnos el ombligo podría ser un buen principio, retandonos con lo que hacen las más tesas del mundo y no quedarnos mirando cómo no podemos porque somos "demasiado grandes".
 
-También he podido concluir que las empresas colombianas tienen como ventaja haber crecido y desarrollado en un ecosistema adverso, pues de alguna manera desarrollan capacidades que cuando el ecosistema un poco más favorable, tienen la oportunidad de volverse dominantes de ese nuevo mercado.
+También he podido concluir que las empresas colombianas tienen como ventaja haber crecido y haberse desarrollado en un ecosistema adverso, pues de alguna manera desarrollan capacidades que cuando el ecosistema es un poco más favorable, tienen la oportunidad de volverse dominantes de ese nuevo mercado.
 
 ##### De la responsabilidad del colombiano de a pie
 A veces pienso lo emocionante que sería saber que un transbordador espacial va a ser lanzado por la "Comisión Aeroespacial de San Andrés Islas". O que vamos a llenar de fincas solares las planicies de nuestros llanos orientales. O que vamos a llenar de gigantes hélices generadoras de energía eólica toda la Guajira. Y a veces pienso, porqué no, que Panaca logre ser la primera entidad con ánimo de lucro en clonar un chigüiro.
