@@ -19,7 +19,7 @@ Es comprensible pero, al compararlo con este nuevo cliente, lo más evidente es 
 Es interesante entonces saber que estas empresas son una apuesta continua a la innovación y a la creación. No a tener miedo porque de pronto mañana les quitan el pan de la boca.
 
 ##### OSS
-Esta orientación les facilita la toma de decisiones y la introducción de nuevas ideas. Por ejemplo, si a alguien se le ocurre construír una plataforma tecnológica, lo que quieren es usar sólo [OSS](https://en.wikipedia.org/wiki/Open-source_software), pues amarrarse a una tecnología propietaria les parece un riesgo. ¿Por qué un riesgo? Porque quedan 100% dependientes de un proveedor y no de una comunidad, así que a pesar de ser empresas del sector turístico, saben que deben volverse empresas de tecnología ([Disney](https://github.com/disney), por ejemplo).
+Esta orientación les facilita la toma de decisiones y la introducción de nuevas ideas. Por ejemplo, si a alguien se le ocurre construir una plataforma tecnológica, lo que quieren es usar sólo [OSS](https://en.wikipedia.org/wiki/Open-source_software), pues amarrarse a una tecnología propietaria les parece un riesgo. ¿Por qué un riesgo? Porque quedan 100% dependientes de un proveedor y no de una comunidad así que, a pesar de ser empresas del sector turístico, saben que deben volverse empresas de tecnología ([Disney](https://github.com/disney), por ejemplo).
 
 ##### Gestión de proyectos
 Otro ejemplo está en la gestión de proyectos. En Colombia las empresas y los gerentes de proyectos están empecinados en usar la frase "es que la junta nos está pidiendo una fecha". No les están pidiendo un resultado. No les están pidiendo alcanzar un indicador de éxito medible con **datos reales** con el producto en producción. Solo les interesa una fecha, lo que quizás, he llegado a pensar, les facilita "gestionar"; que al final del día se convierte en presionar al que toque.
@@ -31,15 +31,15 @@ Estas empresas que fomentan la toma de riesgos crecen desmesuradamente. En la me
 
 Esta alta complejidad requiere de proveedores y tecnologías a la altura de estas necesidades, lo que lleva a que el mercado de proveedores a su alrededor crezca y madure. 
 
-Al crecer y madurar el mercado, los desarrolladores de software encuentran mejores oportunidades si y solo si están a la altura de esas necesidades, creando así un saludable ecosistema en el que el desarrollador no se la pasa preguntandose por qué no le pagan mejor.
+Al crecer y madurar el mercado, los desarrolladores de software encuentran mejores oportunidades si y solo si están a la altura de esas necesidades, creando así un saludable ecosistema en el que el desarrollador no se la pasa preguntándose por qué no le pagan mejor.
 
 En Colombia, en este particular, estamos _un poco muy jodidos_, pues el incitador de esta lógica es empresas que se orientan a la generación de valor, no a la "Gestión del Miedo".
 
-Hay otras entonces que crean elegantes _Vicepresidencias de Innovación_, las cuales a veces terminan comprando cajas de nombres _trendy_ y basadas en OSS y en otros casos, con ejercitos de _Homeopatas Ágiles_ recomendando que todos los desarrolladores deben estar haciendo TDD, "Clean Code" y Scrum de Scrums basadas en SAFe y Pods. Pero de creación de valor, _nanay cucas_.
+Hay otras entonces que crean elegantes _Vicepresidencias de Innovación_, las cuales a veces terminan comprando cajas de nombres _trendy_ y basadas en OSS y en otros casos, con ejércitos de _Homeópatas Ágiles_ recomendando que todos los desarrolladores deben estar haciendo TDD, "Clean Code" y Scrum de Scrums basadas en SAFe y Pods. Pero de creación de valor, _nanay cucas_.
 
 ## 2. Escala
 
-Empresas F500 pueden tener decenas de tiendas en decenas de paises (Walmart por poner un ejemplo). Solo imaginen la complejidad de ese problema. Son decenas de miles de tiendas, con manejo sofisticado de inventarios, distribución y venta. Campañas de mercadeo localizadas, impuestos particularizados por estado y por país. Sólo imaginen la complejidad de crear un sistema de puntos de lealtad para todas esas tiendas con reglas particulares por mercado/ubicación. Obvio, eso no va a correr sobre una base de datos Oracle. Pero vaya uno a decirle eso a un arquitecto gestionado con miedo, por obvias razones se asusta porque de pronto salirse de esa caja implica que lo van a echar; "es que no se puede porque somos muy grandes".
+Empresas F500 pueden tener decenas de tiendas en decenas de países (Walmart por poner un ejemplo). Solo imaginen la complejidad de ese problema. Son decenas de miles de tiendas, con manejo sofisticado de inventarios, distribución y venta. Campañas de mercadeo localizadas, impuestos particularizados por estado y por país. Sólo imaginen la complejidad de crear un sistema de puntos de lealtad para todas esas tiendas con reglas particulares por mercado/ubicación. Obvio, eso no va a correr sobre una base de datos Oracle. Pero vaya uno a decirle eso a un arquitecto gestionado con miedo, por obvias razones se asusta porque de pronto salirse de esa caja implica que lo van a echar; "es que no se puede porque somos muy grandes".
 
 Esta realidad me ha llevado a pensar que la escala de problemas que debemos resolver en Colombia son tan triviales que quizás con esa forma de pensar nos da y nos sobra. Por ejemplo, un reconocido banco envió comunicados a sus clientes notificando la indisponibilidad de su plataforma tecnológica tres domingos seguidos. Una obra de ingeniería que muy seguramente no es, necesariamente, colombiana.
 
@@ -53,7 +53,7 @@ Quizás sea por las restricciones en las que vivimos. Pero también a veces pien
 
 Toda maestría en ingeniería de software que se respete en Colombia dicta una clase de Arquitectura Empresarial. Históricamente esto me ha parecido el esfuerzo académico más inútil de todos.
 
-Al no tener problemas lo suficientemente complejos como para requerir esta disciplina, estos arquitectos empresariales se dedican entonces a estorbar _estrategicamente_ los proyectos que necesitan salir a producción con decisiones gaseosas y de poco valor.
+Al no tener problemas lo suficientemente complejos como para requerir esta disciplina, estos arquitectos empresariales se dedican entonces a estorbar _estratégicamente_ los proyectos que necesitan salir a producción con decisiones gaseosas y de poco valor.
 
 En esta F500 tengo la oportunidad de trabajar de cerca con un equipo de arquitectura empresarial. Los problemas que pueden llegar a resolver tienen la complejidad necesaria como para que este oficio tome valor.
 Sin embargo, todos, empezando por el más veterano y jefe de los demás, escriben código y despliegan componentes a producción, lo que les permite embalarse si llegan a tomar una mala decisión por gaseosa o "pedo-sa", más bien. Y créanme cuando les digo que Zachmann y TOGAF y demás es en lo último en lo que piensan.
@@ -65,9 +65,9 @@ Una de las primeras conclusiones que nacen es quizás que debemos cambiar el pun
 También he podido concluir que las empresas colombianas tienen como ventaja haber crecido y haberse desarrollado en un ecosistema adverso, pues de alguna manera desarrollan capacidades que cuando el ecosistema es un poco más favorable, tienen la oportunidad de volverse dominantes de ese nuevo mercado.
 
 ##### De la responsabilidad del colombiano de a pie
-A veces pienso lo emocionante que sería saber que un transbordador espacial va a ser lanzado por la "Comisión Aeroespacial de San Andrés Islas". O que vamos a llenar de fincas solares las planicies de nuestros llanos orientales. O que vamos a llenar de gigantes hélices generadoras de energía eólica toda la Guajira. Y a veces pienso, por qué no, que Panaca logre ser la primera entidad con ánimo de lucro en clonar un chigüiro.
+A veces pienso lo emocionante que sería saber que un transbordador espacial va a ser lanzado por la "Comisión Aeroespacial de San Andrés Islas". O que vamos a llenar de fincas solares las planicies de nuestros Llanos Orientales. O que vamos a llenar de gigantes hélices generadoras de energía eólica toda La Guajira. Y a veces pienso, por qué no, que Panaca logre ser la primera entidad con ánimo de lucro en clonar un chigüiro.
 
-Estos "sueños humedos" por el que cualquier colombiano debería sentir orgullo y sentir el corazón hinchado, depende completamente de ustedes, cerebros brillantes y maravillosos. Depende de que se queden en Colombia creando, construyendo, cambiando, cuestionando, motivando, escribiendo, criticando, haciendo. Ojalá no solo opinando. Si seguimos esperando que empresas españolas, americanas, argentinas nos vendan su "innovación" no vamos a crear ecosistema, no habrá nunca cambio y no veo entonces cómo salgamos de pobres. Porque ser pobre no es falta de plata, es falta de ganas de demostrar que sí se puede.
+Estos "sueños húmedos" por el que cualquier colombiano debería sentir orgullo y sentir el corazón henchido, depende completamente de ustedes, cerebros brillantes y maravillosos. Depende de que se queden en Colombia creando, construyendo, cambiando, cuestionando, motivando, escribiendo, criticando, haciendo. Ojalá no solo opinando. Si seguimos esperando que empresas españolas, americanas, argentinas nos vendan su "innovación" no vamos a crear ecosistema, no habrá nunca cambio y no veo entonces cómo salgamos de pobres. Porque ser pobre no es falta de plata, es falta de ganas de demostrar que sí se puede.
 
 (Si de alguna manera se siente identificado con esta responsabilidad y resulta que es usted un desarrollador de software, no dude en enviar su CV a info@s4n.co).
 
