@@ -14,7 +14,7 @@ Culturas organizacionales basadas en el miedo han obstaculizado la capacidad de 
 
 Nadie quiere arriesgarse porque lo echan. 
 
-Es comprensible pero, al compararlo con este nuevo cliente, lo más evidente es que precisamente la inexistencia de la "Adminitración Orientada al Miedo" es lo que les ha permitido a estas empresas ser lo que son. Y, curiosamente, estas F500 pueden ser hasta 10 veces más grandes que la empresa más grande de Colombia.
+Es comprensible pero, al compararlo con este nuevo cliente, lo más evidente es que precisamente la inexistencia de la "Administración Orientada al Miedo" es lo que les ha permitido a estas empresas ser lo que son. Y, curiosamente, estas F500 pueden ser hasta 10 veces más grandes que la empresa más grande de Colombia.
 
 Es interesante entonces saber que estas empresas son una apuesta continua a la innovación y a la creación. No a tener miedo porque de pronto mañana les quitan el pan de la boca.
 
