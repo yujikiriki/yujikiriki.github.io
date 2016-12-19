@@ -56,7 +56,7 @@ Toda maestría en ingeniería de software que se respete en Colombia dicta una c
 Al no tener problemas lo suficientemente complejos como para requerir esta disciplina, estos arquitectos empresariales se dedican entonces a estorbar _estrategicamente_ los proyectos que necesitan salir a producción con decisiones gaseosas y de poco valor.
 
 En esta F500 tengo la oportunidad de trabajar de cerca con un equipo de arquitectura empresarial. Los problemas que pueden llegar a resolver tienen la complejidad necesaria como para que este oficio tome valor.
-Sin embargo, todos, empezando por el más veterano y jefe de los demás, escriben código y desplegan componentes a producción, lo que les permite embalarse si llegan a tomar una mala decisión por gaseosa o "pedo-sa", más bien. Y créanme cuando les digo que Zachmann y TOGAF y demás es en lo último en lo que piensan.
+Sin embargo, todos, empezando por el más veterano y jefe de los demás, escriben código y despliegan componentes a producción, lo que les permite embalarse si llegan a tomar una mala decisión por gaseosa o "pedo-sa", más bien. Y créanme cuando les digo que Zachmann y TOGAF y demás es en lo último en lo que piensan.
 
 ## Notas finales
 
