@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [WIP] De adentro hacia afuera 
+title: De adentro hacia afuera (WIP)
 author: Yuji Kiriki
 author_url: https://s3.amazonaws.com/bitacora/me.html
 ---
