@@ -1,0 +1,66 @@
+---
+layout: post
+title: De adentro hacia afuera 
+author: Yuji Kiriki
+author_url: https://s3.amazonaws.com/bitacora/me.html
+---
+
+Las últimas semanas he tenido la oportunidad de participar activamente en la construcción de un producto estratégico para una Fortune 500. En esta entrada trato de dejar algunas ideas para mi futuro yo.
+
+## Ecosistema
+Una de las primeras cosas que evidencié fue el cambio de "liga". En Colombia, el cambio de tecnologías y de método ha sido un camino poco agradable de transitar.
+
+Culturas organizacionales basadas en el miedo han obstaculizado la capacidad de equivocarse y aprender de las empresas colombianas. Cada vez que hablo con un arquitecto "inquieto" lo primero que me dice es: "Es que Yuji, recuerde que esta empresa es muy grande, nosotros no podemos darnos el lujo de improvisar y equivocarnos".
+
+Nadie quiere arriesgarse porque lo echan. 
+
+Es comprensible pero, al compararlo con este nuevo cliente, lo más evidente es que precisamente la inexistencia de la "Adminitración Orientada al Miedo" es lo que les ha permitido a estas empresas ser lo que son. Y, curiosamente, estas Fortune 500 pueden ser hasta 10 veces más grandes que la empresa más grande de Colombia.
+
+Es interesante entonces saber que estas empresas son una apuesta continua a la innovación y a la creación. No a tener miedo porque de pronto mañana les quitan el pan de la boca.
+
+Esta orientación les facilita la toma de decisiones. Por ejemplo, si a alguien se le ocurre contruír una plataforma tecnológica, lo que quieren es usar sólo OSS, pues amarrarse a una tecnología propietaria les parece un riesgo. ¿Por qué un riesgo? Porque quedan 100% dependientes de un proveedor y no de una comunidad, asi que a pesar de ser empresas del sector energético, saben que deben volverse empresas de tecnología.
+
+Otro ejemplo está en la gestión de proyectos. En Colombia las empresas y los gerentes de proyectos están obsesionados con la frase "es que la junta nos está pidiendo una fecha". No les están pidiendo un resultado. No les están pidiendo alcanzar un indicador de éxito medible con **datos reales** con el producto en producción. Solo les interesa una fecha, lo que quizás, he llegado a pensar, les facilita "gestionar"; que final del día se convierte en presionar al que toque.
+
+Esta noción de toma de decisiones basada en datos y no fechas de entrega les ha permitido enfocarse en lo fundamental: crear valor. No en cumplir un cronograma para que no me echen y demostrar "un resultado". 
+
+Estas empresas que fomentan la toma de riesgos crecen desmesuradamente. En la medida que toman riesgos, aprenden que lo fundamental es la creación de valor y la toma de decisiones basada en datos. Esto las lleva a ser altamente valoradas durante prolongados espacios de tiempo que lleva a que sus modelos de negocio se sofistiquen de manera tal que la escala de los problemas que deben atender son de una altísima complejidad. 
+
+Esta alta complejidad requiere de proveedores y tecnologías a la altura de estas necesidades, lo que lleva a que el mercado de proveedores a su alrededor crezca y madure. 
+
+Al crecer y madurar el mercado, los desarrolladores de software encuentran mejores oportunidades si y solo si están a la altura de esas necesidades, creando así un saludable ecosistema en el que el desarrollador no se la pasa preguntandose por qué no le pagan mejor.
+
+En Colombia, en este particular, estamos _un poco muy jodidos_, pues el incitador de esta lógica es empresas que se orientan a la generación de valor, no a la "gestión del miedo".
+
+Hay otras entonces que crean elegantes _Vicepresidencias de Innovación_, las cuales a veces terminan comprando cajas de nombres _trendy_ y basadas en OSS y en otros casos, con ejercitos de Homeopatas Ágiles recomendando que todos los desarrolladores deben estar haciendo TDD, "Clean Code" y Scrum de Scrums basadas en SAFe y Pods. Pero de creación de valor, _nanai cucas_.
+
+## Escala
+
+Empresas Fortune 500 pueden tener decenas de tiendas en decenas de paises (Walmart por poner un ejemplo). Solo imaginen la complejidad de ese problema. No son las 2000 tiendas del D1 a nivel nacional. Son decenas de miles de tiendas, con manejos sofisticadisimos de inventario, distribución y venta. Campañas de mercadeo localizadas, impuestos particularizados por estado y por país. Solo imaginen la complejidad de crear un sistema de puntos de lealtad para todas esas tiendas con reglas particulares por mercado/ubicación. Obvio, eso no va a correr sobre una base de datos Oracle. Pero vaya uno a decirle eso a un arquitecto colombiano, pues se asusta porque de pronto salirse de esa caja implica que lo van a echar porque "es que no se puede porque somos muy grandes".
+
+Esta realidad me ha llevado a pensar que la escala de problemas que debemos resolver en Colombia son tan triviales que quizás con esa forma de pensar nos da y nos sobra. Por ejemplo Bancolombia y sus correos de indisponibilidad de su plataforma tecnológica tres domingos seguidos. Una obra de ingeniería que muy seguramente no es, necesariamente, colombiana.
+
+Esta realidad también me ha llevado a pensar que la falta de problemas de alta complejidad y la inexistencia de un ecosistema de empresas proveedoras de tecnología maduras ha impedido que el contexto mismo en el que se da esta realidad pueda cambiar.
+
+Todo esto me lleva a concluir que en la medida en la que sigamos resolviendo problemas de país pobre con mentalidad de país pobre con un capital humano recostado en el confort de la mediocridad, nos impide crear empresas lo suficientemente grandes que ofrezcan problemas suficientemente complejos que de alguna manera fomenten la creación de un ecosistema sano de oferta de servicios de primer mundo.
+
+Quizás sea por las restricciones en las que vivimos. Pero también a veces pienso que es una excusa en la que nos revolcamos para no quitarnos la pereza de encima y poder opinar de cualquier tema sin hacer realmente nada al respecto.
+
+## 3. Arquitectura empresarial
+
+Toda maestría en ingeniería de software que se respete en Colombia dicta una clase de Arquitectura Empresarial. Históricamente esto me ha parecido la payasada académica más grande de todas.
+
+Al no tener problemas lo suficientemente complejos como para requerir esta disciplina, estos arquitectos empresariales se dedican entonces a estorbar estrategicamente los proyectos que necesitan salir a producción con decisiones gaseosas y de poco valor.
+
+Tuve la oportunidad de trabajar de cerca con un equipo de arquitectura empresarial en esta Fortune 500. Los problemas que pueden llegar a resolver tienen la complejidad necesaria como para que este oficio tome valor.
+Sin embargo, todos, empezando por el más veterano y jefe de los demás, escriben código y desplegan componentes a producción, lo que les permite embalarse si llegan a tomar una mala decisión por gaseosa o "pedo-sa", más bien. Y creanme cuando les digo que Zachmann y TOGAF y demás es en lo último en lo que piensan.
+
+## Notas finales
+
+Saber cómo llegamos a atender a este cliente se puede resumir en dos movimientos: el primero, haber sido lo suficientemente estúpidos como para hace 4 años creer que las tecnologías con las que se contruían las aplicaciones empresariales eran insuficientes, grasosas e inocuas. La segunda, tener la suficiente obstinación para seguir expandiendo esa idea.
+
+Quizás el cambio es de punto de referencia. Dejar de mirarnos el ombligo podría ser un buen principio, retandonos con lo que hacen las más tesas del mundo y no quedarnos mirando cómo no podemos porque somos "demasiado grandes".
+
+A veces pienso lo emocionante que sería saber que un transbordador espacial va a ser lanzado por la "Comisión Aeroespacial de San Andrés Islas", que vamos a llenar de fincas solares las planicies de nuestros llanos orientales o que vamos a llenar de gigantes hélices generadoras de energía eólica toda la Guajira. Y porqué no, que Panaca logre ser la primera entidad con ánimo de lucro en clonar un chigüiro.
+
+Estos "sueños humedos" por el que cualquier colombiano debería sentir orgullo y sentir el corazón hinchado depende completamente de ustedes, cerebros brillantes y maravillosos. Depende de que se queden en Colombia creando, construyendo, cambiando, cuestionando, motivando, escribiendo, criticando, haciendo. Ojalá no solo opinando. Si seguimos esperando que empresas españolas, americanas, argentinas nos vendan su "innovación" no vamos a crear ecosistema, no habrá nunca cambio y no veo entonces cómo salgamos de pobres. Porque ser pobre no es falta de plata, es falta de ganas de demostrar que sí se puede.
