@@ -18,15 +18,15 @@ Es comprensible pero, al compararlo con este nuevo cliente, lo más evidente es 
 
 Es interesante entonces saber que estas empresas son una apuesta continua a la innovación y a la creación. No a tener miedo porque de pronto mañana les quitan el pan de la boca.
 
-#### OSS
+##### OSS
 Esta orientación les facilita la toma de decisiones y la introducción de nuevas ideas. Por ejemplo, si a alguien se le ocurre contruír una plataforma tecnológica, lo que quieren es usar sólo [OSS](https://en.wikipedia.org/wiki/Open-source_software), pues amarrarse a una tecnología propietaria les parece un riesgo. ¿Por qué un riesgo? Porque quedan 100% dependientes de un proveedor y no de una comunidad, así que a pesar de ser empresas del sector turístico, saben que deben volverse empresas de tecnología ([Disney](https://github.com/disney), por ejemplo).
 
-#### Gestión de proyectos
+##### Gestión de proyectos
 Otro ejemplo está en la gestión de proyectos. En Colombia las empresas y los gerentes de proyectos están empecinados en usar la frase "es que la junta nos está pidiendo una fecha". No les están pidiendo un resultado. No les están pidiendo alcanzar un indicador de éxito medible con **datos reales** con el producto en producción. Solo les interesa una fecha, lo que quizás, he llegado a pensar, les facilita "gestionar"; que al final del día se convierte en presionar al que toque.
 
 Esta noción de toma de decisiones basada en datos y no fechas de entrega les ha permitido enfocarse en lo fundamental: crear valor. No en cumplir un cronograma para que no me echen y demostrar "un resultado". Y si hay problemas, es culpa de otro. 
 
-#### Una hipótesis
+##### Una hipótesis
 Estas empresas que fomentan la toma de riesgos crecen desmesuradamente. En la medida que toman riesgos, aprenden que lo fundamental es la creación de valor y la toma de decisiones basada en datos. Esto las lleva a ser altamente valoradas durante prolongados espacios de tiempo que lleva a que sus modelos de negocio se sofistiquen de manera tal que la escala de los problemas que deben atender son de una altísima complejidad. 
 
 Esta alta complejidad requiere de proveedores y tecnologías a la altura de estas necesidades, lo que lleva a que el mercado de proveedores a su alrededor crezca y madure. 
@@ -60,17 +60,17 @@ Sin embargo, todos, empezando por el más veterano y jefe de los demás, escribe
 
 ## Notas finales
 
-Una de las primeras conslusiones que nacen es quizás que debemos cambiar el punto de referencia. Dejar de mirarnos el ombligo podría ser un buen principio, retandonos con lo que hacen las más tesas del mundo y no quedarnos mirando cómo no podemos porque somos "demasiado grandes".
+Una de las primeras conclusiones que nacen es quizás que debemos cambiar el punto de referencia. Dejar de mirarnos el ombligo podría ser un buen principio, retandonos con lo que hacen las más tesas del mundo y no quedarnos mirando cómo no podemos porque somos "demasiado grandes".
 
 También he podido concluir que las empresas colombianas tienen como ventaja haber crecido y desarrollado en un ecosistema adverso, pues de alguna manera desarrollan capacidades que cuando el ecosistema un poco más favorable, tienen la oportunidad de volverse dominantes de ese nuevo mercado.
 
-#### De la responsabilidad del colombiano de a pie
+##### De la responsabilidad del colombiano de a pie
 A veces pienso lo emocionante que sería saber que un transbordador espacial va a ser lanzado por la "Comisión Aeroespacial de San Andrés Islas". O que vamos a llenar de fincas solares las planicies de nuestros llanos orientales. O que vamos a llenar de gigantes hélices generadoras de energía eólica toda la Guajira. Y a veces pienso, porqué no, que Panaca logre ser la primera entidad con ánimo de lucro en clonar un chigüiro.
 
 Estos "sueños humedos" por el que cualquier colombiano debería sentir orgullo y sentir el corazón hinchado, depende completamente de ustedes, cerebros brillantes y maravillosos. Depende de que se queden en Colombia creando, construyendo, cambiando, cuestionando, motivando, escribiendo, criticando, haciendo. Ojalá no solo opinando. Si seguimos esperando que empresas españolas, americanas, argentinas nos vendan su "innovación" no vamos a crear ecosistema, no habrá nunca cambio y no veo entonces cómo salgamos de pobres. Porque ser pobre no es falta de plata, es falta de ganas de demostrar que sí se puede.
 
 (Si de alguna manera se siente identificado con esta responsabilidad y resulta que es usted un desarrollador de software, no dude en enviar su CV a info@s4n.co).
 
-## Pregunta frecuente
+##### Pregunta frecuente
 
 Varios me han preguntado cómo llegamos a atender a este cliente. Se puede resumir en tres movimientos: el primero, haber sido lo suficientemente estúpidos como para hace 4 años creer que las tecnologías/lenguajes con las que se construían las aplicaciones empresariales eran insuficientes, grasosas e inocuas. El segundo, tener la suficiente obstinación para seguir expandiendo esa idea y tener clientes que habían llegado a la misma conclusión. El tercero, haber desarrollado métodos y prácticas que fueran sistemáticamente exitosas en contextos adversos en sentido común, método, presupuesto y tiempos.
