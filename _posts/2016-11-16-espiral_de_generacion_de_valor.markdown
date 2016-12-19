@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Espiral de generación de valor 
+title: [WIP] Espiral de generación de valor 
 author: Yuji Kiriki
 author_url: https://s3.amazonaws.com/bitacora/me.html
 ---
