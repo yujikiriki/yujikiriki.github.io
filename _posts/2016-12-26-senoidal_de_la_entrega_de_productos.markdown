@@ -49,7 +49,7 @@ Entre más alta sea la frecuencia de la gráfica más frecuentemente se entrega 
 
 Sin embargo se debe ser sabio a la hora de definir la razón entre generación de valor (dimensión en y) y el tiempo necesario para hacerlo (dimensión x), haciendo la cadencia sea una métrica de salud de un producto y un equipo.
 
-La cadencia se representa en la gráfica como cada vez que la función toca dos 0 en el eje x. Si el intervalo de tiempo (_timebox_) es el mismo, se fomenta una cadencia comparable entre ciclo y ciclo.
+La cadencia se denota en la gráfica cada vez que la función llega a 0 en el eje y. Si el intervalo de tiempo (_timebox_) es el mismo, se fomenta una cadencia comparable entre ciclo y ciclo.
 
 ### Aprendizaje
 
