@@ -47,6 +47,8 @@ Ser predecible es quizás una de las características más valiosas de un proces
 
 Entre más alta sea la frecuencia de la gráfica más frecuentemente se entrega valor al negocio. Al obligar a un equipo a entregar de manera frecuente, el equipo debe desarrollar las habilidades y mecanismos que le permitan llegar alcanzar su inercia. Este "desarrollar" dependerá del aprendizaje que se pueda capitalizar en el ciclo.
 
+Sin embargo se debe ser sabio a la hora de definir la razón entre generación de valor (dimensión en y) y el tiempo necesario para hacerlo (dimensión x), haciendo la cadencia sea una métrica de salud de un producto y un equipo.
+
 La cadencia se representa en la gráfica como cada vez que la función toca dos 0 en el eje x. Si el intervalo de tiempo (_timebox_) es el mismo, se fomenta una cadencia comparable entre ciclo y ciclo.
 
 ### Aprendizaje
