@@ -219,15 +219,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_posts/2016-11-16-espiral_de_generacion_de_valor.markdown",
-			"settings":
-			{
-				"buffer_size": 2829,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -706,6 +697,9 @@
 	],
 	"file_history":
 	[
+		"/home/yuji/git/yujikiriki.github.io/_posts/2016-12-19-de_adentro_hacia_afuera.markdown",
+		"/home/yuji/git/yujikiriki.github.io/_posts/2016-12-26-senoidal_de_la_entrega_de_productos.markdown",
+		"/home/yuji/git/yujikiriki.github.io/_posts/2016-11-16-espiral_de_generacion_de_valor.markdown",
 		"/home/yuji/downloads/redability.json",
 		"/run/user/1000/gvfs/smb-share:server=backup,share=yuji/Dropbox/Apps/JotterPad/s4n.todo",
 		"/run/user/1000/gvfs/smb-share:server=backup,share=yuji/Dropbox/Apps/JotterPad/La vida es un ratico.txt",
@@ -830,10 +824,7 @@
 		"/home/yuji/git/autos-mundial/mundial-core/mundial-logging/src/main/scala/com/segurosmundial/logging/kafka/producers/TypesafeProducer.scala",
 		"/home/yuji/git/autos-mundial/mundial-core/mundial-logging/src/main/scala/com/segurosmundial/logging/kafka/producers/package.scala",
 		"/home/yuji/git/autos-mundial/mundial-core/mundial-logging/src/main/scala/com/segurosmundial/logging/kafka/AckType.scala",
-		"/home/yuji/git/autos-mundial/mundial-core/mundial-logging/src/main/scala/com/segurosmundial/logging/kafka/KafkaLoggingConstants.scala",
-		"/home/yuji/git/autos-mundial/mundial-core/mundial-logging/src/main/scala/com/segurosmundial/logging/kafka/LogEntry.scala",
-		"/home/yuji/git/autos-mundial/mundial-core/mundial-logging/src/main/scala/com/segurosmundial/logging/kafka/consumers/KafkaLoggingConsumerProps.scala",
-		"/home/yuji/git/autos-mundial/mundial-core/mundial-logging/src/main/scala/com/segurosmundial/logging/kafka/encoders/LogEntryEncoder.scala"
+		"/home/yuji/git/autos-mundial/mundial-core/mundial-logging/src/main/scala/com/segurosmundial/logging/kafka/KafkaLoggingConstants.scala"
 	],
 	"find":
 	{
@@ -1017,111 +1008,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_posts/2016-11-16-espiral_de_generacion_de_valor.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2829,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								80,
-								80
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
-							],
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1131,7 +1019,7 @@
 	},
 	"input":
 	{
-		"height": 39.0
+		"height": 174.0
 	},
 	"layout":
 	{
@@ -1593,7 +1481,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 940.0,
 	"status_bar_visible": true,
 	"template_settings":
