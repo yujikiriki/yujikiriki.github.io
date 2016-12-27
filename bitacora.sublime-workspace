@@ -219,6 +219,18 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "---\nlayout: post\ntitle: Sinusoide de la entrega de productos\nauthor: Yuji Kiriki\nauthor_url: https://s3.amazonaws.com/bitacora/me.html\n---\n\nEn esta entrada busco describir una forma **eficiente** de explicar los conceptos que considero relevantes de un proceso de software orientado a **entregar productos**: cadencia, aprendizaje, predictibilidad, generación de valor, iterativo e incremental.\n\nEsta forma de explicar los conceptos es una amalgama de muchísimas fuentes que he leído durante los años. Por favor ayúdenme a identificar si estoy fusilando sin crédito a alguien.\n\n## La sinusoide\n\nLa gráfica presenta dos dimensiones: generación de valor de negocio (y) y tiempo (x).\n\n<img style=\"margin-left: auto; margin-right: auto;\" src=\"../../../imgs/value-graph.png\" width=\"1100px\" height=\"679px\"/>\n\nCada onda de la sinusoide representa el ciclo de entrega de valor de negocio en el tiempo. Eso quiere decir que a medida que se van completando ciclos, se va generando valor en el tiempo.\n\n### Generación de valor\n\nCada onda que conforma la sinusoide tiene como punto máximo de generación de valor una salida a producción del producto en construcción. Entre el punto 0 de generación de valor de cada onda y la salida a producción ocurren, podría ser, cada una de las ceremonias de Scrum: planeación, reunión diaria, etc. A medida que va pasando el tiempo, a través de la curva de la onda se va acumulando generación de valor mas no se ha generado valor.\n\nEsto significa que la planeación tiene una generación de valor igual a cero. Codificar, crear pruebas, hacer reuniones diarias, etc, solo nos llevan a acumular valor mas no a entregarlo. El único punto de entrega tangible de valor se da en el máximo local de la función, es decir, cuando el producto sale a producción.\n\nEsta representación implica que entre menos tiempo pase entre un _commit_ de un desarrollador hasta la puesta a producción de esas líneas de código, más rápido se le puede entregar valor al negocio.\n\nEn consecuencia **cualquier mejora que se pueda hacer entre esos dos puntos** fomentan la rápida generación de valor que es el fin último de un proceso de construcción de productos de software. \n\nPara acortar la distancia entre un _commit_ y la puesta a producción se debe propender por automatizar todo tipo de actividades sujetas a ello, tales como: ejecución pruebas unitarias, de aceptación, de capacidad o aprovisionamiento de infraestructura. Recuerden, [si duele debe hacerse más seguido](http://martinfowler.com/bliki/FrequencyReducesDifficulty.html).\n\nEsta línea de ideas implica también que prácticas de CI/CD son fundamentales para tener ciclos que generan valor. Y no, tener Jenkins instalado no es igual a estar haciendo CI/CD.\n\nSegún la gráfica, una actividad como el _backlog grooming_ solo nos ayuda para tomar impulso para la siguiente acumulación de valor mas no genera valor de negocio alguno.\n\nOtra característica de la gráfica es que permite explicar porqué los ciclos de entrega a producción se deben hacer en ciclos cortos. Entre más tiempo pasa entre paso a producción y paso a producción (entre más grande es el intervalo en x) más acumulación de valor se hace, pero menos se entrega al negocio.\n\nEn este último punto hay una relación bien curiosa: entre más se acumula valor en el tiempo, menos probable es que ese valor sea capitalizado por el negocio. \n\n### Cadencia\n\nDada la gráfica, es fácil explicar que el objetivo de un proceso de desarrollo valioso es hacer que la generación de valor sea frecuente y que en lo posible genere un valor de negocio incremental.\n\nMantener esta frecuencia generando un valor de negocio proporcional nos induce al ritmo que un equipo debe mantener para ser predecible.\n\nSer predecible es quizás una de las características más necesarias de un proceso incremental-iterativo, pues permite mitigar riesgos y alinear expectativas de los interesados (_stakeholders_) del producto (además de generar mucho aprendizaje).\n\nEntre más alta sea la frecuencia de la gráfica más frecuentemente se entrega valor al negocio. Al obligar a un equipo a entregar de manera frecuente, el equipo debe desarrollar las habilidades y mecanismos que le permitan llegar alcanzar su inercia. Este \"desarrollar\" dependerá del aprendizaje que se pueda capitalizar en el ciclo.\n\nSin embargo se debe ser sabio a la hora de definir la razón entre generación de valor (dimensión en y) y el tiempo necesario para hacerlo (dimensión x), haciendo la cadencia sea una métrica de salud de un producto y un equipo.\n\nLa cadencia se denota en la gráfica cada vez que la función llega a 0 en el eje y. Si el intervalo de tiempo (_timebox_) es el mismo, se fomenta una cadencia comparable entre ciclo y ciclo. Es inclusive posible pensar que se puede medir en términos del periodo de la gráfica.\n\n### Aprendizaje\n\nSi cada entrega a producción es el máximo local de generación de valor, cada vez que la gráfica toca 0 se considera que un ciclo de generación de valor ha terminado (muy seguramente con una retrospectiva). El área de cada ciclo puede considerarse el aprendizaje capitalizado por el equipo y su entorno.\n\nEsto significa que, sí y solo sí es el mismo equipo y el mismo entorno, así como la generación de valor, el aprendizaje se capitalizará con cada puesta a producción.\n\n### Consecuencias de la gráfica\n\nComo podrán imaginarse, las ondas de la gráfica no deben ser siempre iguales. Esto rompe la definición misma de una sinusoide. Sin embargo el título queda más [vendedor](http://www.ibm.com/us-en/) así ¿cierto?\n\nLa amplitud máxima por onda puede determinarse por puntos de esfuerzo obtenidos en el Sprint, por ejemplo. Eso quiere decir que a medida que va pasando el tiempo y la gráfica se va completando, podemos empezar a identificar la cadencia del equipo (y quizás calcularla por su periodo).\n\nLa primera consecuencia es que queda más simple explicarle al negocio porqué se deben automatizar todo tipo de actividades que estén entre la ceremonia de planeación y la salida a producción de la aplicación.\n\nCualquier traba (infraestructura, SOX, auditoria, etc) que se le ponga al ciclo va en detrimento de la generación de valor. No estoy diciendo que se deban eliminar, solo que todas esas trabas son altamente automatizables.\n\nSegunda consecuencia es la necesidad de adquirir cadencia basada en ciclos de tiempo idénticos, capitalizando el aprendizaje generado entre salida y salida a producción.\n\nLa tercera consecuencia es que toda actividad que no sea orientada a desplegar a producción se debe considerar como gasto y no inversión dentro del proceso de desarrollo. Cualquier ceremonia, reunión, actividad, mesa de trabajo, etc, que un proceso de desarrollo se invente va en detrimento de la generación de valor (tal como SAFey sus amigotes).\n",
+			"file": "_posts/2016-12-26-senoidal_de_la_entrega_de_productos.markdown",
+			"file_size": 6878,
+			"file_write_time": 131273437086702233,
+			"settings":
+			{
+				"buffer_size": 6763,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -697,8 +709,8 @@
 	],
 	"file_history":
 	[
-		"/home/yuji/git/yujikiriki.github.io/_posts/2016-12-19-de_adentro_hacia_afuera.markdown",
 		"/home/yuji/git/yujikiriki.github.io/_posts/2016-12-26-senoidal_de_la_entrega_de_productos.markdown",
+		"/home/yuji/git/yujikiriki.github.io/_posts/2016-12-19-de_adentro_hacia_afuera.markdown",
 		"/home/yuji/git/yujikiriki.github.io/_posts/2016-11-16-espiral_de_generacion_de_valor.markdown",
 		"/home/yuji/downloads/redability.json",
 		"/run/user/1000/gvfs/smb-share:server=backup,share=yuji/Dropbox/Apps/JotterPad/s4n.todo",
@@ -828,7 +840,7 @@
 	],
 	"find":
 	{
-		"height": 51.0
+		"height": 132.0
 	},
 	"find_in_files":
 	{
@@ -1008,8 +1020,111 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_posts/2016-12-26-senoidal_de_la_entrega_de_productos.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								60
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 884.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
