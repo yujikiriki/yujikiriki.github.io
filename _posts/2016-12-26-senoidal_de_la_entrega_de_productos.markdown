@@ -25,7 +25,7 @@ Esto significa que la planeación tiene una generación de valor igual a cero. C
 
 Esta representación implica que entre menos tiempo pase entre un _commit_ de un desarrollador hasta la puesta a producción de esas líneas de código, más rápido se le puede entregar valor al negocio.
 
-En consecuencia que **cualquier mejora que se pueda hacer entre esos dos puntos** fomentan la rápida generación de valor que es el fin último de un proceso de construcción de productos de software. 
+En consecuencia **cualquier mejora que se pueda hacer entre esos dos puntos** fomentan la rápida generación de valor que es el fin último de un proceso de construcción de productos de software. 
 
 Para acortar la distancia entre un _commit_ y la puesta a producción se debe propender por automatizar todo tipo de actividades sujetas a ello, tales como: ejecución pruebas unitarias, de aceptación, de capacidad o aprovisionamiento de infraestructura. Recuerden, [si duele debe hacerse más seguido](http://martinfowler.com/bliki/FrequencyReducesDifficulty.html).
 
@@ -33,7 +33,7 @@ Esta línea de ideas implica también que prácticas de CI/CD son fundamentales 
 
 Según la gráfica, una actividad como el _backlog grooming_ solo nos ayuda para tomar impulso para la siguiente acumulación de valor mas no genera valor de negocio alguno.
 
-Otra característica de la gráfica es que permite explicar por qué los ciclos de entrega a producción se deben hacer en ciclos cortos. Entre más tiempo pasa entre paso a producción y paso a producción (entre más grande es el intervalo en x) más acumulación de valor se hace pero menos se entrega al negocio.
+Otra característica de la gráfica es que permite explicar porqué los ciclos de entrega a producción se deben hacer en ciclos cortos. Entre más tiempo pasa entre paso a producción y paso a producción (entre más grande es el intervalo en x) más acumulación de valor se hace, pero menos se entrega al negocio.
 
 En este último punto hay una relación bien curiosa: entre más se acumula valor en el tiempo, menos probable es que ese valor sea capitalizado por el negocio. 
 
@@ -55,18 +55,18 @@ La cadencia se denota en la gráfica cada vez que la función llega a 0 en el ej
 
 Si cada entrega a producción es el máximo local de generación de valor, cada vez que la gráfica toca 0 se considera que un ciclo de generación de valor ha terminado (muy seguramente con una retrospectiva). El área de cada ciclo puede considerarse el aprendizaje capitalizado por el equipo y su entorno.
 
-Esto significa que, si y solo si es el mismo equipo y el mismo entorno, así como la generación de valor, el aprendizaje se capitalizará con cada puesta a producción.
+Esto significa que, sí y solo sí es el mismo equipo y el mismo entorno, así como la generación de valor, el aprendizaje se capitalizará con cada puesta a producción.
 
 ### Consecuencias de la gráfica
 
-Como podrán imaginarse, las ondas de la gráfica no deben ser siempre iguales. Esto rompe la definición misma de una sinusoide. Sin embargo ¿el título no queda más [vendedor](http://www.ibm.com/us-en/) así?
+Como podrán imaginarse, las ondas de la gráfica no deben ser siempre iguales. Esto rompe la definición misma de una sinusoide. Sin embargo el título queda más [vendedor](http://www.ibm.com/us-en/) así ¿cierto?
 
-La amplitud máxima por onda puede determinarse por puntos de esfuerzo obtenidos en el Sprint, por ejemplo. Eso quiere decir que a medida que va pasando el tiempo y la gráfica se de completando podemos empezar a identificar la cadencia del equipo (y quizás calcularla por su periodo).
+La amplitud máxima por onda puede determinarse por puntos de esfuerzo obtenidos en el Sprint, por ejemplo. Eso quiere decir que a medida que va pasando el tiempo y la gráfica se va completando, podemos empezar a identificar la cadencia del equipo (y quizás calcularla por su periodo).
 
 La primera consecuencia es que queda más simple explicarle al negocio porqué se deben automatizar todo tipo de actividades que estén entre la ceremonia de planeación y la salida a producción de la aplicación.
 
 Cualquier traba (infraestructura, SOX, auditoria, etc) que se le ponga al ciclo va en detrimento de la generación de valor. No estoy diciendo que se deban eliminar, solo que todas esas trabas son altamente automatizables.
 
-Segunda consecuencia es la necesidad de adquirir cadencia basada en ciclos de tiempo idénticos, capitalizando el aprendizaje generado entre salida a producción y salida a producción.
+Segunda consecuencia es la necesidad de adquirir cadencia basada en ciclos de tiempo idénticos, capitalizando el aprendizaje generado entre salida y salida a producción.
 
-La tercera consecuencia es que toda actividad que no sea orientada a desplegar a producción se debe considerar como gasto y no inversión dentro del proceso de desarrollo. Cualquier ceremonia, reunión, actividad, mesa de trabajo, etc, que un proceso de desarrollo se invente va en detrimento de la generación de valor.
+La tercera consecuencia es que toda actividad que no sea orientada a desplegar a producción se debe considerar como gasto y no inversión dentro del proceso de desarrollo. Cualquier ceremonia, reunión, actividad, mesa de trabajo, etc, que un proceso de desarrollo se invente va en detrimento de la generación de valor (tal como SAFey sus amigotes).
