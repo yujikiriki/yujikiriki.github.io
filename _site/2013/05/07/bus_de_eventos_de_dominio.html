@@ -1,33 +1,19 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bliki | Bus de eventos de dominio</title>
-    <link rel="stylesheet" href="http://yujikiriki.github.io/css/foundation.css" />
-    <script src="http://yujikiriki.github.io/js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-<!-- Page begins  -->
-  <div class="row bottom-border">
-    <div class="large-11 columns">
-      <h1><small><a href="http://yujikiriki.github.io/index.html">_bliki</a></small></h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-8 columns">
-      <div class="row">
-        <div class="large-12 columns">
-          <br/>
-          <h2>BUS DE EVENTOS DE DOMINIO</h2>
-          <h6 class="subheader">Por: <a href="https://s3.amazonaws.com/bitacora/me.html">Yuji Kiriki</a></h6>
-          <h6 class="subheader">Publicado: May 07, 2013</h6>
-          <h6 class="subheader">Número de palabras: 978</h6>
-          <h6 class="subheader">Categorías: </h6>
-        </div>
-      </div>
-      <br/><br/>
-      <p>El Agregado puede ser el patrón táctico más importante de #DDDesign pues nos permite fijar limites transaccionales a nuestras entidades de negocio. Es interesante cómo aplicando sabiamente este patrón se facilita la construcción de aplicaciones que soportan considerables volumenes de concurrencia.</p>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bus de eventos de dominio</title>
+  <meta name="description" content="El Agregado puede ser el patrón táctico más importante de #DDDesign pues nos permite fijar limites transaccionales a nuestras entidades de negocio. Es intere...">
+  <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+  <article>
+	<h1>Bus de eventos de dominio</h1>
+	<em>Por <a href="https://twitter.com/ykiriki">Yuji Kiriki</a></em>
+	<br>
+	<br>
+    <p>El Agregado puede ser el patrón táctico más importante de #DDDesign pues nos permite fijar limites transaccionales a nuestras entidades de negocio. Es interesante cómo aplicando sabiamente este patrón se facilita la construcción de aplicaciones que soportan considerables volumenes de concurrencia.</p>
 
 <p>Sin embargo me he encontrado más de una vez con la dificultad de representar las relaciones existentes entre Entidades que pertenecen a Agregados distintos dado que no deberían conocerse; al menos no directamente. Esta dificultad aumenta cuando además un cambio de estado en un Agregado tiene consecuencias (side-effects) en otros Agregados.</p>
 
@@ -73,51 +59,13 @@
 
 <p>¡Me encantaría saber qué opinan!</p>
 
-    </div>
-    <div class="large-4 columns left-border">
-        <p class="panel">
-          <p class="hide-for-small-only"><span class="subheader">Entradas</span></p>
-          <ul class="side-nav no-bullet">
-                  
-            <li>&#187; <a class="hide-for-small-only" href="/2015/09/01/T%C3%ADtulo%20escandaloso_sobre%20los_desarrolladores_colombianos.html">Título escandaloso sobre los desarrolladores colombianos*</a></li>
-                  
-            <li>&#187; <a class="hide-for-small-only" href="/2014/11/18/futuros_y_actores.html">Futuros y actores en Scala y Akka</a></li>
-                  
-            <li>&#187; <a class="hide-for-small-only" href="/2014/03/09/consistencia.html">Consistencia</a></li>
-                  
-            <li>&#187; <a class="hide-for-small-only" href="/2013/09/21/soa_agil.html">SOA ágil</a></li>
-                  
-            <li>&#187; <a class="hide-for-small-only" href="/2013/05/07/bus_de_eventos_de_dominio.html">Bus de eventos de dominio</a></li>
-                  
-            <li>&#187; <a class="hide-for-small-only" href="/2013/04/13/simpatia_semantica.html">Simpatía semántica</a></li>
-                  
-            <li>&#187; <a class="hide-for-small-only" href="/2013/02/23/pareto_arquitectura_y_scrum.html">Arquitectura, DDD y Scrum.</a></li>
-                  
-            <li>&#187; <a class="hide-for-small-only" href="/2012/04/24/no_bpms.html">No, su proyecto no necesita BPMS</a></li>
-                  
-            <li>&#187; <a class="hide-for-small-only" href="/2011/10/17/patron_estados_observados.html">Patrón de estados observados</a></li>
-                  
-            <li>&#187; <a class="hide-for-small-only" href="/2011/07/22/soa_no_es_esb.html">SOA != ESB</a></li>
-                    
-          </ul>
-        </p>
-        <p class="hide-for-small-only"><span class="subheader">Social </span></p>
-          <ul class="side-nav no-bullet">
-            <li>» <a class="hide-for-small-only" href="https://bitacora.s3.amazonaws.com/me.html">El autor</a></li>
-            <li>» <a class="hide-for-small-only" href="http://twitter.com/ykiriki">@ykiriki</a></li>
-            <li>» <a class="hide-for-small-only" href="/atom.xml">Atom 1.0</a></li>
-          </ul>
-        </p>        
-    </div>    
-  </div>
-  <div class="row">
-    <div class="large-12 columns">
-      <div id="disqus_thread"></div>bitacora/
+</article>
+  <!-- Disqus -->
+<div id="disqus_thread"></div>bitacora/
         <script type="text/javascript">
           var disqus_shortname = 'bitcora';
           var disqus_identifier = 'http://yujikiriki.github.io/2013/05/07/bus_de_eventos_de_dominio';
           var disqus_url = 'http://yujikiriki.github.io/2013/05/07/bus_de_eventos_de_dominio.html';
-
           /* * * DON'T EDIT BELOW THIS LINE * * */
           (function() {
               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -126,24 +74,14 @@
           })();
         </script>
       </div>
-    </div>
-  </div>
-<!-- Foundation dependencies -->
-    <script src="http://yujikiriki.github.io/js/vendor/jquery.js"></script>
-    <script src="http://yujikiriki.github.io/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
 <!-- Google analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-66942303-1', 'auto');
   ga('send', 'pageview');
-
 </script>
-  </body>
+</body>
 </html>

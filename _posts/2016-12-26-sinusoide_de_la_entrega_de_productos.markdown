@@ -13,7 +13,7 @@ Esta forma de explicar los conceptos es una amalgama de muchísimas fuentes que 
 
 La gráfica presenta dos dimensiones: generación de valor de negocio (y) y tiempo (x).
 
-<img style="margin-left: auto; margin-right: auto;" src="../../../imgs/value-graph.png" width="1100px" height="679px"/>
+<img style="margin-left: auto; margin-right: auto;" src="../../../imgs/value-graph.png" width="637px" height="393px"/>
 
 Cada onda de la sinusoide representa el ciclo de entrega de valor de negocio en el tiempo. Eso quiere decir que a medida que se van completando ciclos, se va generando valor en el tiempo.
 

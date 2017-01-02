@@ -1,9 +1,2 @@
-safe: false
-port: 4000
-source: .
-destination: ./_site
-future: true
-lsi: false
-highlighter:	rouge
 markdown: kramdown
 url: http://yujikiriki.github.io
