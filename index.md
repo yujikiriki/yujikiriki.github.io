@@ -9,3 +9,4 @@ layout: index
     <a href="{{ baseurl }}{{ post.url }}">[{{ post.date | date: "%Y/%m/%d" }}] {{ post.title }}</a>
 </p>
 {% endfor %}
+
