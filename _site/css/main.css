@@ -1,14 +1,27 @@
 body {
-  margin: 40px	auto;
+  margin: 0px	auto;
   max-width: 650px;
   line-height: 1.6;
   font-size: 18px;
   color: #444;
-  padding: 0 10px;
+  padding: 0 0px;
   text-align: justify; }
 
 h1, h2, h3 {
-  line-height: 1.2; }
+  line-height: 1.2;
+  text-align: left; }
 
 a {
-  color: #04708E; }
+  color: #008CB3; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active {
+  text-decoration: underline; }

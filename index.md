@@ -2,7 +2,7 @@
 layout: index 
 ---
 
-# _bliki
+# _bitácora
 
 {% for post in site.posts %}        
 <p>
