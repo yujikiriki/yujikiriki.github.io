@@ -9,7 +9,7 @@ author_url: https://s3.amazonaws.com/bitacora/me.html
 
 Lo que me motivó a escribir fueron [dos](http://bunnyinc.com/blog/colombia-doesnt-software-engineers-really-not-even-one) [blogs](http://bunnyinc.com/blog/?tag=colombia) que publicó Alex Torrenegra y la [respuesta](https://medium.com/colombia-dev/colombia-doesnt-have-an-engineering-deficit-really-it-doesnt-af60d1cac85c) de Juan Pablo Buriticá.
 
-Me había negado ha escribir sobre eso, tratando de tapar el sol con mis manos. Cuando lo leí sentí que lo único que buscaban era antención gracias a la controversia: títulos rimbombantes y llamativos, rayando en lo escandaloso. Cifras sacadas debajo de la manga. Al leer sentía como cuando un presidente colombiano demuestra gestión después de haberle metido la mano a los artefactos de medición del DANE.
+Me había negado a escribir sobre eso, tratando de tapar el sol con mis manos. Cuando lo leí sentí que lo único que buscaban era antención gracias a la controversia: títulos rimbombantes y llamativos, rayando en lo escandaloso. Cifras sacadas debajo de la manga. Al leer sentía como cuando un presidente colombiano demuestra gestión después de haberle metido la mano a los artefactos de medición del DANE.
 
 Luego de un tiempo me dí cuenta que lo que ellos habían escrito sí había hecho un cambio: trajo consigo rumores, chismes y conversaciones de corredor.
 
