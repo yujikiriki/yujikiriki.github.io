@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/yujikiriki
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://yujikiriki.com
+  * I am yujikiriki (https://keybase.io/yujikiriki) on keybase.
+  * I have a public key ASCzjlVMePkNkA2V5fyIpkxTQKC7uL3Ofn1bv3zrzlDiIQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120b38e554c78f90d900d95e5fc88a64c5340a0bbb8bdce7e7d5bbf7cebce50e2210a",
+            "host": "keybase.io",
+            "kid": "0120b38e554c78f90d900d95e5fc88a64c5340a0bbb8bdce7e7d5bbf7cebce50e2210a",
+            "uid": "68f363a324485a2caf6cdaccfe23cc00",
+            "username": "yujikiriki"
+        },
+        "service": {
+            "hostname": "yujikiriki.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.22"
+    },
+    "ctime": 1495887996,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1495887987,
+        "hash": "7f9a31064abbfeb5b229116d7ad1fdfe53ba0c8ee1589a5e6260cb8c862a56f61df30b0ab337806eca045349092d393fca09aedbf14b7c5761869c225e520a89",
+        "seqno": 1120483
+    },
+    "prev": "6eb51930cdc8f34f996902671d63e3be91378a6690f94a8dc883ccb796e3db90",
+    "seqno": 16,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgs45VTHj5DZANleX8iKZMU0Cgu7i9zn59W798685Q4iEKp3BheWxvYWTFAvl7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYjM4ZTU1NGM3OGY5MGQ5MDBkOTVlNWZjODhhNjRjNTM0MGEwYmJiOGJkY2U3ZTdkNWJiZjdjZWJjZTUwZTIyMTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYjM4ZTU1NGM3OGY5MGQ5MDBkOTVlNWZjODhhNjRjNTM0MGEwYmJiOGJkY2U3ZTdkNWJiZjdjZWJjZTUwZTIyMTBhIiwidWlkIjoiNjhmMzYzYTMyNDQ4NWEyY2FmNmNkYWNjZmUyM2NjMDAiLCJ1c2VybmFtZSI6Inl1amlraXJpa2kifSwic2VydmljZSI6eyJob3N0bmFtZSI6Inl1amlraXJpa2kuY29tIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yMiJ9LCJjdGltZSI6MTQ5NTg4Nzk5NiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDk1ODg3OTg3LCJoYXNoIjoiN2Y5YTMxMDY0YWJiZmViNWIyMjkxMTZkN2FkMWZkZmU1M2JhMGM4ZWUxNTg5YTVlNjI2MGNiOGM4NjJhNTZmNjFkZjMwYjBhYjMzNzgwNmVjYTA0NTM0OTA5MmQzOTNmY2EwOWFlZGJmMTRiN2M1NzYxODY5YzIyNWU1MjBhODkiLCJzZXFubyI6MTEyMDQ4M30sInByZXYiOiI2ZWI1MTkzMGNkYzhmMzRmOTk2OTAyNjcxZDYzZTNiZTkxMzc4YTY2OTBmOTRhOGRjODgzY2NiNzk2ZTNkYjkwIiwic2Vxbm8iOjE2LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQGiGWQ7TskVBztN7lSrFLZRG8U++rZvO2gO7vje/nadtq5oU9/fF07q71u/VdT3PoqQDrDkkiXbsPlol966UzASoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCA1ydEXYjgsfLnB2ciucnW/2tepon8/XVcXvgQBG5b/U6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/yujikiriki
+
+==================================================================
