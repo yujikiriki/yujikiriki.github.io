@@ -11,8 +11,11 @@ Se que hay millones de listas de libros mejores que esta. Se que hay miles de li
 
 Si tienen sugerencias de libros ¡no duden en decirme!
 
-## Sobre cómo escribir código
+## Sobre cómo caracterizar un producto
+- Impact Mapping: Making a big impact with software products and projects
+- Introducing EventStorming: An act of Deliberate Collective Learning
 
+## Sobre cómo escribir código
 - Clean Code: A Handbook of Agile Software Craftsmanship
 - Code Complete: A Practical Handbook of Software Construction
 - The Pragmatic Programmer: From Journeyman to Master
@@ -29,4 +32,8 @@ Si tienen sugerencias de libros ¡no duden en decirme!
 - SOA Patterns
 - Service Design Patterns: Fundamental Design Solutions for SOAP/WSDL and RESTful Web Services
 - REST in Practice: Hypermedia and Systems Architecture
+
+## Sobre cómo entregar productos
+- Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation
+- Release It! Design and Deploy Production-Ready Software
 
