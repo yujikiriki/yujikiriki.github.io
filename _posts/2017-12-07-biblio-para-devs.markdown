@@ -2,7 +2,7 @@
 layout: post
 title: Libros para devs
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+author_url: https://twitter.com/ykiriki
 ---
 
 Si hace 15 años alguien me hubiera entregado esta lista de libros para aprender sobre desarrollo de software, me hubieran ahorrado mucho tiempo. Por esa razón comparto la que considero hubiera sido la lista que me hubiera gustado que me hubieran recomendado. La lista se encuentra ordenada por mi orden sugerido de lectura.

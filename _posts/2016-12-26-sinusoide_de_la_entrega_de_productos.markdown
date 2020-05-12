@@ -2,7 +2,7 @@
 layout: post
 title: Sinusoide de la entrega de productos
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+author_url: https://twitter.com/ykiriki
 ---
 
 En esta entrada busco describir una forma **eficiente** de explicar los conceptos que considero relevantes de un proceso de software orientado a **entregar productos**: cadencia, aprendizaje, predictibilidad, generación de valor, iterativo e incremental.
@@ -25,7 +25,7 @@ Esto significa que la planeación tiene una generación de valor igual a cero. C
 
 Esta representación implica que entre menos tiempo pase entre un _commit_ de un desarrollador hasta la puesta a producción de esas líneas de código, más rápido se le puede entregar valor al negocio.
 
-En consecuencia **cualquier mejora que se pueda hacer entre esos dos puntos** fomentan la rápida generación de valor que es el fin último de un proceso de construcción de productos de software. 
+En consecuencia **cualquier mejora que se pueda hacer entre esos dos puntos** fomentan la rápida generación de valor que es el fin último de un proceso de construcción de productos de software.
 
 Para acortar la distancia entre un _commit_ y la puesta a producción se debe propender por automatizar todo tipo de actividades sujetas a ello, tales como: ejecución pruebas unitarias, de aceptación, de capacidad o aprovisionamiento de infraestructura. Recuerden, [si duele debe hacerse más seguido](http://martinfowler.com/bliki/FrequencyReducesDifficulty.html).
 
@@ -35,7 +35,7 @@ Según la gráfica, una actividad como el _backlog grooming_ solo nos ayuda para
 
 Otra característica de la gráfica es que permite explicar porqué los ciclos de entrega a producción se deben hacer en ciclos cortos. Entre más tiempo pasa entre paso a producción y paso a producción (entre más grande es el intervalo en x) más acumulación de valor se hace, pero menos se entrega al negocio.
 
-En este último punto hay una relación bien curiosa: entre más se acumula valor en el tiempo, menos probable es que ese valor sea capitalizado por el negocio. 
+En este último punto hay una relación bien curiosa: entre más se acumula valor en el tiempo, menos probable es que ese valor sea capitalizado por el negocio.
 
 ### Cadencia
 

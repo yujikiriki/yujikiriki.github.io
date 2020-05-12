@@ -2,7 +2,7 @@
 layout: post
 title: Futuros y actores en Scala y Akka
 author: Miguel Vila, Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+author_url: https://twitter.com/ykiriki
 ---
 
 Tradicionalmente, construir aplicaciones que soporten concurrencia en la JVM siempre ha sido problema del servidor de aplicaciones. Pocas veces nos veíamos en la tarea de implementar o de pensar en problemas de semáforos, hilos y procesos y, cuando teníamos que hacerlo, es porque el servidor de aplicaciones no daba más.
@@ -21,7 +21,7 @@ La mayor ventaja del modelo de actores sobre los futuros es su capacidad de mant
 
 Lo simple nace del fomento de la [simpatía semántica](https://s3.amazonaws.com/bitacora/2013/04/13/simpatia_semantica.html) al combinar el modelo de actores con los principios del diseño OO. Esta combinación puede entenderse como un [mutualismo](http://en.wikipedia.org/wiki/Mutualism_(biology)) donde, en la solución de software, el modelo de actores se ve fortalecido por OO y OO se ve enriquecido por el modelo de actores.
 
-El mutualismo se fundamenta en la noción de estado de los actores y de los objetos. Al ser dos ideas análogas, se pueden aplicar los principios de OO en el diseño de los actores, siendo cada uno de ellos interpretados como objetos que protegen su encapsulamiento a través del intercambio de mensajes. 
+El mutualismo se fundamenta en la noción de estado de los actores y de los objetos. Al ser dos ideas análogas, se pueden aplicar los principios de OO en el diseño de los actores, siendo cada uno de ellos interpretados como objetos que protegen su encapsulamiento a través del intercambio de mensajes.
 
 En una [entrevista](http://www.drdobbs.com/architecture-and-design/interview-with-alan-kay/240003442?pgno=3), Alan Kay (para algunos el fundador del paradigma objetual), admite esta relación:
 
@@ -38,7 +38,7 @@ Otra ventaja de los actores sobre los futuros es la capacidad de distribuir trab
 Es necesario recordar que el modelo de actores no es un artefacto de la programación funcional. Sin embrago desde el punto de vista de la programación funcional, los actores adolecen de:
 
 * No determinismo: no hay garantía en la entrega de mensajes entre actores.
-* Implican side effects y tener una visión no local del sistema, lo que implica que no se puedan componer. 
+* Implican side effects y tener una visión no local del sistema, lo que implica que no se puedan componer.
 * Los actores en Akka rechazan la unidad básica de modularidad: las funciones con efectos ```A => B``` por funciones con _side effects_ ```Any => Unit```.
 
 ### Cuándo Futuros
@@ -49,26 +49,26 @@ Los futuros son una abstracción que sirve para representar acciones asíncronas
 
 Existen diversas implementaciones de futuros en Scala: en la [librería estándar](http://www.scala-lang.org/api/2.11.4/#scala.concurrent.Future), y en librerias como akka, finagle y scalaz. Para efectos de esta entrada lo importante es que estas instancias implementan:
 
-* Un constructor, que permite ejecutar asíncronamente un bloque de código y envolver su resultado en un futuro. 
+* Un constructor, que permite ejecutar asíncronamente un bloque de código y envolver su resultado en un futuro.
 * Las funciones map y flatMap que permiten manipular y componer futuros.
 
 Los futuros presentan varias ventajas:
 
 * Se pueden componer naturalmente. El API que se deriva de tener las funciones ```map``` y ```flatMap``` es bastante rico y permite secuenciar acciones asíncronas casi de la misma forma en la que uno maneja valores en un contexto síncrono (Esto claramente no es tan simple como suena: requiere un buen entendimiento del API de Futuros). La posiblidad de componer fácilmente Futuros parece ser la razón por la cuál Twitter se decantó por ellos y por eso construyó gran parte de su infraestructura en torno a [la idea de componer comportamiento a partir de funciones](http://monkey.org/~marius/funsrv.pdf). En contraste parece que [por ahora el equipo de ingeniería de Twitter no piensa usar actores](http://www.reddit.com/r/IAmA/comments/23s80n/we_work_on_open_source_at_twitter_ask_us_anything/ch03le5).
 
-* Solo requieren una visión local del sistema: Teniendo un ```Future[A]``` solamente puedo crear un nuevo valor con una función ```A => B``` o una función ```A => Future[B]```. En cambio los actores requieren razonar como interactúa un sistema de actores, qué mensajes se le debe mandar a otro actor, qué mensajes debe manejar otro actor, etc. La modularidad de un actor depende en gran parte de un conocimiento implícito de como responde a ciertos mensajes. [Hay quienes piensan que la modularidad de una abstracción depende de que tanto permite](http://pchiusano.blogspot.com/2010/01/actors-are-not-good-concurrency-model.html) usar [funciones puras](http://en.wikipedia.org/wiki/Pure_function). Para ellos los _side effects_ perjudican la modularidad. La comunicación entre actores es un _side effect_ gigante y bajo esa perspectiva no son muy modulares. En cambio los futuros permiten usar funciones puras en sus transformaciones y por lo tanto permiten que sean reutilizados en contextos que no requieren un conocimiento implícito de la implementación. 
+* Solo requieren una visión local del sistema: Teniendo un ```Future[A]``` solamente puedo crear un nuevo valor con una función ```A => B``` o una función ```A => Future[B]```. En cambio los actores requieren razonar como interactúa un sistema de actores, qué mensajes se le debe mandar a otro actor, qué mensajes debe manejar otro actor, etc. La modularidad de un actor depende en gran parte de un conocimiento implícito de como responde a ciertos mensajes. [Hay quienes piensan que la modularidad de una abstracción depende de que tanto permite](http://pchiusano.blogspot.com/2010/01/actors-are-not-good-concurrency-model.html) usar [funciones puras](http://en.wikipedia.org/wiki/Pure_function). Para ellos los _side effects_ perjudican la modularidad. La comunicación entre actores es un _side effect_ gigante y bajo esa perspectiva no son muy modulares. En cambio los futuros permiten usar funciones puras en sus transformaciones y por lo tanto permiten que sean reutilizados en contextos que no requieren un conocimiento implícito de la implementación.
 
 * En general los futuros están en consonancia con muchas  de las ideas de programación funcional. Empezando por el hecho de que exigen contener algún valor uno siempre se ve obligado a manejar transformaciones de ese valor sea con ```map``` o ```flatMap```. Esto no quiere decir que uno no pueda hacer futuros con _side effects_. Uno perfectamente puede crear un ```Future[Unit]```, es decir un ```Future``` sin valor dentro, por ejemplo: producto de haber imprimido en pantalla un resultado asíncrono. Entonces, si bien los Futuros no evitan que uno rompa las "reglas" de programación funcional, sí son un mecanismo de concurrencia que, a diferencia de los actores, permiten razonar sobre la transformación de un valor a partir de funciones puras. Adicionalmente los Futuros son inmutables en dos sentidos: por una parte cuando un Futuro se resuelve su valor no puede cambiar, lo que da pie a que una composición de futuros determine un grafo de ejecución y de transformación de valores. Por otra parte la mayoría del API de los Futuros no muta el estado sino que devuelve otro Futuro, lo que facilita razonar sobre ellos. En gran parte estas facilidades se dan por que los Futuros son [monadas](http://www.codecommit.com/blog/ruby/monads-are-not-metaphors).
 
 * Otra ventaja, un poco relacionada con el anterior punto, es que los Futuros son declarativos. Permiten al usuario combinarlos sin que éste se preocupe de varias cosas: de qué estrategia usa el _pool de threads_ que lo está ejecutando o en qué momento se ejecuta la función que se pasa por parámetro, o como combinar múltiples Futuros sin importar cuál se resuelva primero, etc... En cambio los actores requieren un mayor grado de coordinación y por lo tanto dan mayor responsabilidad (y también libertad) al usuario.
 
-Por último los futuros tienen una desventaja considerable, que tiene que ver con los casos de uso para los cuales fueron ideados. Los futuros no son adecuados para manejar estado: por ejemplo tener estado mutable que puede ser modificado por dos futuros distintos es una receta para hacer un desastre. En general este es un corolario del consabido consejo de no compartir recursos entre _threads_ distintos. Por lo tanto es difícil utilizar futuros para modelar aspectos del dominio, aspectos que por lo general requieren algún tipo de estado. En conclusión los futuros sirven para manejar concurrencia y paralelismo de funciones que carecen de estado dentro de una misma JVM. Cuando se quiere realizar distribución entre distintas maquinas o concurrencia protegiendo estado los actores representan una abstracción adecuada. 
+Por último los futuros tienen una desventaja considerable, que tiene que ver con los casos de uso para los cuales fueron ideados. Los futuros no son adecuados para manejar estado: por ejemplo tener estado mutable que puede ser modificado por dos futuros distintos es una receta para hacer un desastre. En general este es un corolario del consabido consejo de no compartir recursos entre _threads_ distintos. Por lo tanto es difícil utilizar futuros para modelar aspectos del dominio, aspectos que por lo general requieren algún tipo de estado. En conclusión los futuros sirven para manejar concurrencia y paralelismo de funciones que carecen de estado dentro de una misma JVM. Cuando se quiere realizar distribución entre distintas maquinas o concurrencia protegiendo estado los actores representan una abstracción adecuada.
 
 ### Conclusión
 
-Los Actores y los Futuros son dos abstracciones útiles que permiten manejar concurrencia. El uso de uno no excluye automáticamente el uso del otro. Por el contrario, usualmente son colaborativos: e.g. un Actor puede despachar trabajo a un Futuro. 
+Los Actores y los Futuros son dos abstracciones útiles que permiten manejar concurrencia. El uso de uno no excluye automáticamente el uso del otro. Por el contrario, usualmente son colaborativos: e.g. un Actor puede despachar trabajo a un Futuro.
 
-En esta entrada analizamos las ventajas de cada uno y sus mejores casos de uso, pero cabe aclarar que el mundo de Scala es prolífico en abstracciones y hay muchas alternativas que pueden ser más adecuadas para ciertos casos de uso. Hay muchas que no mencionamos como [Iteratees](https://www.playframework.com/documentation/2.0/Iteratees), [scalaz-streams](https://github.com/scalaz/scalaz-stream) y la iniciativa de [Reactive Streams](http://www.reactive-streams.org/). 
+En esta entrada analizamos las ventajas de cada uno y sus mejores casos de uso, pero cabe aclarar que el mundo de Scala es prolífico en abstracciones y hay muchas alternativas que pueden ser más adecuadas para ciertos casos de uso. Hay muchas que no mencionamos como [Iteratees](https://www.playframework.com/documentation/2.0/Iteratees), [scalaz-streams](https://github.com/scalaz/scalaz-stream) y la iniciativa de [Reactive Streams](http://www.reactive-streams.org/).
 
 El mundo de Scala y la JVM es rico, los actores y los Futuros son solo las primeras abstracciones que tenemos para explorar.
 

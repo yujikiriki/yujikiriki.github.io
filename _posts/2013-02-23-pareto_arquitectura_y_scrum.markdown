@@ -2,14 +2,14 @@
 layout: post
 title: Arquitectura, DDD y Scrum.
 author: Yuji Kiriki
-author_url: http://yujikiriki.com/me.html
+author_url: https://twitter.com/ykiriki
 ---
 
 Después de haber experimentado el curso de certificación en Scrum developer (CSD) quedé con una duda: dónde meter los ejercicios de arquitectura de software para los proyectos de mis clientes.
 
 Pido que no me malinterpreten, considero que Scrum como metodología de construcción de software es madura, honesta, acertada y efectiva a la hora de construir software. En este momento me es difícil imaginar otra manera de ejecutar proyectos de software.
 
-Sin embargo, estoy acostumbrado a realizar ciclos completos de [Architecture Tradeoff Analysis Method](http://www.sei.cmu.edu/architecture/tools/evaluate/atam.cfm) (ATAM) o [Software Architecture Analysis Method](http://www.sei.cmu.edu/library/abstracts/whitepapers/icse16.cfm) (SAAM) combinándolos con [Attribute-Driven Design Method](http://www.sei.cmu.edu/architecture/tools/define/add.cfm) (ADD) para llegar a definiciones arquitectónicas adecuadas para los retos que tienen las empresas en sus aplicaciones estratégicas. 
+Sin embargo, estoy acostumbrado a realizar ciclos completos de [Architecture Tradeoff Analysis Method](http://www.sei.cmu.edu/architecture/tools/evaluate/atam.cfm) (ATAM) o [Software Architecture Analysis Method](http://www.sei.cmu.edu/library/abstracts/whitepapers/icse16.cfm) (SAAM) combinándolos con [Attribute-Driven Design Method](http://www.sei.cmu.edu/architecture/tools/define/add.cfm) (ADD) para llegar a definiciones arquitectónicas adecuadas para los retos que tienen las empresas en sus aplicaciones estratégicas.
 
 Cuando pongo sobre la mesa Scrum y ADD la cosa se complica, más aún si, como algunos sabrán, soy fiel creyente de los buenos resultados de hacer DDD cuando tengo que enfrentarme a un dominio complejo.
 
@@ -17,7 +17,7 @@ Afirmo que se complica porque, según aprendí, la forma adecuada de diseñar en
 
 ### Diseño != Arquitectura
 
-Para que mi lector entienda hacia dónde voy, es fundamental entender que  diseñar es distinto a arquitectar. 
+Para que mi lector entienda hacia dónde voy, es fundamental entender que  diseñar es distinto a arquitectar.
 
 Arquitectura de software es la colección de decisiones fundamentales sobre una solución de software que buscan cumplir o alcanzar los atributos de calidad esperados por los _stakeholders_.
 

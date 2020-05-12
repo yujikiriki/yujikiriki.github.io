@@ -2,7 +2,7 @@
 layout: post
 title: Patrón de estados observados
 author: Yuji Kiriki
-author_url: http://yujikiriki.com/me.html
+author_url: https://twitter.com/ykiriki
 ---
 Durante los últimos años he participado en el diseño de aplicaciones que involucran procesos de negocio donde la estrella principal es una entidad en particular: una solicitud de préstamo, una solicitud de compra de un bien o un servicio, una queja o un reclamo, entre muchos otros.
 
@@ -10,7 +10,7 @@ No les ha pasado que cuando se enfrentan a este tipo proyectos ¿el comportamien
 
 Es típico. Esa clase que hace de todo porque es la entidad central del proceso de negocio. Esa clase que nos hace pasar horas hurgándola y depurándola porque hace demasiado. Esa clase que llega a ser intocable y no permite que la aplicación evolucione.
 
-Uno puede pensar que para evitar esto puede hacer delegados, fachadas, decoradores y demás, pero por más que ustedes aplican patrones y patrones, el código de la entidad estrella sigue plagada de código que **no** tiene que ver con el comportamiento del negocio sino que tiene más que ver con las consecuencias de las reglas de negocio. 
+Uno puede pensar que para evitar esto puede hacer delegados, fachadas, decoradores y demás, pero por más que ustedes aplican patrones y patrones, el código de la entidad estrella sigue plagada de código que **no** tiene que ver con el comportamiento del negocio sino que tiene más que ver con las consecuencias de las reglas de negocio.
 
 En esta entrada presento un patrón que se me ocurrió para este tipo de proyectos evitando que el panorama se torne tan negro, permitiendoles asignar responsabilidades de manera rápida y segura, además de que les puede dar gratis procesamiento distribuido y gobierno de transacciones en sus aplicaciones empresariales.
 
@@ -22,7 +22,7 @@ Este es el resultado de la combinación de dos patrones de GoF: **Observador** y
 
 #### Patrón observador
 
-El siguiente es el diagrama de entidades que describe al patrón observador un poco matizado: 
+El siguiente es el diagrama de entidades que describe al patrón observador un poco matizado:
 
 <img style="margin-left: auto; margin-right: auto;" src="../../../imgs/PatronObservador.png" width="550px" height="91px"/>
 
@@ -52,11 +52,11 @@ Hasta acá nada nuevo, nada especial. Solo un pequeño repaso de dos patrones de
 
 En el diagrama anterior vemos las mismas clases que veíamos en las gráficas anteriores solo que juntas. En la sección derecha está el patrón Observador y en la de la izquierda vemos el patrón Estados. Lo único que en este momento une a los patrones es que **EntidadConEstados** será una entidad observable.
 
-Como se mencionó anteriormente, lo interesante por observar de una **EntidadConEstados** es precisamente sus estados y sus transiciones pues cada una representa un comportamiento fundamental del dominio. 
+Como se mencionó anteriormente, lo interesante por observar de una **EntidadConEstados** es precisamente sus estados y sus transiciones pues cada una representa un comportamiento fundamental del dominio.
 
-Esta es una buena pista ya que las clases **IEstadoEntidad** contendrán el algoritmo requerido por el estado que representan y las consecuencias funcionales de que la **EntidadConEstados** haya pasado a ese estado podrán implementarse en las entidades suscritas u observadoras de la **EntidadConEstados**. 
+Esta es una buena pista ya que las clases **IEstadoEntidad** contendrán el algoritmo requerido por el estado que representan y las consecuencias funcionales de que la **EntidadConEstados** haya pasado a ese estado podrán implementarse en las entidades suscritas u observadoras de la **EntidadConEstados**.
 
-Si se detienen a pensar un poco el párrafo anterior, se darán cuenta que estas implicaciones y consecuencias no deben ser implementadas dentro del contexto semántico de la **EntidadConEstados**. A continuación explicamos porqué. 
+Si se detienen a pensar un poco el párrafo anterior, se darán cuenta que estas implicaciones y consecuencias no deben ser implementadas dentro del contexto semántico de la **EntidadConEstados**. A continuación explicamos porqué.
 
 Un cambio de estado de una **EntidadConEstados** es un evento destacable del dominio del negocio. Al ser destacable ese cambio de estado tiene asociados múltiples requerimientos funcionales como enviar un correo electrónico a alguien, crear un registro en una bitácora, registrar el cambio de estado en un reporte, realizar un consumo de un servicio de sistema externo entre muchos otros. Estos requerimientos funcionales no hacen parte del dominio de la **EntidadConEstados** como tal, pues queda un poco incomodo dejar este tipo de algoritmos inmersos en las reglas de negocio implementadas en ella o en un **IEstadoEntidad**.
 
@@ -72,7 +72,7 @@ En el diagrama anterior podemos identificar dos clases nuevas: **EventoDeDominio
 
 #### Un evento del dominio
 
-Una instancia de la clase **EventoDeDominio** contiene información útil para cualquier aplicación como la hora de su ocurrencia, su hora de notificación, origen, etc. La clase captura algo ocurrido (en tiempo pasado) en la **EntidadConEstados** y deberá contener todo lo que requieran los suscriptores. 
+Una instancia de la clase **EventoDeDominio** contiene información útil para cualquier aplicación como la hora de su ocurrencia, su hora de notificación, origen, etc. La clase captura algo ocurrido (en tiempo pasado) en la **EntidadConEstados** y deberá contener todo lo que requieran los suscriptores.
 
 <img style="margin-left: auto; margin-right: auto;" src="../../../imgs/EventoDeDominio.png" width="216px" height="123px"/>
 
@@ -87,7 +87,7 @@ Como su nombre lo indica, la clase **SuscriptorDeCambiosDeEstado** está suscrit
 Un **SuscriptorDeCambiosDeEstado** solo está interesado en algunos cambios de estado y para ello cuenta con una lista de eventos interesantes para él. Cada vez que le llegue un **EventoDeDominio** interesante el tendrá el algoritmo adecuado que trabaje sobre los datos recibidos del evento.
 
 Si mapeamos este patrón a una aplicación distribuida, podemos hacer que un **SuscriptorDeCambiosDeEstado** no comparta necesariamente el mismo espacio de memoria que la **EntidadConEstados** pues el **Mensaje** puede propagarse a través de algún protocolo (HTTP por ejemplo) o a través de una cola a otro espacio de memoria de otra máquina, permitiéndonos tener procesamiento distribuido de mensajes gratis.
- 
+
 ### Ejemplo
 
 Una vez se ha entendido el mecanismo básico de comunicación entre las clases podemos entrar a ver el patrón en acción a través de un ejemplo.
@@ -100,12 +100,12 @@ Vamos a tomar como ejemplo el proceso de quejas de una empresa de telefonía mó
 
 #### Descripción del proceso
 
-+ El proceso lo inicia el envío de un formulario de queja diligenciado a través del portal Web de la compañía. 
++ El proceso lo inicia el envío de un formulario de queja diligenciado a través del portal Web de la compañía.
 + La queja es clasificada para que se le dé una correcta gestión según el tipo queja. Una queja puede ser clasificada de 1 a 3.
 + Según la clasificación de la queja, esta es asignada a un empleado de la empresa para que le dé una rápida gestión.
 + Una vez se finaliza la gestión de la queja, el usuario es notificado de la respuesta de la compañía.
 
-Como es usual, hay unos detalles que mariposean alrededor del proceso de negocio: 
+Como es usual, hay unos detalles que mariposean alrededor del proceso de negocio:
 
 + Si la queja es clasificada de nivel *3* el sistema deberá notificar a la **Unidad de Mercadeo** para que este envíe un regalo al usuario.
 + Si han pasado más de **5 días** después de que el usuario registró la queja y esta no ha sido resuelta, la queja debe aumentar al máximo nivel de prioridad.
@@ -118,13 +118,13 @@ METER EJEMPLO DE CONSUMO DE UN SERVICIO ASINCRONO
 
 <img style="float:left" src="../../../imgs/marrano.png" width="150px" height="125px"/>
 
-Bien podría uno acribillar el BPEL de *&lt;choices&gt;* e *&lt;invoke&gt;* y modelar absolutamente todo en el proceso sin separar responsabilidades ni detenerse a modelar el dominio con actitud de *"Ahhhhhrrrrrggghhhh eso de todas maneras no lo voy a mantener yo, marranos..."*; o bien podría usar el **patrón de estados observados**. 
+Bien podría uno acribillar el BPEL de *&lt;choices&gt;* e *&lt;invoke&gt;* y modelar absolutamente todo en el proceso sin separar responsabilidades ni detenerse a modelar el dominio con actitud de *"Ahhhhhrrrrrggghhhh eso de todas maneras no lo voy a mantener yo, marranos..."*; o bien podría usar el **patrón de estados observados**.
 
 A continuación se presenta el diagrama que contiene el modelo de la entidad de negocio Queja como una **EntidadConEstados** y sus **SuscriptorDeCambiosDeEstado**:
 
 <img style="margin-left: auto; margin-right: auto;" src="../../../imgs/ejemplo.png" width="550px" height="342px"/>
 
-En la gráfica se presentan tres **SuscriptorDeCambiosDeEstado** para la **EntidadConEstados** *Queja*, a saber: *Notificación*, *ReporteAuditoría* y *QuejaPrioridadAlpha*. 
+En la gráfica se presentan tres **SuscriptorDeCambiosDeEstado** para la **EntidadConEstados** *Queja*, a saber: *Notificación*, *ReporteAuditoría* y *QuejaPrioridadAlpha*.
 
 Como se explicó, los **SuscriptorDeCambiosDeEstado** están atentos a todos los **EventoDeDominio** que emite la **EntidadConEstados**. Al suscriptor *Notificación* solo le interesan aquellos que impliquen el envío de correos electrónicos, tal como el requerimiento de enviar notificación a la **Unidad de Mercadeo** para que le envíe un regalo al usuario cuando la queja adquiere clasificación 3.
 
@@ -132,7 +132,7 @@ Cuando *Queja* cambie a prioridad **Alpha** debido a que se cumple la regla de n
 
 El suscriptor *ReporteAuditoría* estará escuchando todos los cambios de la entidad *Queja*: el usuario que hizo el cambio, la hora en la que la hizo, la IP desde dónde realizó la modificación sobre la queja y qué modificación realizó. Si uno realiza una consulta por el ID de la queja sobre este reporte tendrá toda la información transaccional de la queja, información que como imaginarán es muy poderosa al tratar de capturar un error de la aplicación o la resolución particular de una queja.
 
-Los anteriores son solo tres ejemplos de simplificación del desarrollo de este tipo de requerimientos gracias al patrón utilizado. La simplificación se evidencia principalmente por presentar una solución más fácil de mantener y de evolucionar. 
+Los anteriores son solo tres ejemplos de simplificación del desarrollo de este tipo de requerimientos gracias al patrón utilizado. La simplificación se evidencia principalmente por presentar una solución más fácil de mantener y de evolucionar.
 
 Cualquier requerimiento nuevo consecuencia de una evaluación de reglas de negocio puede ser implementado rápidamente en un nuevo **SuscriptorDeCambiosDeEstado**. O por ejemplo, si se necesita agregar una nueva notificación por correo electrónico, lo único que se debe hacer es meter un nuevo evento interesante en la lista de eventos interesantes de *Notificación*.
 
@@ -146,7 +146,7 @@ Una vez se tienen claros los requerimientos funcionales, el mayor reto al constr
 
 Este patrón permite separar de manera clara las reglas de negocio los requerimientos funcionales que no hacen parte del comportamiento del negocio. De hecho, al utilizarlo, se refuerza la noción de desacoplamiento dentro comportamiento de negocio mismo, permitiendo que su mantenimiento o su evolución se pueda realizar pensando en dos vistas independientes: comportamiento y consecuencia de comportamiento.
 
-El patrón tiene una posibilidad muy poderosa: los observadores no necesariamente tienen que estar en el mismo espacio de memoria que la **EntidadConEstados**. Supongan que en vez de que el **SuscriptorDeCambiosDeEstado** tenga el algoritmo que mastica los datos, este envíe estos datos vía una cola a otro sistema para que haga con ellos lo que quiera. De esta manera el patrón nos regala procesamiento asíncrono de peticiones, permitiendo así soportar transacciones de larga duración de manera decente e inteligente con mucho gobierno. 
+El patrón tiene una posibilidad muy poderosa: los observadores no necesariamente tienen que estar en el mismo espacio de memoria que la **EntidadConEstados**. Supongan que en vez de que el **SuscriptorDeCambiosDeEstado** tenga el algoritmo que mastica los datos, este envíe estos datos vía una cola a otro sistema para que haga con ellos lo que quiera. De esta manera el patrón nos regala procesamiento asíncrono de peticiones, permitiendo así soportar transacciones de larga duración de manera decente e inteligente con mucho gobierno.
 
 Siendo un poco extremos, podríamos hacer que todos los suscriptores de los eventos se encuentren en distintos espacios de memoria (bien sea en otros servidores virtualizados u otras máquinas virtuales) logrando que todas las consecuencias de un cambio de estado sean procesadas de manera distribuida. Esto es alta disponibilidad y alta capacidad de escalamiento gratis.
 

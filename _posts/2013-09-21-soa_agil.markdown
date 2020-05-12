@@ -2,26 +2,26 @@
 layout: post
 title: SOA ágil
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+author_url: https://twitter.com/ykiriki
 ---
 
-La comunidad de metodologías ágiles en Colombia, particularmente la de Medellín, logró convocar a más de 600 personas en un mismo lugar para compartir conocimiento y experiencias fundamentadas en los 12 principios del manifiesto ágil. Tuve la fortuna de asistir y de escuchar varias charlas y presentaciones las cuales por su calidad superaron mis expectativas. 
+La comunidad de metodologías ágiles en Colombia, particularmente la de Medellín, logró convocar a más de 600 personas en un mismo lugar para compartir conocimiento y experiencias fundamentadas en los 12 principios del manifiesto ágil. Tuve la fortuna de asistir y de escuchar varias charlas y presentaciones las cuales por su calidad superaron mis expectativas.
 
-Hubo una en particular cuyo nombre me llamó muchísimo la atención: "SOA ágil". A pesar de los esfuerzos del expositor, pienso que la charla dejó muchos vacíos pues percibí que sus ideas estaban sesgadas por analogías a una reconocida metodología de un proveedor de tecnología. 
+Hubo una en particular cuyo nombre me llamó muchísimo la atención: "SOA ágil". A pesar de los esfuerzos del expositor, pienso que la charla dejó muchos vacíos pues percibí que sus ideas estaban sesgadas por analogías a una reconocida metodología de un proveedor de tecnología.
 
 Esta entrada la debía de tiempo atrás y gracias a una invitación me animé a escribirla. La idea de esta entrada es dejar escritas ideas que he venido recopilando para luego unirlas y así poder proponer lo que considero puede ser un buen aproximamiento a una "SOA ágil".
 
 ### Algunas notas de historia
 
-En el año 2006 Jim Webber introdujo el concepto de _[Guerilla SOA](http://www.infoq.com/interviews/jim-webber-qcon-london)_ la cual proponía, para ese entonces, la _subversiva_ idea de eliminar los largos ejércitos de consultores, los _middleware_ grasosos, los cronogramas de años, y el acercamiento **STOP THE WORLD** de los proyectos "SOA" típicos de ese entonces. 
+En el año 2006 Jim Webber introdujo el concepto de _[Guerilla SOA](http://www.infoq.com/interviews/jim-webber-qcon-london)_ la cual proponía, para ese entonces, la _subversiva_ idea de eliminar los largos ejércitos de consultores, los _middleware_ grasosos, los cronogramas de años, y el acercamiento **STOP THE WORLD** de los proyectos "SOA" típicos de ese entonces.
 
-Su idea se fundamentaba en el hecho de que ese acercamiento a SOA es demasiado pesado. Propuso una forma de hacerlo más ligera y sin depender de productos o _middleware_ particulares para obtener resultados visibles en corto tiempo y que generaran valor de negocio medible. 
+Su idea se fundamentaba en el hecho de que ese acercamiento a SOA es demasiado pesado. Propuso una forma de hacerlo más ligera y sin depender de productos o _middleware_ particulares para obtener resultados visibles en corto tiempo y que generaran valor de negocio medible.
 
 Según Webber _Guerilla SOA_ es ligera cuando los equipos de ejecución de tales proyectos son pequeños y si se focalizan en una capacidad de negocio a la vez, entregando resultados de manera incremental e iterativa. Así mismo, el hecho de eliminar las grasosas cajas negras como BPMS o ESB encontró que REST (en esa época la bautizó MEST) cumplía de mejor manera las los atributos de calidad que el cliente esperaba y respondiendo rápido a sus exigencias.
 
 Unos meses después, en Septiembre del 2007, me [encontré](http://highscalability.com/amazon-architecture) con que Amazon hacía uso de una arquitectura basada en servicios y que seguía los principios no solo de _Guerilla SOA_ sino que proponía algunas ideas radicales para su época tales como: un equipo pequeño por servicio (de 8 a 10 personas por servicio); que el 70% de sus servicios fuesen REST; una infraestructura en la que no se compartan recursos entre servicios (tales como bases de datos, eliminando así SPOF); entre muchas más que pueden encontrar en ese artículo.
 
-Pasaron unos años y en Junio del 2012 Netflix publicó una serie de [artículos](http://techblog.netflix.com/2012/06/netflix-operations-part-i-going.html) donde cuentan cómo pasaron de una aplicación monolítica a todo un ecosistema de servicios que sobra decir, son distribuidos. Lo que más me llamó la atención de la serie fue cómo, el hecho de distribuir los servicios no solo impactó positivamente la velocidad de entrega de las capacidades de negocio requeridas sino a que los equipos se vieron forzados a dividirse por servicio y la infraestructura se particularizó por servicio. 
+Pasaron unos años y en Junio del 2012 Netflix publicó una serie de [artículos](http://techblog.netflix.com/2012/06/netflix-operations-part-i-going.html) donde cuentan cómo pasaron de una aplicación monolítica a todo un ecosistema de servicios que sobra decir, son distribuidos. Lo que más me llamó la atención de la serie fue cómo, el hecho de distribuir los servicios no solo impactó positivamente la velocidad de entrega de las capacidades de negocio requeridas sino a que los equipos se vieron forzados a dividirse por servicio y la infraestructura se particularizó por servicio.
 
 ¿Y el mal llamado "Gobierno SOA"? Se dieron cuenta que tal cosa sólo iba en contravía de su objetivo estratégico como unidad de negocio que es entregar valor a la organización **YA**. ¿Qué hicieron? Abrazar el caos, volverlo parte de su operación y dejar de luchar contra ese hecho.
 
@@ -31,13 +31,13 @@ Esa lógica pone en evidencia las caóticas cualidades de cualquier sistema dist
 
 En Marzo del 2012 leí por primera vez acerca de los micro-servicios, una idea propuesta e implementada por James Lewis. Dejo esta idea cronológicamente después de la serie de artículos de Netflix pues pienso que así, cuando mezcle las ideas, será más fácil para el lector entenderme.
 
-Los micro-servicios son una manera muy interesante de implementar una SOA. En pocas palabras un micro-servicio es una pequeña aplicación (en funcionalidad y en líneas de código) que cumple una sola función y la cual se comunica con otras pequeñas aplicaciones a través de un mecanismo común, tal y como funcionan las aplicaciones de Unix que se comunican a través de cadenas de caracteres. 
+Los micro-servicios son una manera muy interesante de implementar una SOA. En pocas palabras un micro-servicio es una pequeña aplicación (en funcionalidad y en líneas de código) que cumple una sola función y la cual se comunica con otras pequeñas aplicaciones a través de un mecanismo común, tal y como funcionan las aplicaciones de Unix que se comunican a través de cadenas de caracteres.
 
 Piensen en los comandos _cat_ y _grep_ por ejemplo. Estas aplicaciones pueden componer su funcionamiento a través del _pipe_ ```"|"```. Solo que los micro-servicios en vez de comunicarse a través de cadenas de caracteres se comunican a través del intercambio de mensajes usando **respetuosamente** el protocolo HTTP.
 
 Una de las ideas más valiosas de los micro-servicios es que, en palabras de Lewis, si un micro-servicio necesita cambiar su comportamiento o tiene algún error de programación, es preferible rehacer el micro-servicio que modificarlo. Si necesita reutilizar un micro-servicio existente pero omitiendo o agregando un comportamiento particular, copie pegue modifique y publique un nuevo micro-servicio.
 
-A primera vista esa idea puede llevar al lector incauto a pensar que eso no respeta el principios de _"Don't Repeat Yourself"_ (DRY), pero en serio pregúntense ahora, evitar el "copy + paste" ¿es realmente DRY? 
+A primera vista esa idea puede llevar al lector incauto a pensar que eso no respeta el principios de _"Don't Repeat Yourself"_ (DRY), pero en serio pregúntense ahora, evitar el "copy + paste" ¿es realmente DRY?
 
 Les pregunto ¿un cambio de comportamiento de un servicio existente, por mínimo que sea, no implica que es un comportamiento _distinto_? ¿Quién les mintió diciéndoles que factorizar comportamiento es la forma a través de la cual se logra mayor reutilización?
 
@@ -45,7 +45,7 @@ En marzo de este año el equipo técnico de Gilt publicó un corto [artículo](h
 
 ### SOA ágil
 
-Una SOA tiene una naturaleza caótica debido a que hereda todas las características de un sistema distribuido. Normalmente un sistema distribuido es caótico pues es difícil predecir cómo se va a comportar, particularmente ante fallas. De ser fácil, la industria no tendría que hacer extensivas pruebas de capacidad a las aplicaciones para saber cómo se van a comportar ante situaciones límite o de borde. 
+Una SOA tiene una naturaleza caótica debido a que hereda todas las características de un sistema distribuido. Normalmente un sistema distribuido es caótico pues es difícil predecir cómo se va a comportar, particularmente ante fallas. De ser fácil, la industria no tendría que hacer extensivas pruebas de capacidad a las aplicaciones para saber cómo se van a comportar ante situaciones límite o de borde.
 
 Las fallas en este tipo de arquitectura se vuelven tan difíciles de predecir que Netflix diseño y publicó el proyecto [Chaos Monkey](http://techblog.netflix.com/2012/07/chaos-monkey-released-into-wild.html) el cual permite simular fallas al azar para así poder diseñar e implementar mecanismos que les permita responder ante distintas eventualidades.
 
@@ -59,7 +59,7 @@ Así, parándome en los hombros de gigantes, les propongo 8 heurísticas de una 
 
 #### 1. No hay gobierno
 
-¿Qué es gobierno? ¿Comprar un producto? ¿Quiere salir con un producto nuevo de su empresa al mercado en el menor tiempo posible? No limite a su equipo de desarrollo en seguir políticas inútiles que no le ayudan a disminuir entropía sino que la aumenta y la burocratiza. 
+¿Qué es gobierno? ¿Comprar un producto? ¿Quiere salir con un producto nuevo de su empresa al mercado en el menor tiempo posible? No limite a su equipo de desarrollo en seguir políticas inútiles que no le ayudan a disminuir entropía sino que la aumenta y la burocratiza.
 
 El problema no es controlar. Lo que se debe buscar es estandarizar aspectos generales tales como seguridad y protocolos y deje que la innovación emerja. Más de esto en las siguientes heurísticas.
 
@@ -77,7 +77,7 @@ Entrene a sus equipos en patrones arquitectónicos. Defina arquitecturas de refe
 
 Especialice y responsabilice a los equipos de trabajo por capacidad de negocio. No separe al desarrollo de la infraestructura. Logre que sus equipo de desarrollo se responsabilicen de la infraestructura. Permita que la arquitectura de su organización emerja. (En alguna otra ocasión escribiré sobre la "nube", la idea más gaseosa de todos los tiempos)
 
-#### 5. Fork, Clone, Pull request 
+#### 5. Fork, Clone, Pull request
 
 ¿Reutilización? Métase ya mismo a Github y disfrute de lo que en realidad es reutilización. Reutilización no es factorizar comportamiento, es especializarlo (algún día escribiré sobre este punto). Es usar librerías que voy encontrando por ahí y que están mantenidos por alguien con quien nunca he hablado. Lo importante es que el código está ahí para leerlo, tocarlo, modificarlo, copiarlo.
 
@@ -93,7 +93,7 @@ SOA es distribuido. Los servicios son pequeñas aplicaciones que se comunican po
 
 #### 8. Reutilización, redundancia, replicación y duplicidad.
 
-No sé quién nos metió en la cabeza que reutilizar es factorizar comportamiento (acoplamiento vertical, ¿alguien?). No sé quién nos vendió la idea de que replicar datos es tan malo como duplicarlos. No sé quién nos enseñó que la única manera de tener aplicaciones disponibles es a punta de plata comprando infraestructura redundante (pura fuerza bruta y cero ingeniería). 
+No sé quién nos metió en la cabeza que reutilizar es factorizar comportamiento (acoplamiento vertical, ¿alguien?). No sé quién nos vendió la idea de que replicar datos es tan malo como duplicarlos. No sé quién nos enseñó que la única manera de tener aplicaciones disponibles es a punta de plata comprando infraestructura redundante (pura fuerza bruta y cero ingeniería).
 
 Para este punto si lea, estudie, analice y observe como aplicaciones Web como Facebook, Amazon, Netflix, Instagram, Gmail, Google Maps, Simple Bank, entre muchísimas más funcionan. Estoy seguro que su empresa no está ni cerca de lo caótico y complejo ni del volumen de transacciones que estas aplicaciones soportan. ¡Y sin _middleware_!
 
@@ -103,4 +103,4 @@ Soy consciente que no todas las heurísticas son fáciles de digerir. Obviamente
 
 Abrace el Caos. Deje que él mismo lleve a que su ecosistema de aplicaciones tienda al orden. Construya aplicaciones simples, pequeñas y autónomas desde su comportamiento hasta su infraestructura. No se mate buscando que estructura factorizar para después arrepentirse. No desperdicie plata en _middleware_ innecesario que sólo le da tranquilidad al político y no al técnico. Permita que su equipo técnico innove. Permita que su arquitectura emerja restringiendo su estilo y orientandola a través de múltiples arquitecturas de referencia. Sea costo eficiente y use la ingeniería no la fuerza bruta. Respóndale rápido al negocio y apalanque el crecimiento de su empresa.
 
-¿Qué opinan? 
+¿Qué opinan?

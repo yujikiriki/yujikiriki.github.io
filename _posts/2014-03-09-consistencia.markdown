@@ -2,14 +2,14 @@
 layout: post
 title: Consistencia
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+author_url: https://twitter.com/ykiriki
 ---
 
 Entender cómo funciona la consistencia en un sistema distribuido es quizas la herramienta más versatil para diseñar e implementar aplicaciones de software tolerantes a fallas, escalables y de desempeño adecuado.
 
 Pienso que es importante escribir sobre la consistencia debido a que su entendimiento común puede facilitar y enriquecer discusiones de diseño y arquitectura entre las personas. Su mal entendimiento puede llevar a un equipo de trabajo creer en soluciones místicas gobernadas por leyes "superiores" a la matemática.
 
-La intención de esta entrada es tratar de resumir un considerable número de papers, artículos y blogs que he leído durante los últimos meses, esperando hacer justicia a los distintos autores. 
+La intención de esta entrada es tratar de resumir un considerable número de papers, artículos y blogs que he leído durante los últimos meses, esperando hacer justicia a los distintos autores.
 
 ### Definición
 

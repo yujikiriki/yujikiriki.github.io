@@ -2,7 +2,7 @@
 layout: post
 title: Comparación de aplicaciones para llevar notas
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+author_url: https://twitter.com/ykiriki
 ---
 Antes de haber comprado la tableta [Remarkable](https://remarkable.com/), usaba un cuaderno para llevar todas mis notas.
 

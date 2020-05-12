@@ -2,7 +2,7 @@
 layout: post
 title: De adentro hacia afuera
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+author_url: https://twitter.com/ykiriki
 ---
 
 Las últimas semanas he tenido la oportunidad de participar activamente en la construcción de un producto estratégico para una [Fortune 500](http://beta.fortune.com/fortune500/) (F500). En esta entrada trato de dejar por escrito algunas ideas y hallazgos que pueden ser valiosas para alguien más.
@@ -12,7 +12,7 @@ Una de las primeras cosas que evidencié fue el cambio de _liga_. En Colombia, e
 
 Culturas organizacionales basadas en el miedo han obstaculizado la capacidad de equivocarse y aprender en las empresas colombianas. Cada vez que hablo con un arquitecto "inquieto" lo primero que me dice es: "Es que Yuji, recuerde que esta empresa es muy grande, nosotros no podemos darnos el lujo de improvisar y equivocarnos".
 
-Nadie quiere arriesgarse porque lo echan. 
+Nadie quiere arriesgarse porque lo echan.
 
 Es comprensible pero, al compararlo con este nuevo cliente, lo más evidente es que precisamente la inexistencia de la "Administración Orientada al Miedo" es lo que les ha permitido a estas empresas ser lo que son. Y, curiosamente, estas F500 pueden ser hasta 10 veces más grandes que la empresa más grande de Colombia.
 
@@ -24,12 +24,12 @@ Esta orientación les facilita la toma de decisiones y la introducción de nueva
 ### Gestión de proyectos
 Otro ejemplo está en la gestión de proyectos. En Colombia las empresas y los gerentes de proyectos están empecinados en usar la frase "es que la junta nos está pidiendo una fecha". No les están pidiendo un resultado. No les están pidiendo alcanzar un indicador de éxito medible con **datos reales** con el producto en producción. Solo les interesa una fecha, lo que quizás, he llegado a pensar, les facilita "gestionar"; que al final del día se convierte en presionar al que toque.
 
-Pareciera que esta noción de toma de decisiones basada en datos y no fechas de entrega de esta F500, le ha permitido enfocarse en lo fundamental: **crear valor**. No en cumplir un cronograma para que no los echen y demostrar "un resultado", culpando a otro si hay problemas. 
+Pareciera que esta noción de toma de decisiones basada en datos y no fechas de entrega de esta F500, le ha permitido enfocarse en lo fundamental: **crear valor**. No en cumplir un cronograma para que no los echen y demostrar "un resultado", culpando a otro si hay problemas.
 
 ### Una hipótesis
-Estas empresas que fomentan la toma de riesgos crecen desmesuradamente. En la medida que toman riesgos, aprenden que lo fundamental es la creación de valor y la toma de decisiones basada en datos. Esto las lleva a ser altamente valoradas durante prolongados espacios de tiempo que lleva a que sus modelos de negocio se sofistiquen de manera tal que la escala de los problemas que deben atender son de una altísima complejidad. 
+Estas empresas que fomentan la toma de riesgos crecen desmesuradamente. En la medida que toman riesgos, aprenden que lo fundamental es la creación de valor y la toma de decisiones basada en datos. Esto las lleva a ser altamente valoradas durante prolongados espacios de tiempo que lleva a que sus modelos de negocio se sofistiquen de manera tal que la escala de los problemas que deben atender son de una altísima complejidad.
 
-Esta alta complejidad requiere de proveedores y tecnologías a la altura de estas necesidades, lo que lleva a que el mercado de proveedores a su alrededor crezca y madure. 
+Esta alta complejidad requiere de proveedores y tecnologías a la altura de estas necesidades, lo que lleva a que el mercado de proveedores a su alrededor crezca y madure.
 
 Al crecer y madurar el mercado, los desarrolladores de software encuentran mejores oportunidades si y solo si están a la altura de esas necesidades, creando así un saludable ecosistema en el que el desarrollador no se la pasa preguntándose por qué no le pagan mejor.
 

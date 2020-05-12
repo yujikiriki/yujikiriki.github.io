@@ -2,7 +2,7 @@
 layout: post
 title: SOA != ESB
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+author_url: https://twitter.com/ykiriki
 ---
 ¿Qué opinan?
 
@@ -12,9 +12,9 @@ Cuando leí esta perla revisando esta [licitación](https://www.contratos.gov.co
 
 Lo que sí sabía era que tenía que escribir para desahogar esta sensación de impotencia y que mejor lugar que la bitácora.
 
-### SOA y las cajas negras 
+### SOA y las cajas negras
 
-No hay un tema más trillado que SOA. Lo curioso es que en Colombia seguimos tratando de meterle estupideces a ese estilo arquitectónico tan simple. "¡Se le tiene, se le tiene! Que el ESB, que el UDDI, que el BPM, que el gobierno de servicios!". Le metemos cuanta caja negra el "Consultor de Preventa" nos meta por los ojos a punta de tiquetes a Las Vegas, EEUU. 
+No hay un tema más trillado que SOA. Lo curioso es que en Colombia seguimos tratando de meterle estupideces a ese estilo arquitectónico tan simple. "¡Se le tiene, se le tiene! Que el ESB, que el UDDI, que el BPM, que el gobierno de servicios!". Le metemos cuanta caja negra el "Consultor de Preventa" nos meta por los ojos a punta de tiquetes a Las Vegas, EEUU.
 
 <img style="float:left" src="../../../imgs/combo.jpg"/>
 
@@ -43,12 +43,12 @@ En cualquier caso en la siguiente sección les dejo luces de cómo pueden pasar 
 
 ### Alternativas para el ESB
 
-En casi todos los escenarios para poder exponer servicios se necesita integrar servicios de otras aplicaciones o de aplicaciones de otras empresas. El ESB se creyó adecuado pues, según los vendedores de tecnología podían cumplir 4 responsabilidades: enrutamiento de mensajes, traducción de mensajes, transformación de protocolos y garantía en la calidad del servicio (a veces interpretada como la garantía de las transacciones distribuidas). 
+En casi todos los escenarios para poder exponer servicios se necesita integrar servicios de otras aplicaciones o de aplicaciones de otras empresas. El ESB se creyó adecuado pues, según los vendedores de tecnología podían cumplir 4 responsabilidades: enrutamiento de mensajes, traducción de mensajes, transformación de protocolos y garantía en la calidad del servicio (a veces interpretada como la garantía de las transacciones distribuidas).
 
 Por esta razón les presento tres alternativas evaluadas desde esos tres puntos de vista.
 
 #### HTTP Proxy
-HTTP es una tecnología para sistemas basados en red muy exitosa y la mayor evidencia de ello es Internet. Un proxy HTTP es un mecanismo tan sencillo que hasta los profesores de mi universidad entienden qué es y cómo funciona. 
+HTTP es una tecnología para sistemas basados en red muy exitosa y la mayor evidencia de ello es Internet. Un proxy HTTP es un mecanismo tan sencillo que hasta los profesores de mi universidad entienden qué es y cómo funciona.
 
 En el caso de esta alternativa, la única responsabilidad que actualmente tiene un ESB y que cubre el proxy es el enrutamiento, asumiendo que se van a estandarizar toda comunicación de aplicaciones sobre HTTP. La demás responsabilidades del ESB (traducción, transformación y QoS) se delegan en los puntos de integración.
 
@@ -59,11 +59,11 @@ Esta opción es la más radical y ligera, pero es muy exitosa en organizaciones 
 Un ejemplo de esta alternativa es utilizar el proxy HTTP Squid que es viejito pero muy sabroso.
 
 #### Simple Message Bus
-Esta es la opción más "robusta" empresarialmente hablando, pues se usa un Message-Oriented Middleware (MoM por sus siglas en inglés) con una capa envolvente que simplifica el uso de colas, tópicos y listeners de mensajes. Lo bonito de esta alternativa es que es posible garantizar entrega de mensajes entre aplicaciones y se puede realizar enrutamiento. Las demás responsabilidades (transformación y traducción de mensajes) se delegan a los nodos a integrar. 
+Esta es la opción más "robusta" empresarialmente hablando, pues se usa un Message-Oriented Middleware (MoM por sus siglas en inglés) con una capa envolvente que simplifica el uso de colas, tópicos y listeners de mensajes. Lo bonito de esta alternativa es que es posible garantizar entrega de mensajes entre aplicaciones y se puede realizar enrutamiento. Las demás responsabilidades (transformación y traducción de mensajes) se delegan a los nodos a integrar.
 
 Tanto esta alternativa como la inmediatamente anterior dependen de la correcta definición de un lenguaje/vocabulario canónico que permita, a nivel del bus de mensajes, manejar conceptos únicos, forzando así que los nodos que se integran cumplan con este. De hecho tener un lenguaje/vocabulario canónico es la mejor práctica de integración posible; entendiendo que es muy difícil de lograr.
 
-Esta alternativa debe ir acompañada de un framework que abstraiga los detalles del manejo de colas y tópicos del MoM y que facilite la implementación de los patrones de Hohpe como Apache Camel. Combinar ambas tecnologías permiten tener una solución muy ligera, de rápido desarrollo y que fomenta la estandarización en la comunicación entre las aplicaciones. 
+Esta alternativa debe ir acompañada de un framework que abstraiga los detalles del manejo de colas y tópicos del MoM y que facilite la implementación de los patrones de Hohpe como Apache Camel. Combinar ambas tecnologías permiten tener una solución muy ligera, de rápido desarrollo y que fomenta la estandarización en la comunicación entre las aplicaciones.
 
 Un ejemplo de este enfoque es NServiceBus. Vale la pena leer qué hace y como lo hace. En Java lo mejor es utilizar un MoM como HornetQ que implementa NIO a través de Netty y de nuevo Apache Camel.
 
@@ -71,9 +71,9 @@ Se puede soñar un poco con esta alternativa y se puede pensar en estandarizar e
 
 #### API REST
 
-Es difícil separar esta opción de las anteriores. De hecho hace parte como de otra categoría o podría ser consecuencia de las dos anteriores. De todas maneras la propongo como la mejor opción para reemplazar un ESB en su totalidad. 
+Es difícil separar esta opción de las anteriores. De hecho hace parte como de otra categoría o podría ser consecuencia de las dos anteriores. De todas maneras la propongo como la mejor opción para reemplazar un ESB en su totalidad.
 
-La idea es crear un API de servicios RESTful por aplicación empresarial. Luego lo único que toca hacer es un utilizar los API de servicios desde una u otra aplicación. 
+La idea es crear un API de servicios RESTful por aplicación empresarial. Luego lo único que toca hacer es un utilizar los API de servicios desde una u otra aplicación.
 
 Si lo piensan un poco se darán cuenta que las dos alternativas anteriores podrían ser los cómo de esta alternativa. De todas maneras lo dejo como una alternativa más.
 

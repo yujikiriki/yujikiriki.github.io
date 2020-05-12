@@ -2,7 +2,7 @@
 layout: post
 title: No, su proyecto no necesita BPMS
 author: Yuji Kiriki
-author_url: http://yujikiriki.com/me.html
+author_url: https://twitter.com/ykiriki
 ---
 Sí, tenía que empezar con un buen título, algo llamativo y tentador, algo que invitara a participar. Ojalá este tema genere polémica y de la buena, de esa que no solo se trata de trolliar y nada más, de esa que tanto nos hace falta para cultivar criterio.
 
@@ -15,9 +15,9 @@ Para esta entrada la complejidad de negocio se traduce a la densidad de las rela
 Me encanta ver los Demos de las herramientas BPMS que hacen los proveedores de tecnología: tres actividades humanas, un par de roles, escalamientos con base en unas reglas quemadas en alguna estructura de decisión y listo. “Y mire...” dice el Consultor BPM de alguno de esos proveedores “¡también le generamos las pantallas que necesita su aplicación!”, “¡No necesita DBA! ¡No necesita desarrolladores expertos!” “¡El analista de negocio es quien gobierna las reglas!”. Subestiman la complejidad del mundo real y de ahí, pocas veces, hay éxito o vuelta atrás.
 
 ### Las promesas rotas
-Lamentablemente el desarrollador no se tiene que enfrentar a esos procesos de mentiras. Él tiene que modelar procesos llenos de comportamiento de negocio, de imprecisiones y flujos excepcionales que casi son regla general. 
+Lamentablemente el desarrollador no se tiene que enfrentar a esos procesos de mentiras. Él tiene que modelar procesos llenos de comportamiento de negocio, de imprecisiones y flujos excepcionales que casi son regla general.
 
-La primera decisión que toma el desarrollador es montar todo su proceso de negocio, hasta un nivel procedimental y empieza a generar pantallas. Poco a poco se va dando cuenta que a su editor de procesos cada vez le va costando más abrir ese proyecto y poco a poco la complejidad que está tratando de modelar se va volviendo inmanejable. Luego, después de semanas de estar descubriendo las funcionalidades de su editor de procesos se dispone a realizar su primer despliegue del proceso, con pantallas generadas y todo. Su computador de desarrollo se demora un rato desplegando, pero bueno, después de unos minutos la aplicación queda desplegada. 
+La primera decisión que toma el desarrollador es montar todo su proceso de negocio, hasta un nivel procedimental y empieza a generar pantallas. Poco a poco se va dando cuenta que a su editor de procesos cada vez le va costando más abrir ese proyecto y poco a poco la complejidad que está tratando de modelar se va volviendo inmanejable. Luego, después de semanas de estar descubriendo las funcionalidades de su editor de procesos se dispone a realizar su primer despliegue del proceso, con pantallas generadas y todo. Su computador de desarrollo se demora un rato desplegando, pero bueno, después de unos minutos la aplicación queda desplegada.
 
 El desarrollador, contento, se da cuenta que la cosa como que sí funciona y piensa inocentemente “menos mal que el ambiente de producción tiene 8 instancias en cluster con procesadores de última generación y memoria casi ilimitada”.
 
@@ -31,7 +31,7 @@ En producción la cosa se ve un poco difícil. Esas 8 instancias tienen dificult
 
 <img style="margin-left: auto; margin-right: auto;" src="../../../imgs/exito.png" width="254px" height="204" />
 
-La primera semana de operación, los de infraestructura se dan cuenta que las 32 gigas asignadas no son suficientes y que requieren asignarle al menos el doble para que la plataforma funcione. La segunda semana la base de datos empieza a generar bloqueos y contención produciendo fallas generalizadas y quejas por parte de los usuarios porque la aplicación “está lenta”. Infraestructura llega al límite de su presupuesto, la aplicación actualmente se come más de 128 gigas en memoria, la base de datos no da abasto, se reportan errores por sesiones duplicadas, datos duplicados, fallas en la consistencia, reportes que se demoraban 2 segundos actualmente toman días en terminarse. Entra el pánico. Hay caos. El vicepresidente llama al Arquitecto Líder de Desarrollo de Aplicaciones Orientadas a Procesos con Maestría y le pregunta “¿qué hacemos?”. 
+La primera semana de operación, los de infraestructura se dan cuenta que las 32 gigas asignadas no son suficientes y que requieren asignarle al menos el doble para que la plataforma funcione. La segunda semana la base de datos empieza a generar bloqueos y contención produciendo fallas generalizadas y quejas por parte de los usuarios porque la aplicación “está lenta”. Infraestructura llega al límite de su presupuesto, la aplicación actualmente se come más de 128 gigas en memoria, la base de datos no da abasto, se reportan errores por sesiones duplicadas, datos duplicados, fallas en la consistencia, reportes que se demoraban 2 segundos actualmente toman días en terminarse. Entra el pánico. Hay caos. El vicepresidente llama al Arquitecto Líder de Desarrollo de Aplicaciones Orientadas a Procesos con Maestría y le pregunta “¿qué hacemos?”.
 
 El que era una vez desarrollador y se “ensuciaba las manos” escribiendo código le responde: “llamemos al proveedor porque yo no se qué hacer. Los errores hablan de bloqueos en bases de datos y yo nunca diseñé una base de datos para la aplicación. También me sale que las transacciones toman mucho tiempo y no se de que se trata todo eso de las transacciones si tampoco me tocó diseñar alguna...”.
 Al llamar al proveedor, estos mandan un experto de Alemania o de Bélgica o de EEUU hasta Colombia (ahí ellos se sintieron importantes, obviamente) y la conclusión a la que llega es que “no usaron las mejores prácticas” y “la herramienta fue mal utilizada”. Ahí todos quedan fríos. Después de miles de dolares en licencias y entrenamiento, le dicen al Vice que la aplicación que construyeron es inviable y que ellos no le dan soporte debido a que quedó mal construida. ¿Culpa del Arquitecto? ¿Culpa del Vice? ¿Culpa del desarrollador? ¿La culpa es de la vaca?
@@ -39,25 +39,25 @@ Al llamar al proveedor, estos mandan un experto de Alemania o de Bélgica o de E
 ### Una evaluación técnica conciensuda
 La historia que les acabo de contar es de cualquier cliente, de todos los que han comprado un BPM y estoy seguro que ustedes, los lectores, conocerán más de un caso similar. No faltará el que me salte y diga que él sí tiene un proceso funcionando perfectamente, por eso quiero hacer una evaluación técnica de un BPMS desde un punto funcional y como estructura arquitectónica.
 
-**1. Como estructura arquitectónica, demasiada responsabilidad.** 
+**1. Como estructura arquitectónica, demasiada responsabilidad.**
 
 Si ustedes lo analizan por un segundo, lo que los proveedores de tecnología nos tratan de vender es una herramienta que es capaz de modelar procesos, ejecutar procesos, orquestar actividades humanas, gestionar el ciclo de vida de las tareas (reclamarlas, liberarlas, asignarlas, escalarlas, etc ), generar eventos para la generación de indicadores de gestión, generar pantallas, acceder a servicios web, procedimientos almacenados, tablas, modelar reglas en tablas de decisión, ejecutar lógica implementada en Java, C#, o lo que sea, generación de alarmas, generación de notificaciones vía correo electrónica, mandar a imprimir, mostrar en tableros de control los indicadores de manera automática, etc. Todas esas funcionalidades en una sola estructura arquitectónica. Eso a uno le huele a acoplamiento, y del más feo.
 
 Acoplamiento no solo por la exagerada cantidad de responsabilidades que tiene que asumir esa estructura para las aplicaciones que fueron desarrolladas o generadas dentro del BPMS sino que genera dependencia a las estructuras externas que requieren el uso del BPMS, tales como administración del ciclo de vida de un proceso o una tarea humana.
 
-**2. Funcionalidad: generar indicadores.** 
+**2. Funcionalidad: generar indicadores.**
 
-Esta es tal vez una de las mayores expectativas por parte de los usuarios o analistas de negocio. Ver como a medida que se va ejecutando el proceso de negocio se generan indicadores de gestión. Muchas veces he encontrado que haciendo un adecuado análisis y diseño del modelo del dominio vía DDD, uno descubre que realmente a lo que le quieren hacer seguimiento es al ciclo de vida de la solicitud o de los documentos que orbitan alrededor de la ejecución del proceso. Algunos lo llaman hoja de ruta del proceso, pero al final del día es eso: llevar registro de todo lo que pasa. 
+Esta es tal vez una de las mayores expectativas por parte de los usuarios o analistas de negocio. Ver como a medida que se va ejecutando el proceso de negocio se generan indicadores de gestión. Muchas veces he encontrado que haciendo un adecuado análisis y diseño del modelo del dominio vía DDD, uno descubre que realmente a lo que le quieren hacer seguimiento es al ciclo de vida de la solicitud o de los documentos que orbitan alrededor de la ejecución del proceso. Algunos lo llaman hoja de ruta del proceso, pero al final del día es eso: llevar registro de todo lo que pasa.
 Cuando llego a ese momento me pregunto ¿acaso los BPMS son la única forma de obtener ese tipo de información? ¿Es un modelo exclusivo? ¿Acaso no hay alternativas técnicas más adecuadas de generar eventos tal vez más ricos y útiles a través de otros mecanismos más desacoplados? ¿Cuántos Indicadores Clave de Desempeño son realmente útiles? ¿de 5 a 7 por proceso?
 
-**3. Funcionalidad: flexibilidad de negocio.** 
+**3. Funcionalidad: flexibilidad de negocio.**
 
-Eso sólo pasaría si el proceso de negocio es tan genérico y tan generalizado que sencillamente pierde su sentido semántico de negocio. Si ese es el caso ¿Entonces para qué se está usando un BPMS si es para modelar un proceso que no tiene nada de semántica de negocio? 
-Al final del día, esa flexibilidad la estará soportando en estructuras que sí contengan esa semántica. ¿Para qué agregarle una capa más a su aplicación entonces? ¿Por los indicadores? ¿Por la orquestación de tareas humanas? Todo eso se puede hacer de maneras alternativas, mucho más ligeras y fáciles de mantener. 
+Eso sólo pasaría si el proceso de negocio es tan genérico y tan generalizado que sencillamente pierde su sentido semántico de negocio. Si ese es el caso ¿Entonces para qué se está usando un BPMS si es para modelar un proceso que no tiene nada de semántica de negocio?
+Al final del día, esa flexibilidad la estará soportando en estructuras que sí contengan esa semántica. ¿Para qué agregarle una capa más a su aplicación entonces? ¿Por los indicadores? ¿Por la orquestación de tareas humanas? Todo eso se puede hacer de maneras alternativas, mucho más ligeras y fáciles de mantener.
 
 **4. Funcionalidad: “no se necesita ser experto”, “los analistas de negocio serán dueños de sus reglas y procesos” y puede “generar código”.**
 
-Son las tres frases típicas de vendedor mediocre y mentiroso. Cuando las escuche ¡HUYA! ¿Por qué? Después de años de estar trabajando en este medio, me he dado cuenta de que esa es la expectativa de cualquier Gerente; que la tecnología reemplace por completo a esos seres costosos y que se demoran demasiado haciendo las cosas, los bien llamados desarrolladores. 
+Son las tres frases típicas de vendedor mediocre y mentiroso. Cuando las escuche ¡HUYA! ¿Por qué? Después de años de estar trabajando en este medio, me he dado cuenta de que esa es la expectativa de cualquier Gerente; que la tecnología reemplace por completo a esos seres costosos y que se demoran demasiado haciendo las cosas, los bien llamados desarrolladores.
 La tecnología está lejos, muy lejos de automatizar la construcción de software. Sí, podemos generar cositas, amañar DSLs o crear metamodelos muy cercanos al modelo de dominio de una empresa, pero de un problema en particular,  ¡no de cualquier problema!.
 
 Ahora, ¿se imaginan que un usuario de proceso, un analista de negocio, se ponga a jugar con las reglas de negocio de una aplicación sin hacer pruebas unitarias, sin pasar por etapas de calidad mínimas, sin poder saber realmente el impacto técnico que esa decisión tenga? “¡Ah!“, dirá el vendedor del proveedor de tecnología, “pero es que él puede simular...” Y ¿Si? ¿Es que acaso simular es suficiente? ¿Con eso el negocio queda tranquilo? ¿Podría una organización quedar tranquila sabiendo que por ejemplo las evaluaciones de riesgo de un crédito están siendo implementadas por una persona que no es experta en desarrollo de software?

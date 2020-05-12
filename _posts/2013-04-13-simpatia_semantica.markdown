@@ -2,10 +2,10 @@
 layout: post
 title: Simpatía semántica
 author: Yuji Kiriki
-url: https://s3.amazonaws.com/bitacora/me.html
+url: https://twitter.com/ykiriki
 ---
 
-Durante una discusión tratando de explicar las responsabilidades de un equipo de desarrollo en los proyectos logramos llegar a definir cuál debería ser el objetivo cuando iniciamos el entendimiento de la problemática a resolver. 
+Durante una discusión tratando de explicar las responsabilidades de un equipo de desarrollo en los proyectos logramos llegar a definir cuál debería ser el objetivo cuando iniciamos el entendimiento de la problemática a resolver.
 
 Para poder explicar la definición, necesito que el lector entienda dos conceptos: **ImpedanciaObjeto-Relación** y **SimpatíaMecánica**.
 
@@ -23,7 +23,7 @@ La **SimpatíaSemántica** consta de tres hitos a los cuales se llegan a traves 
 
 La anterior es una esquematización de la labor del equipo de desarrollo cuando inicia un proyecto de software. Por lo general el equipo parte de una problemática encontrada en el mundo real. Esta problemática la esboza en un modelo el cual representa una **Abstracción** del mundo real. La **Abstracción** es luego traducida en código fuente el cual al compilarse y desplegarse en el ambiente de producción resuelve la problemática identificada en el mundo real generando valor de negocio.
 
-Así, la labor del equipo puede dividirse en tres transformaciones: 
+Así, la labor del equipo puede dividirse en tres transformaciones:
 
 1. Del mundo real a la abstracción del mundo real.
 2. De la abstracción del mundo real al código fuente.
@@ -32,13 +32,13 @@ Así, la labor del equipo puede dividirse en tres transformaciones:
 
 ### F : MundoReal => Dominio
 
-La primera función se puede entender como una transformación del conocimiento y mecanismos encontrados en el **MundoReal** al diseño de una **Abstracción** del mismo en su semántica. 
+La primera función se puede entender como una transformación del conocimiento y mecanismos encontrados en el **MundoReal** al diseño de una **Abstracción** del mismo en su semántica.
 
 Se habla en términos de una **Abstracción** debido a que el equipo de desarrollo no modela todo el **MundoReal**. Por ejemplo: por lo general y dependiendo de la problemática a resolver sacamos de nuestras abstracciones la gravedad o la fricción o cualquier otro fenómeno físico existente en el **MundoReal**. Como equipo de desarrollo nos concentramos es en describir los mecanismos en términos de la semántica suficientes para caracterizar la problemática y solucionarla.
 
-El hecho de que esta **Abstracción** haga uso de la misma semántica del **MundoReal** garantiza el aumento de la **SimpatíaSemántica** entre el dominio de la Función (el **MundoReal**) y el rango de la Función (la **Abstracción**). 
+El hecho de que esta **Abstracción** haga uso de la misma semántica del **MundoReal** garantiza el aumento de la **SimpatíaSemántica** entre el dominio de la Función (el **MundoReal**) y el rango de la Función (la **Abstracción**).
 
-Esta simpatía es deseable y provechosa en la medida en la que la **Abstracción** modela los mecanismos y relaciones entre definiciones encontradas en el **MundoReal** permitiendo que un cambio en este sea fácilmente replicable en la **Abstracción**. 
+Esta simpatía es deseable y provechosa en la medida en la que la **Abstracción** modela los mecanismos y relaciones entre definiciones encontradas en el **MundoReal** permitiendo que un cambio en este sea fácilmente replicable en la **Abstracción**.
 
 Esta facilidad redundará en la **CapacidadDeEvolución** y **CapacidadDeMantenimiento** que tendrá la aplicación de software. Así mismo redundará en la cantidad positiva de valor generado por la aplicación.
 
@@ -50,7 +50,7 @@ Dado que la **Abstracción** se puede reducir al **ModeloDeDominio**, el **Lengu
 
 Es necesario destacar que en la medida en la que el equipo de desarrollo conozca de manera más profunda el **MundoReal** y tenga más cerca al experto de negocio esta transformación tendrá mayor **SimpatíaSemántica**. En casos en los que estas condiciones no se dan, por ejemplo, el Arquitecto PowerPoint o el Líder de Requerimientos, es inevitable que la **SimpatíaSemántica** se vea impactada negativamente.
 
-Entre mayor sea la **SimpatíaSemántica** entre la **Abstracción** y el **CódigoFuente**, por transitividad, será mayor la **SimpatíaSemántica** entre el **MundoReal** y el **CódigoFuente**. 
+Entre mayor sea la **SimpatíaSemántica** entre la **Abstracción** y el **CódigoFuente**, por transitividad, será mayor la **SimpatíaSemántica** entre el **MundoReal** y el **CódigoFuente**.
 
 Si se logra una alta Simpatía entre el **MundoReal** y el **CódigoFuente** llegaremos a aplicaciones de software enriquecidas por los conceptos y mecanismos encontrados en el **MundoReal** a tal punto que el **MundoReal** se convierte en fuente de inspiración para resolver problemas de consistencia transaccional, distribución de cargas o cualquier otro atributo de calidad.
 
@@ -58,7 +58,7 @@ Esta transformación depende en gran medida de la calidad de código que se escr
 
 ### F'': CódigoFuente => GeneraciónDeValor
 
-Si se siguió el proceso descrito en las secciones anteriores buscando en cada hito respetar y promover la **SimpatíaSemántica** se puede llegar a aseverar que la aplicación de software es rica en comportamientos y semática del MundReal. 
+Si se siguió el proceso descrito en las secciones anteriores buscando en cada hito respetar y promover la **SimpatíaSemántica** se puede llegar a aseverar que la aplicación de software es rica en comportamientos y semática del MundReal.
 
 También se puede afirmar que inclusive la UI de la aplicación se construyó en términos del **MundoReal** resultando en una UI intuitiva.
 
@@ -70,6 +70,6 @@ El valor agregado entonces no se limitará a haber resuelto la problemática sin
 
 Todo este discurso nace de la necesidad de explicar cuál es la función de un equipo de desarrollo. Si estan de acuerdo conmigo, este proceso requiere de un gran esfuerzo intelectual, de comunicación y disciplina; habilidades y competencias que no son comunes en la industria.
 
-Definí la **SimpatíaSemántica** con el propósito de encapsular en una sola definición las decisiones técnicas orientadas por el **MundoReal** y el proceso cognitivo mismo de un equipo de desarrollo cuando construye una aplicación de software porque, hacer software no es solo usar tecnologías. Hacer software no es solo comunicación a través de una metodología ágil y sus ceremonias. Hacer software no es solo hacer CRUD sobre datos. 
+Definí la **SimpatíaSemántica** con el propósito de encapsular en una sola definición las decisiones técnicas orientadas por el **MundoReal** y el proceso cognitivo mismo de un equipo de desarrollo cuando construye una aplicación de software porque, hacer software no es solo usar tecnologías. Hacer software no es solo comunicación a través de una metodología ágil y sus ceremonias. Hacer software no es solo hacer CRUD sobre datos.
 
 Hacer software es generar valor al **MundoReal** y la **SimpatíaSemántica** es un mecanismo para alcanzar y medir ese valor.

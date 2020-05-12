@@ -2,7 +2,7 @@
 layout: post
 title: Bus de eventos de dominio
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+author_url: https://twitter.com/ykiriki
 ---
 
 El Agregado puede ser el patrón táctico más importante de #DDDesign pues nos permite fijar limites transaccionales a nuestras entidades de negocio. Es interesante cómo aplicando sabiamente este patrón se facilita la construcción de aplicaciones que soportan considerables volumenes de concurrencia.
@@ -15,7 +15,7 @@ En teoría la solución planteada por Vernon es bastante fácil de aplicar y cre
 
 Es importante recordar que un Agregado es responsable sólo de una transacción que manifiesta consistencia de ACID y no de CAP, mientras que una transacción de un Agregado que afecta otro agregado es "CAP consistente" y no "ACID consistente". Por ejemplo, a un Agregado se le exige que la integridad de todos los elementos involucrados en la transacción sea garantizada o linealmente trazable. Sin embargo las transacciones que cobijan más de un Agregado deberían ser capaces de soportar la consistencia más débil (Consistencia Eventual) dado que transaccionalmente no son dependientes consecuencia de la definición del Modelo de Dominio. (Este párrafo debe ser ampliado en una futura entrada)
 
-A continuación les presento una esquematización de cómo comunicamos Agregados a través de los buses de eventos. 
+A continuación les presento una esquematización de cómo comunicamos Agregados a través de los buses de eventos.
 
 <img style="margin-left: auto; margin-right: auto;" src="../../../imgs/event_bus.png" width="526px" height="372px" />
 
@@ -45,7 +45,7 @@ También existe la posibilidad de tener bitácoras de auditoría de transaccione
 
 ### Un poco más allá
 
-De acá quedan abiertas muchas posibilidades. Por ejemplo aplicar otros patrones de Enterprise Integration Patterns a nuestro dominio. También crear Fuentes de Eventos consultables idempotentes por otros Aggregates para que estos se mantegan consistentes sin la necesidad de crear suscriptores, volviendo así autónomos algunos Agregado de nuestro dominio y, si mis Agregados son autónomos, puedo terminar construyendo Contextos Delimitados autónomos. 
+De acá quedan abiertas muchas posibilidades. Por ejemplo aplicar otros patrones de Enterprise Integration Patterns a nuestro dominio. También crear Fuentes de Eventos consultables idempotentes por otros Aggregates para que estos se mantegan consistentes sin la necesidad de crear suscriptores, volviendo así autónomos algunos Agregado de nuestro dominio y, si mis Agregados son autónomos, puedo terminar construyendo Contextos Delimitados autónomos.
 
 Se podría pensar también que estos eventos no deberían estar limitados al dominio sino que es posible que estos puedan trascender inclusive Contextos Delimitados regalandonos una implementación de aplicaciones orientadas a eventos.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Título escandaloso sobre los desarrolladores colombianos*
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+author_url: https://twitter.com/ykiriki
 ---
 ## Introducción
 ¿Hay escasez de desarrolladores talentosos en Colombia? Obviamente sí. Es un fenómeno mundial. Por infinidad de razones, y todas están "explicadas" a un _google query_ de distancia.
@@ -20,7 +20,7 @@ Para poder hacerlo, trataré de seguir la misma línea de los icónicos artícul
 ## Tengo que demostrar experiencia conociendo desarrolladores y la industria
 Obviamente, si no ¿cómo justifico que tengo _autoridad_ para hablar sobre este tema y así poderlos envolver en mi [_Argumentum Ad Verecundiam_](https://es.wikipedia.org/wiki/Argumento_ad_verecundiam)?
 
-Hace 8 años recluto* desarrolladores de software para una PyME. A la fecha hemos contratado más de 100 desarrolladores. Muchos de ellos aún hacen parte de la empresa. Muchos otros se han ido a otras empresas, han cambiado de profesión, han iniciado su emprendimiento o se han ido a estudiar al exterior. 
+Hace 8 años recluto* desarrolladores de software para una PyME. A la fecha hemos contratado más de 100 desarrolladores. Muchos de ellos aún hacen parte de la empresa. Muchos otros se han ido a otras empresas, han cambiado de profesión, han iniciado su emprendimiento o se han ido a estudiar al exterior.
 
 Todos los vinculados han pasado por nuestro proceso de reclutamiento: 1) Evaluación de hoja de vida por psicología. 2) Entrevista con psicología. 3) Prueba técnica teórica escrita. 4) Prueba de código para la casa. 5) Entrevista con algún líder de equipo de la empresa.
 
@@ -37,25 +37,25 @@ Esta PyME fue construída de la nada. Sin capital de algún inversionista. Inscr
 Para poder entender el "problema", debemos empezar a encontrar culpables. Bueno, eso ha sido al menos el ejercicio que han hecho los demás.
 
 ## Hay que culpar a la academia
-El señor Torrenegra culpa a las universidades por no estar produciendo desarrolladores de software calificados o expertos. 
+El señor Torrenegra culpa a las universidades por no estar produciendo desarrolladores de software calificados o expertos.
 
-Él ejemplifica que 
+Él ejemplifica que
 
->" A lucky Colombian systems engineer gets to study around 70% of the classes that a software engineer gets to study. The other 30% is packed with finance, business, and management. And this is bad". 
+>" A lucky Colombian systems engineer gets to study around 70% of the classes that a software engineer gets to study. The other 30% is packed with finance, business, and management. And this is bad".
 
 No veo cómo eso es un problema para los desarrolladores de software.
 
 ¿No es acaso una de las habilidades más codiciadas en un desarrollador, su capacidad de entender dominios de negocio? Si no tiene fundamentos mínimos de economía, administración, contabilidad, etc, ¿cómo pretende un desarrollador entender y entablar una conversación con un experto de negocio/inversionista/cualquier ser humano no técnico para así saber qué solución de tecnología se le puede construir?
 
-> "Their ultimate professional goal is to manage other people." 
+> "Their ultimate professional goal is to manage other people."
 
-Esta pregunta va para los más viejitos: ¿no es acaso el reto más grande en un equipo de software lograr crear un ambiente y condiciones propicias para escribir buen código? ¿No son los libros de psicología y comportamiento humano los libros que uno lee con esmero para tratar de entender la condición humana y al individuo para, de alguna manera, poder formar los mejores equipos que en consecuencia construyan un buen producto de software? 
+Esta pregunta va para los más viejitos: ¿no es acaso el reto más grande en un equipo de software lograr crear un ambiente y condiciones propicias para escribir buen código? ¿No son los libros de psicología y comportamiento humano los libros que uno lee con esmero para tratar de entender la condición humana y al individuo para, de alguna manera, poder formar los mejores equipos que en consecuencia construyan un buen producto de software?
 
 En este punto me dí cuenta que muy seguramente el señor Torrenegra construye software de una manera muy particular pues, si no necesita desarolladores "generalistas" ¿cómo logra que ellos entiendan lo que hay que hacer y cómo ellos pueden aportar a la solución de un reto? ¿Será acaso que él los ve como pega-ladrillos (no peyorativo) que le deben obedecer?
 
-> "As we say in Colombia, “tenemos mucho cacique y poco indio,” meaning “we have many chiefs and few Indians.”" 
+> "As we say in Colombia, “tenemos mucho cacique y poco indio,” meaning “we have many chiefs and few Indians.”"
 
-Coincido, pero eso ¿es culpa de la universidad? Acá prefiero esconderme detrás de otra célebre frase: 
+Coincido, pero eso ¿es culpa de la universidad? Acá prefiero esconderme detrás de otra célebre frase:
 
 > "En Colombia, _doctor_ se le dice a cualquier hijueputa"
 
@@ -65,26 +65,26 @@ Con base en ese hecho, no es justo culpar completamente a la formación impartid
 
 Es fácil culpar a la academia. Pero una vez una profesora de la Universidad de lo Andes me preguntó en un panel: ¿qué están haciendo las empresas para convencer a los jóvenes bachilleres de que estudien ingenieria de sistemas y computación?. Me quedé mudo porque no supe responder.
 
-Por otro lado, no estoy de acuerdo en que una formación generalista impida la formación de buenos desarrolladores. Finalmente, como en cualquier carrera universitaria, la persona y su vida laboral es quien termina definiendo qué hacemos y cómo lo hacemos. 
+Por otro lado, no estoy de acuerdo en que una formación generalista impida la formación de buenos desarrolladores. Finalmente, como en cualquier carrera universitaria, la persona y su vida laboral es quien termina definiendo qué hacemos y cómo lo hacemos.
 
-Si la universidad nos deja con las bases en _hard_ y _soft skills_ se puede construir lo que sea, siendo los _soft skills_ más valiosos: disciplina, auto-apredizaje, resiliencia, tolerancia a la frustración, comunicación escrita y verbal, etc. Adicionalmente si la universidad fomenta los _hard skills_ como el racionamiento lógico, a través del ciclo básico, quienes estamos desaprovechando el potencial somos las empresas.  
+Si la universidad nos deja con las bases en _hard_ y _soft skills_ se puede construir lo que sea, siendo los _soft skills_ más valiosos: disciplina, auto-apredizaje, resiliencia, tolerancia a la frustración, comunicación escrita y verbal, etc. Adicionalmente si la universidad fomenta los _hard skills_ como el racionamiento lógico, a través del ciclo básico, quienes estamos desaprovechando el potencial somos las empresas.
 
 Ahí entra el artículo del señor Buriticá.
 
 ## Hay que culpar a las empresas
 El señor Buriticá explica que no hay escasez de desarrolladores. Según él, el problema es que las empresas de la industria de software en Colombia son malas. O con el eufemismo: "Necesitamos mejores empresas".
 
-> "En Colombia tenemos una industria de software que no está lista para contratar personas que están experimentando con Go o Rust". 
+> "En Colombia tenemos una industria de software que no está lista para contratar personas que están experimentando con Go o Rust".
 
 Si el señor Buriticá puede argumentar que su equipo es una demostración de que no hay déficit de desarrolladores de software, creo yo, que puedo poner a nuestra PyME como contraejemplo de sus aseveraciones pues, desde hace más de dos años, no hemos escatimado esfuerzos en fomentar el uso de diferentes tecnologías en Colombia: [Scala, Akka, Play, Apache Spark](https://www.typesafe.com/partners/systemintegrator-partners), [Apache Cassandra](http://www.datastax.com/partners), Apache Kafka, JS, Docker, chef-solo y muchas más ya hacen parte del ecosistema de las más tradicionales empresas del país. Y no sólo eso. Fomentar [comunidad](http://www.meetup.com/ScalaMDE/) y entrenar a nuestros desarrolladores hace parte de la demostración de contraejemplo.
 
-> "Esta industria definitivamente tiene un déficit y es un problema que ella misma se ha creado. No son un sector atractivo para trabajar, incluso tras haber aumentado los salarios gracias a una afluencia de consultorías extranjeras y empresas near-shoring." 
+> "Esta industria definitivamente tiene un déficit y es un problema que ella misma se ha creado. No son un sector atractivo para trabajar, incluso tras haber aumentado los salarios gracias a una afluencia de consultorías extranjeras y empresas near-shoring."
 
 Las condiciones del mercado han permitido que nos volvamos mercenarios. Y eso es bueno. Habla muy bien de qué tan talentosos y valiosos nos hemos vuelto los colombianos. Por otro lado, confirma la escasez.
 
-Llegan _startups_ extranjeras o llegan empresas extranjeras con sus grandes billeteras (sumándole la escalada del dolar) a "comprar" talento colombiano. Y eso también es bueno. 
+Llegan _startups_ extranjeras o llegan empresas extranjeras con sus grandes billeteras (sumándole la escalada del dolar) a "comprar" talento colombiano. Y eso también es bueno.
 
-Con una billetera suficientemente grande es posible salir de compras y **especular** sobre cuánto debería o no debería ser el salario de un desarrollador colombiano. Así el salario mínimo en Colombia para 2015 sea de COP$644.350. Y obvio, acá en Colombia, cualquier persona de cualquier industria por un salario de un orden de magnitud más grande que el mínimo, hasta trabaja en una _startup_. 
+Con una billetera suficientemente grande es posible salir de compras y **especular** sobre cuánto debería o no debería ser el salario de un desarrollador colombiano. Así el salario mínimo en Colombia para 2015 sea de COP$644.350. Y obvio, acá en Colombia, cualquier persona de cualquier industria por un salario de un orden de magnitud más grande que el mínimo, hasta trabaja en una _startup_.
 
 Lo que demuestra hasta acá el artículo del señor Buriticá es que con la distorsión que una billetera llena de dolares puede causar, no se percibe que sí hay escasez de desarrolladores. Y es entendible pues, las restricciones sobre las que su empresa trabaja son muy diferentes a las nuestras como PyME.
 
@@ -98,11 +98,11 @@ La distorción en salarios hace que se inflen los precios de los proyectos de so
 
 Recuerden que las fábricas de software son invento [extranjero](http://dspace.mit.edu/bitstream/handle/1721.1/2345/swp-3268-23661042.pdf?sequence=1) y que es muy fácil contratar equipos en el extranjero por 6 o menos dolares la hora.
 
-En este punto las personas me cuestionan que lo que los clientes deberían valorar es la "calidad superior". A estas personas les pido que se documenten sobre cómo funciona en Colombia la compra de proyectos de software. 
+En este punto las personas me cuestionan que lo que los clientes deberían valorar es la "calidad superior". A estas personas les pido que se documenten sobre cómo funciona en Colombia la compra de proyectos de software.
 
 Recuerden que quienes toman las decisiones de un proyecto no les interesa si se hizo en COBOL, en SQL, en Ruby o en Scala. Si se están usando las tecnologías más _hipsters_ y _trendy_ o no. Lo que les interesa es el resultado financiero del ejercicio y, si alguien me lo promete por la mitad de lo que usted cobra, pues que decisión más sencilla.
 
-> "La industria del software empresarial en Colombia necesita poner los pies en la tierra, mejorar su estándares y condiciones laborales generales, si quiere algún día llegar a ser un sector competitivo." 
+> "La industria del software empresarial en Colombia necesita poner los pies en la tierra, mejorar su estándares y condiciones laborales generales, si quiere algún día llegar a ser un sector competitivo."
 
 Estoy seguro que esta aseveración se basa en "me han contado", "supe de alguien que", etc.
 
@@ -110,7 +110,7 @@ Esas historias también las he escuchado. De las personas que entrevistamos y de
 
 Pero no solo es encontrarlas. Es darles espacio para el desarrollo de su autonomía y su maestría en el contexto de la ejecución de un propósito aprovechando la inteligencia distribuída. Son estos los fundamentos del "Manual de Identidad" de nuestra PyME.
 
-Tenemos un equipo de personas dedicadas a fomentar el bienestar de las personas. No solo se trata de que tengan dos pantallas o que puedan tomar cerveza en la oficina. Es estar ahí en caso de fallecimiento de un ser querido, incapacidad, paternidad o maternidad, libranzas, etc. Lo hemos venido haciendo desde que podemos, así no siempre hayamos podido exportar nuestros servicios al exterior y entendiendo las restricciones de no haber iniciado esta empresa con capital nacional o extranjero. 
+Tenemos un equipo de personas dedicadas a fomentar el bienestar de las personas. No solo se trata de que tengan dos pantallas o que puedan tomar cerveza en la oficina. Es estar ahí en caso de fallecimiento de un ser querido, incapacidad, paternidad o maternidad, libranzas, etc. Lo hemos venido haciendo desde que podemos, así no siempre hayamos podido exportar nuestros servicios al exterior y entendiendo las restricciones de no haber iniciado esta empresa con capital nacional o extranjero.
 
 La excelencia técnica de los equipos de esta PyME es reconocida por nuestros clientes y nuestros pares. Como el señor Buriticá dice, eso depende de la orientación técnica de nuestra empresa. Vale la pena aclarar que esa orientación técnica la tenemos hace rato, por lo que a nuestra PyME hasta este punto el artículo no nos ha generado valor.
 
@@ -123,7 +123,7 @@ Si quieren tener mejor salario, hagan un trabajo que sea más valioso. ¿Cómo? 
 
 Aprendan inglés. Estudien mucho. No le tengan miedo a los _papers_. Pregunten, equivoquense, aprendan. ¡Lean! Propongan, cuestionen, sacien su curiosidad. No esperen a los proyectos para aprender, lleguen aprendidos. Escriban y lean código todos los días. Aprendan a escribir y hablar asertivamente. Ojo con la ortografía y la redacción. Sean empáticos con los problemas a resolver, pues siempre hay un alguien que se va a beneficiar y no necesariamente es ROI. Recuerden que hacer software es una expresión de amor.
 
-## Hay que llegar a una conclusión que no solucione nada 
+## Hay que llegar a una conclusión que no solucione nada
 Para poder cerrar, quiero cerrar como lo hicieron los autores de los blogs que inspiraron esta respuesta. Seguir opinando y emitiendo juicios de valor sin sentido sobre lo que yo creo que es correcto (a pesar de que estoy seguro que no implica nada).
 
 La escasez de talento la hemos afrontado con mucho cariño y respeto. Cariño, en cuanto a la paciencia y humildad que hay que tener frente a los desarrolladores que hasta ahora están entrando al mundo laboral o, a aquellos que lamentablemente han pasado por proyectos mal ejecutados. Respeto, por lo que saben, por lo que son y valorándolos por su potencial inmediato.
