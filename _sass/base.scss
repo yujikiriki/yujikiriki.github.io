@@ -20,31 +20,6 @@ body {
   padding:1em;
 }
 
-aside {
-  --aside-width: 12.5rem;
-  --column-gap: 2rem;
-  --padding: 1rem;
-  --aside-offset: 1rem;
-  --aside-offset-lineheight: 1.5rem;
-  box-sizing: border-box;
-  margin-bottom: calc(var(--padding) * 2);
-  margin-top: calc((var(--aside-offset) + (var(--aside-offset-lineheight)*2))/-1);
-  padding: var(--padding);
-  position: absolute;
-  right: 21%;
-  width: var(--aside-width);
-  font-size: 0.8125rem;
-  font-weight: 400;
-  -ms-hyphens: none;
-  -webkit-hyphens: none;
-  hyphens: none;
-  line-height: 1.25rem;
-  margin-bottom: 0.5rem;
-  text-align: left;
-  border-radius: calc(var(--padding)/4);
-  max-width: 100%;
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1024px){
   body {
     max-width: 66.66%;
