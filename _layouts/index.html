@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
+  <script>
+    const htmlEl = document.getElementsByTagName('html')[0];
+
+    const toggleTheme = (theme) => {
+      htmlEl.dataset.theme = theme;
+    }
+  </script>
 <body>
+	<a onclick="toggleTheme('dark');">dark</a>
+  <a onclick="toggleTheme('light');">light</a>
   {{ content }}
 </body>
 </html>
