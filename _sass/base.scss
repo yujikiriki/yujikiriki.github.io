@@ -1,3 +1,10 @@
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 #theme {
   position: relative;
   float: right;
@@ -48,13 +55,14 @@ code {
 }
 
 a {
-  border-bottom: 1px solid #444444;
   color: #444444;
   text-decoration: none;
+  height: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 a:hover {
-  border-bottom: 0;
+  border-bottom: 1.5px solid rgba(2, 162, 224, 0.7);
 }
 
 img {
