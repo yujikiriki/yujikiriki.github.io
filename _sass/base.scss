@@ -1,38 +1,43 @@
-html[data-theme='dark'] {
-    background: #000;
-    filter: invert(1) hue-rotate(180deg)
+#theme {
+  position: relative;
+  float: right;
 }
 
-html[data-theme='dark'] img {
-  filter: invert(1) hue-rotate(180deg)
+html[data-theme="dark"] {
+  background: #000;
+  filter: invert(1) hue-rotate(180deg);
+}
+
+html[data-theme="dark"] img {
+  filter: invert(1) hue-rotate(180deg);
 }
 
 body {
   margin: 2em auto;
   background: #ffffff;
   color: #444444;
-  font-family: 'Inconsolata', monospace, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Inconsolata", monospace, Roboto, Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   text-shadow: 0 1px 0 #ffffff;
   text-align: justify;
-  margin:2em auto;
-  padding:1em;
+  margin: 2em auto;
+  padding: 1em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
     max-width: 66.66%;
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1980px){
+@media only screen and (min-width: 1025px) and (max-width: 1980px) {
   body {
     max-width: 33.33%;
   }
 }
 
-@media only screen and (min-width: 1980px) and (max-width: 3840px){
+@media only screen and (min-width: 1980px) and (max-width: 3840px) {
   body {
     max-width: 33.33%;
   }
