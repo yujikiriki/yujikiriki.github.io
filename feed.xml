@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-03T12:01:12-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">El reto del lenguaje</title><link href="http://localhost:4000/2020/09/28/lenguaje.html" rel="alternate" type="text/html" title="El reto del lenguaje" /><published>2020-09-28T00:00:00-05:00</published><updated>2020-09-28T00:00:00-05:00</updated><id>http://localhost:4000/2020/09/28/lenguaje</id><content type="html" xml:base="http://localhost:4000/2020/09/28/lenguaje.html">&lt;p&gt;En su libro “Sapiens”, Yuval Harari argumenta que los seres humanos son la especie dominante del planeta porque somos el único animal que puede cooperar en grandes números. Esto se debe, según él, a la habilidad de los humanos de &lt;em&gt;creer&lt;/em&gt; en cosas y conceptos completamente imaginarios.&lt;/p&gt;
+
+&lt;p&gt;Todos los equipos a los que he pertenecido reportan en sus retrospectivas la necesidad de mejorar la comunicación. Por otro lado, hay opiniones en las redes que postulan que UML o los patrones de diseño de GoF son malas prácticas en sí mismas y que no deberían aprenderse.&lt;/p&gt;
+
+&lt;p&gt;Aquí presento una interpretación alternativa.&lt;/p&gt;
+
+&lt;p&gt;Nada es más poderoso que después de mucho tiempo de hacer las cosas empíricamente, encontrar que el mundo ya le ha encontrado nombre a eso que uno venía haciendo.&lt;/p&gt;
+
+&lt;p&gt;Poderle poner nombre a una práctica, una actividad, o a un sistema de elementos, da capacidad de abstracción lo que invita a razonar sobre ellos.&lt;/p&gt;
+
+&lt;p&gt;Como ha sido descrito innumerables veces, las palabras como artefactos de comunicación son el mecanismo que permite no solo razonar sino comunicar ideas entre nosotros. Implica entonces que para el trabajo en equipo, poder usar las palabras más adecuadas que representan o codifican un concepto, acción o sistema lo impactarán positivamente.&lt;/p&gt;
+
+&lt;p&gt;Apalancarse en un conjunto de elementos de comunicación común simplifica la comunicación entre los miembros de un equipo y adicionalmente, las semánticas utilizadas le permitirán al equipo construir y definir otras en términos de las existentes, recursivamente, creando así nuevo conocimiento o profundizando la abstracción de la conversación que llevaría a una mejor y más efectiva (en términos de tiempo y capacidad de razonamiento) comunicación.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, UML, los patrones de GoF, los morfismos entre objetos de la teoría de categorías, el modelo de documentación C4, los Wardley Maps, kanban, &lt;em&gt;Event Storming&lt;/em&gt;, un modelo de dominio, los mapas de contexto, los diagramas de destilación de dominios, todos representan abstracciones que permiten la comunicación entre individuos que pertenecen a un mismo equipo o no.&lt;/p&gt;
+
+&lt;p&gt;Cómo se aprenden estas herramientas de comunicación es problema del individuo y por ese criterio no considero razonable cuestionar la herramienta.&lt;/p&gt;
+
+&lt;p&gt;De UML he encontrado que los diagramas más utilizados y que tienen embebidos mayor capacidad de expresión son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Máquinas de estado.&lt;/li&gt;
+  &lt;li&gt;De secuencia.&lt;/li&gt;
+  &lt;li&gt;De componentes.&lt;/li&gt;
+  &lt;li&gt;De despliegue.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hay otro tipo de diagramas que no se encuentran descritos en UML pero que uso muy frecuentemente:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Flechitas y cajitas: para explicar diseños arquitectónicos.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Syntax_diagram&quot;&gt;Diagramas de ferrocarril&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.researchgate.net/profile/Ricardo_Galli/publication/2320676/figure/fig4/AS:669396179632164@1536607894878/Causal-consistency-executions.png&quot;&gt;Este&lt;/a&gt; nos lo enseñó Kyle Kingsbury en su clase de sistemas distribuidos. Sirve para razonar y comunicar escenarios de consistencia. Olvidé cómo se llama.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Yuji Kiriki</name></author><summary type="html">En su libro “Sapiens”, Yuval Harari argumenta que los seres humanos son la especie dominante del planeta porque somos el único animal que puede cooperar en grandes números. Esto se debe, según él, a la habilidad de los humanos de creer en cosas y conceptos completamente imaginarios.</summary></entry><entry><title type="html">Carta a la programadora 100.001</title><link href="http://localhost:4000/2020/09/16/carta_a_la_100001.html" rel="alternate" type="text/html" title="Carta a la programadora 100.001" /><published>2020-09-16T00:00:00-05:00</published><updated>2020-09-16T00:00:00-05:00</updated><id>http://localhost:4000/2020/09/16/carta_a_la_100001</id><content type="html" xml:base="http://localhost:4000/2020/09/16/carta_a_la_100001.html">&lt;p&gt;Te escribo porque siento la responsabilidad de compartirte algunas ideas, recomendaciones, experiencias y quizás consejos para que una vez te gradúen del programa “Misión TIC 2022” puedas sacar el mejor provecho.&lt;/p&gt;
+
+&lt;p&gt;Irresponsablemente el programa lo han vendido con la expectativa de que vas a devengar un salario de 12 o hasta 16 millones de pesos por mes. Esto solo pasa si se cumplen unas condiciones que el programa no te va a garantizar ni preparar para. El programa está diseñado para graduar personas que siguen instrucciones de alguien que sabe más o que tiene más experiencia.&lt;/p&gt;
+
+&lt;p&gt;Así no se hace software ni se logra entrar en la 4ta revolución industrial.&lt;/p&gt;
+
+&lt;p&gt;Hoy, en el 2020, puedes apuntarle a un salario de ese rango si tienes nivel B2 en inglés (esto puede tomarte hasta 3 años si eres A1) y no solo sabes seguir instrucciones, sino que eres capaz de diseñar, implementar y entregar soluciones a pequeña o mediana escala. Para ello, necesitarás saber de diseño, de algoritmos, de estructuras de datos, cómo comunicar tus ideas, influenciar a otros, ayudarlos y guiarlos. Tendrás que manejar las situaciones estresantes y salir victoriosa de ellas sin quemarte.&lt;/p&gt;
+
+&lt;p&gt;Es posible que después de graduarte te ofrezcan trabajo en una Fábrica de Software o en un &lt;em&gt;startup&lt;/em&gt; para seguir instrucciones, donde bien sea un Gerente de Proyectos, un Arquitecto de Software, un CTO, o un Líder Técnico, en teoría, va a saber más que tú y que va a estar convencido que tiene la verdad revelada (te darás cuenta que no es así y que a veces los llaman desarrolladores 10x).&lt;/p&gt;
+
+&lt;p&gt;En mi experiencia de más de 20 años en entregar productos de software, de haber liderado centenas de proyectos, equipos, de acompañar centenas de personas y decenas de clientes, te puedo garantizar que la construcción de software es un ejercicio social, y como tal, la diversidad de opiniones y de puntos de vista son los que enriquecen el producto final. Tu voz es lo que más vale y hacer caso no sirve de nada.&lt;/p&gt;
+
+&lt;p&gt;Tu voz valdrá más cuando digas &lt;em&gt;NO&lt;/em&gt;. Deberás saber decirle &lt;em&gt;NO&lt;/em&gt; a un Gerente o a un Arquitecto de Solución. Haz valorar tu voz y la de tus compañeros que, como equipo, son más que un individuo. Nunca se te olvide que varias cabezas suman más que una.&lt;/p&gt;
+
+&lt;p&gt;Como el programa quiere graduar personas que siguen instrucciones, en muchas ocasiones te vas a dar cuenta que te están pidiendo estupideces.&lt;/p&gt;
+
+&lt;p&gt;En esos casos, construye una prueba de concepto, llénate de datos soportados por un experimento que hayas hecho y demuéstrale a los Jefes que tú tienes la razón.&lt;/p&gt;
+
+&lt;p&gt;No porque eres tú, sino porque tu lógica, tus razonamientos, tu experimento y los datos que obtuviste así lo demuestran. Esto me ha salvado más de una vez de tener conversaciones de gusto, de caprichos o de forma. Tristemente para mí, aprendí a hacer eso ya de viejo.&lt;/p&gt;
+
+&lt;p&gt;Al entrar al programa tomaste la decisión de ejercer el oficio que me ha dado de comer todos los años adultos de mi vida. Un oficio de mucho sacrificio, perseverancia y sobre todo, terquedad.&lt;/p&gt;
+
+&lt;p&gt;Porque la habilidad que me ha sacado adelante es ser terco (hasta que los datos demuestren los contrario), porque encontrarás que en esta industria hay personas brillantes que no requieren mucho esfuerzo para entender o hacer cosas que a uno le cuestan mucho. Ahí, sé terca.&lt;/p&gt;
+
+&lt;p&gt;Para mí, admitir y entender que las cosas me cuestan más que a los demás me ha permitido saber que me tocará esforzarme 5 o 10 veces más que los demás para lograr alcanzar un objetivo.&lt;/p&gt;
+
+&lt;p&gt;Lo bonito es que este oficio te regalará unos instantes de gran satisfacción. Cuando al fin lo que querías que funcionara funciona, te sentirás a la altura de las más grandes y más tesas. Solo que posiblemente te costó mucho más tiempo y sueño.&lt;/p&gt;
+
+&lt;p&gt;Quiero contarte que en este oficio no vale tanto la pena ser un experto en una tecnología. Vale más entender el fundamento de las cosas.&lt;/p&gt;
+
+&lt;p&gt;Verás en unos años que no son las tecnologías las que solucionan un problema sino el criterio de escoger la herramienta más adecuada para el problema que quieres resolver. Deberás entonces vivir en un camino de exploración de intensa y constante curiosidad.&lt;/p&gt;
+
+&lt;p&gt;¿Cómo hace una para volverse curiosa de algo que quizás no le gusta &lt;em&gt;tanto&lt;/em&gt;? Hacerlo día a día sin pensar tanto en si me gusta o no. Eso me ha servido. Enfocándome en la tarea a realizar, mirando cómo lo puedo hacer mejor la próxima vez. Obligándome a leer sobre temas o tecnologías que no me gustan, poquito a poco les he cogido no gusto pero sí cariño.&lt;/p&gt;
+
+&lt;p&gt;Muchos te pedirán que por plata, acciones, &lt;em&gt;equity&lt;/em&gt;, por un bono o algún otro tipo de zanahoria trasnoches por semanas, trabajes fines de semana y te dirán que estás haciendo país; o te dirán que así evitas que demanden a la empresa en la que trabajas; o te dirán que es para conservar tu puesto. El mundo funciona así solo si tú lo permites.&lt;/p&gt;
+
+&lt;p&gt;En 20 años jamás se ha justificado una trasnochada en mi vida. Y he cometido el error de inspirar a equipos a los que he pertenecido a que así lo hagamos. Aún estoy arrepentido de cada una de esas trasnochadas.&lt;/p&gt;
+
+&lt;p&gt;¿Por qué? Porque vas a salir a producción con un producto de software hecho a retazos, que nadie entiende bien cómo funciona y que luego te cobrará cuando empiece a fallar.&lt;/p&gt;
+
+&lt;p&gt;La calidad en este oficio se paga trasnochando o sacrificando tiempo con la familia. Jamás vale la pena. ¿Y sabes qué es lo más triste? Que luego de la borrachera de haber logrado la salida a producción en una fecha puesta por un &lt;a href=&quot;https://en.wikipedia.org/wiki/Peter_principle&quot;&gt;Incompetente&lt;/a&gt;, te toca seguir al mismo ritmo, pagando las ausencias que dejaste.&lt;/p&gt;
+
+&lt;p&gt;Ese ritmo de trabajo puede llevarte a sentirte triste de repente, de no encontrar sentido a lo que haces, puede volverte huraña o inclusive te puede hacer sentir que no vale la pena seguir viviendo. Nadie, ni siquiera el CEO de un Unicornio, vale eso. Si llegas a ese estado, para y busca ayuda profesional.&lt;/p&gt;
+
+&lt;p&gt;Saber inglés es determinante para tu presente y futuro inmediatos. Muchas de las fuentes en español sobre este oficio solo ofrecen contenido muy básico y de inicio.&lt;/p&gt;
+
+&lt;p&gt;Te confieso que antes de viajar a mi primer cliente en Estados Unidos tomé clases con una amiga canadiense, pues mi nivel de inglés era pésimo.&lt;/p&gt;
+
+&lt;p&gt;Me daba pena hablar y eso impidió que mi acostumbrada elocuencia me permitiera explicar (vender, siendo honesto :D) mis ideas. Para superar eso, me tocó dejar la pena y con nadado de perro salir adelante.&lt;/p&gt;
+
+&lt;p&gt;Hoy en día, 4 años después de esa época, los profes de la empresa me dicen que paso por ser un C1 “fácil”. Aún así, vivo bajo la sombra de la pena y de no conocer la pronunciación correcta de muchas palabras que he leído o hablar tartamudeando y con largos silencios.&lt;/p&gt;
+
+&lt;p&gt;Este es un oficio que se deja querer.&lt;/p&gt;
+
+&lt;p&gt;Es un oficio que te permitirá hacer cosas que aún hoy me parecen mágicas. Parte de lo bonito es esa sensación de logro constante. De haber logrado superar un reto. Por otro lado, poder con tus manos hacer algo cada vez mejor te va a llenar de orgullo.&lt;/p&gt;
+
+&lt;p&gt;Como programadora serás capaz de ayudar a muchas personas, no solo por lo económico (que pareciera es la única variable para la que optimizaron el programa de MinTIC), sino porque puede que te inventes algo o puede que hagas parte de un equipo que resuelve un problema teso de tu comunidad ¡o del mundo!&lt;/p&gt;
+
+&lt;p&gt;Como programadores y como todo oficio en el que se busca la maestría, tenemos la responsabilidad de generar un impacto positivo en la sociedad, por eso, sé consciente para qué tipo de proyecto y empresa trabajas.&lt;/p&gt;
+
+&lt;p&gt;Si es una empresa que explota a otros al no reconocerles los mínimos laborales evidentes estás siendo cómplice en su éxito. Si es una empresa en la que da pena levantarse a las 5 de la tarde del puesto porque eso lo leen tus Jefes y Fundadores como “falta de compromiso”, solo estás siendo cómplice con esa cultura del miedo fundamentada en modelos de gestión caducos y coloniales.&lt;/p&gt;
+
+&lt;p&gt;Tristemente, como todo lo que pasa en un país pobre, este programa “Misión TIC 2022” lo hicieron de afán y lo ejecutarán de afán. El afán obedece a cumplir con una meta numérica del presente gobierno. Están tratando de hacer realidad el programa en un tiempo irracional.&lt;/p&gt;
+
+&lt;p&gt;Entendiendo ese hecho vas a aprovechar al máximo esta oportunidad si sabes que este programa es solo una meta para el gobierno y asumes el reto de, luego de graduarte, seguir estudiando, intentando y practicando.&lt;/p&gt;
+
+&lt;p&gt;Quizás puedas resolverle el problema a la tienda del barrio, o quizás a un familiar o un amigo. Tienes que ser muy agresiva en qué tan rápido pones en práctica tus conocimientos en un producto real, en el que ojalá, todas las decisiones dependan de ti.&lt;/p&gt;
+
+&lt;p&gt;Con los conocimientos que te van a entregar (que dependen enteramente de la institución, el profesor, el tutor y demás, lo cual cuestiona aún más el programa como programa) te vas a ver en la necesidad de complementarlos. Hay muchas fuentes en Internet que te ayudarán a profundizar los temas.&lt;/p&gt;
+
+&lt;p&gt;Volverte la más tesa buscando en Internet será una habilidad que no debes menospreciar y debes empezar a practicar desde ya.&lt;/p&gt;
+
+&lt;p&gt;Cuando como todos, vayas a copiar y pegar una respuesta de StackOverflow, recuerda leer qué estás copiando (jajaja). Ya los viejitos como yo no aprendimos eso.&lt;/p&gt;
+
+&lt;p&gt;Eso me lleva a otro punto: si te van a meter los dedos a la boca, que salgan con los dedos mutilados. No comas entero, no creas, pide datos, pide argumentos lógicos, deductivos/inductivos y no emocionales. No dejes de hacer preguntas hasta no sentirte satisfecha.&lt;/p&gt;
+
+&lt;p&gt;Tu curiosidad y tus preguntas son lo más valioso que le puedes aportar a tu equipo y a un producto.&lt;/p&gt;
+
+&lt;p&gt;Nunca, jamás, tengas pena de una pregunta. Nunca una pregunta es estúpida, evidente o irrelevante. Te confieso que aún hoy, después de muchos años de ser un usuario Linux, me toca buscar en Internet cómo se copia un archivo de un lado a otro.&lt;/p&gt;
+
+&lt;p&gt;¡Usa Linux! Yo sé que Mac &lt;em&gt;se ve más bonito&lt;/em&gt;. Sé que Windows parece ser más &lt;em&gt;fácil&lt;/em&gt;, pero el hecho de asumir la complejidad de entender qué y cómo lo hace Linux te va a traer unos aprendizajes insospechados.&lt;/p&gt;
+
+&lt;p&gt;Vale la pena participar en comunidades de desarrolladores. Normalmente hablan de herramientas o técnicas. Ten la responsabilidad de ahondar en los conceptos que allí presenten. Además, te puedo decir que muchas veces quien presenta el tema de la charla no es experto. Solo es una persona que se le quitó la pena y se atrevió. Te lo digo por experiencia propia.&lt;/p&gt;
+
+&lt;p&gt;Para mantenerte al día con las tendencias de una industria que se mueve demasiado rápido, usa las redes sociales para encontrar personas que piensan igual que tú y a otras que no piensan igual que tú.&lt;/p&gt;
+
+&lt;p&gt;Eso te permitirá crear tu propia opinión sobre las cosas que te interesan o de las que otros hablan. Te darás cuenta que entre más promiscuidad intelectual te permitas, mejor programadora serás.&lt;/p&gt;
+
+&lt;p&gt;Jamás dejes que un &lt;em&gt;framework&lt;/em&gt; o lenguaje defina tu vida profesional.&lt;/p&gt;
+
+&lt;p&gt;Date la oportunidad de ser experimental, de empujar los límites de lo que sabes y eres, fluye tanto como quieras. Opina de lo que quieras y está preparada para fundamentarlo y dar la pelea a muerte, porque en este oficio es muy común que nos volvamos marranitos que se revuelcan en el lodo y a los marranitos les encanta el lodo.&lt;/p&gt;
+
+&lt;p&gt;No sientas presión de tener un proyecto &lt;em&gt;Open Source&lt;/em&gt; o de ser activa en proyectos OSS. Tampoco te sientas mal por no estar tirando código las 24h. Haz lo que quieras con tu tiempo pues es TU tiempo. Es tu familia. Es tu vida.&lt;/p&gt;
+
+&lt;p&gt;Lo que sí no debes dejar de  lado es ser disciplinada con leer (de lo que sea), curiosear y probar tecnologías o prácticas. Puede ser en tiempo laboral, que importa realmente, pues ese tiempo se le devuelve con creces a la empresa en la que trabajas o al equipo que perteneces y siempre a ti misma.&lt;/p&gt;
+
+&lt;p&gt;Yo amo mi oficio y me siento orgulloso de ser programador. El programa quiere alimentar la base de una pirámide laboral. Esa pirámide solo existe en la cabeza de los que no saben de tecnología. No les des gusto y jamás te sientas que sobre ti hay gente más capaz o que tiene la capacidad de darte instrucciones y tú solo seguirlas. Nadie es más que tú y tú no eres más que nadie.&lt;/p&gt;
+
+&lt;p&gt;La 4ta revolución industrial no se logrará pensando en graduar personas que hacen caso, sino a través de pequeños equipos de jerarquías horizontales donde el consenso y la autonomía gobiernan. No donde alguien te da instrucciones.&lt;/p&gt;
+
+&lt;p&gt;Esta es quizás una &lt;em&gt;rara&lt;/em&gt; y a veces tóxica industria. Ojalá hubiera sido en otras condiciones. Pero así te tocó y eres una berraca. Eres la más tesa. No se te olvide que hasta los que llevamos mucho tiempo en esto, nos cuesta tanto como los primeros días.&lt;/p&gt;
+
+&lt;p&gt;Dale con toda que tu destino está en tus manos, no de un programa que será mal ejecutado, no de un gobierno o un gobernante, y nadie debe decirte qué hacer.&lt;/p&gt;
+
+&lt;p&gt;Trasciende los riesgos y falencias del programa del MinTIC, hazte cargo de tu futuro y estudia mucho, cuestiona, experimenta, crea, prueba y verás cómo desde un teclado modificas la realidad de todos.&lt;/p&gt;
+
+&lt;h3 id=&quot;bitácora-de-cambios&quot;&gt;Bitácora de cambios&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;2020-09-18:&lt;/em&gt; Muchos errores de ortografía. Aprendí la diferencia entre &lt;em&gt;tú&lt;/em&gt; y &lt;em&gt;tu&lt;/em&gt;. Karen Suarez (no tiene presencia en la Web) me tendió la mano y me ayudo con la redacción general y una cantidad ridícula de errores que tenía. Gracias ❤.&lt;/p&gt;</content><author><name>Yuji Kiriki</name></author><summary type="html">Te escribo porque siento la responsabilidad de compartirte algunas ideas, recomendaciones, experiencias y quizás consejos para que una vez te gradúen del programa “Misión TIC 2022” puedas sacar el mejor provecho.</summary></entry><entry><title type="html">Tiempo</title><link href="http://localhost:4000/2020/08/11/tiempo.html" rel="alternate" type="text/html" title="Tiempo" /><published>2020-08-11T00:00:00-05:00</published><updated>2020-08-11T00:00:00-05:00</updated><id>http://localhost:4000/2020/08/11/tiempo</id><content type="html" xml:base="http://localhost:4000/2020/08/11/tiempo.html">&lt;p&gt;Quizás hoy estoy particularmente sensible. Releer sobre &lt;a href=&quot;https://typelevel.org/cats/typeclasses/applicative.html&quot;&gt;Applicative&lt;/a&gt; me tocó el corazoncito técnico.&lt;/p&gt;
+
+&lt;p&gt;Escribir software así es &lt;em&gt;simple&lt;/em&gt;. El reto es que la carga cognitiva es brutal. A un dev sin experiencia le puede tomar hasta 8 meses de estudio y práctica seguidos dominar esto con confianza. Un dev con experiencia le puede tomar fácilmente 4 meses.&lt;/p&gt;
+
+&lt;p&gt;¿Es el tiempo el criterio adecuado en todos los casos para evaluar una forma de escribir software? Si estoy pensando en mis inversionistas, seguro. Si pienso en el producto que quiero construir ¿también?&lt;/p&gt;
+
+&lt;p&gt;Se puede usar cualquier herramienta (lenguaje, framework, etc) para implementar cualquier requerimiento funcional. ¿Qué criterios usar entonces para encontrar la herramienta adecuada?&lt;/p&gt;
+
+&lt;p&gt;Pienso que de alguna manera es una relación inversa entre tiempo, el tipo de producto que quiero construir y el estado de madurez de un equipo.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, usualmente, cuando inicio un proyecto de software con un equipo nuevo, restrinjo a que sus iteraciones sean de máximo 1 semana por los primeros meses. Eso implica que el equipo se somete a una intoxicación de ceremonias y prácticas por un tiempo. ¿Por qué? Porque es la manera más eficiente que he encontrado de que le cojan fastidio a Scrum y se empiecen a cuestionar qué es lo que realmente les genera valor como equipo. De esta manera se obligan a conocerse como equipo.&lt;/p&gt;
+
+&lt;p&gt;A medida que el producto va saliendo cada vez más frecuentemente a producción y el equipo va demostrando madurez, les hago caer en cuenta de que iteraciones de 2 o 3 semanas son muy cortas y les cuestiono la diferencia entre entregar iteraciones a entregar productos de software.&lt;/p&gt;
+
+&lt;p&gt;De ahí caemos, normalmente, a ciclos de 6 semanas (muy a la &lt;a href=&quot;https://basecamp.com/shapeup&quot;&gt;ShapeUp&lt;/a&gt;, curiosamente) donde las ceremonias pierden sentido y, aprovechando que la memoria muscular del equipo ha venido siendo entrenada por los psicólogos del desempeño, se puede fomentar a que el objetivo final sea entregar un producto de software completo.&lt;/p&gt;
+
+&lt;p&gt;Este estadio de madurez es valioso porque son equipos de 3 a 4 personas, que son responsables de entregar todas las capas de un producto digital. Eso implica calidad de software, infraestructura, UX, UI y desarrollo de clientes y servicios.&lt;/p&gt;
+
+&lt;p&gt;Este acercamiento lleva a que el equipo se obsesione por entregar su producto en 6 semanas y no entregando versiones de un “algo” cada Sprint. No obstante, llegar a este estadio toma tiempo, requiere muchísimo entrenamiento e inversión.&lt;/p&gt;
+
+&lt;p&gt;Con este ejemplo intento poner en consideración del lector la trascendencia del criterio tiempo. Como describí, un equipo pasa por diferentes estadios que le permiten ir mejorando lo que entrega y cómo funciona. ¿Pasaría lo mismo con los lenguaje de programación? Es decir ¿se podría entender la elección de tecnologías y herramientas -como el lenguaje de programación- como una variable dinámica que muta y oscila a medida que el equipo madura?&lt;/p&gt;
+
+&lt;p&gt;Conozco y practico la arquitectura evolutiva, pero lo que me cuestiono acá es diferente. Así como lo expliqué en el  frente metodológico ¿deberíamos tener prácticas y tecnologías diferentes en la medida en la que el equipo y el producto evolucionan?&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, un lenguaje que históricamente ha demostrado que permite implementar aplicaciones Web muy rápido es PHP.&lt;/p&gt;
+
+&lt;p&gt;Eso implica que uno esperaría que un equipo sin mucha experiencia pueda entregar requerimientos funcionales muy rápido en esa tecnología. Creo que golang y python está en el mismo nivel de PHP: permiten ser productivos en plazos muy cortos debido a que la curva de aprendizaje es muy corta. Son herramientas diseñadas para ser fáciles de aprender.&lt;/p&gt;
+
+&lt;p&gt;El hecho de que esos lenguajes demuestren ser tan productivos en las etapas tempranas del desarrollo de un producto ¿implica que son herramientas más adecuadas de hacer software? Desde el punto de vista del inversionista sí porque &lt;em&gt;tiempo es dinero, baby&lt;/em&gt;. ¿Desde el punto de vista del equipo? ¿Desde el punto de vista del producto?&lt;/p&gt;
+
+&lt;p&gt;La exploración que estoy proponiendo es que así como un equipo necesita unas formas de trabajo que cambian, así mismo las tecnologías y patrones arquitectónicos deben ir mutando en el tiempo. De esta manera, se le puede sacar el mejor provecho a estas tecnologías fáciles de aprender pero que, por lo general, terminan generando algún tipo de deuda en alguna otra parte.&lt;/p&gt;
+
+&lt;p&gt;Luego, a medida que el producto y el equipo van madurando, se puede pensar en tener acercamientos más simples pero menos fáciles como la programación funcional.&lt;/p&gt;
+
+&lt;p&gt;Quizás eso mismo pasa con algunos devs, iniciamos con lenguajes fáciles y terminamos deshilvanándonos la cabeza con teoría de categorías a medida que vamos adquiriendo maestría en nuestro oficio para hacer las cosas más simples.&lt;/p&gt;</content><author><name>Yuji Kiriki</name></author><summary type="html">Quizás hoy estoy particularmente sensible. Releer sobre Applicative me tocó el corazoncito técnico.</summary></entry><entry><title type="html">Productora de Software S.A.S.</title><link href="http://localhost:4000/2020/07/04/PSL.html" rel="alternate" type="text/html" title="Productora de Software S.A.S." /><published>2020-07-04T00:00:00-05:00</published><updated>2020-07-04T00:00:00-05:00</updated><id>http://localhost:4000/2020/07/04/PSL</id><content type="html" xml:base="http://localhost:4000/2020/07/04/PSL.html">&lt;blockquote&gt;
+  &lt;p&gt;… is a Colombian provider of software services that serves the US, European and Latin American markets. It is also
+the first Latin American software company to achieve CMMI 5 Status,[1] and the first in the Spanish-speaking world to
+receive the Software Process Achievement Award granted by the IEEE Computer Society and Carnegie Mellon’s Software
+Engineering Institute.[2] In 2018, PSL was selected to be part of the Global Outsourcing 100 List by the IOAP
+(International Association of Outsourcing Professionals) [3].&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Durante 34 años PSL fue una empresa colombiana. Quiere decir que nacieron en 1986. ¿Qué pasaba en Colombia entre &lt;a href=&quot;https://www.semana.com/especiales/articulo/hechos-1986-1989/51646-3&quot;&gt;1986 y 1989&lt;/a&gt;?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Virgilio Barco es elegido presidente.&lt;/li&gt;
+  &lt;li&gt;La mafia asesina al director de El Espectador, Guillermo Cano, uno de los periodistas más valientes del país a quien nunca le tembló el pulso para denunciar a los corruptos y al tenebroso poder del narcotráfico.&lt;/li&gt;
+  &lt;li&gt;La planta nuclear de Chernobyl explota.&lt;/li&gt;
+  &lt;li&gt;Los grupos de extrema derecha desatan una violenta persecución contra dirigentes de izquierda, defensores de derechos humanos, periodistas críticos. Entre las víctimas caen Jaime Pardo Leal y Héctor Abad Gómez.&lt;/li&gt;
+  &lt;li&gt;La guerra sucia se intensifica, cientos de colombianos tienen que salir del país por la presión de las amenazas. Entre ellos están los periodistas Daniel Samper, Antonio Caballero y la actriz Vicky Hernández. Empieza el éxodo.&lt;/li&gt;
+  &lt;li&gt;Después de que el país llorara miles de asesinatos individuales en 1987, en 1988 la modalidad son las masacres. Sitios como La Mejor Esquina, Saiza y Segovia sufrieron el espanto a manos de los grupos paramilitares.&lt;/li&gt;
+  &lt;li&gt;La guerra contra la mafia continúa. El hecho más dramático de ésta fue el secuestro y asesinato del procurador Carlos Mauro Hoyos.&lt;/li&gt;
+  &lt;li&gt;El secuestro sigue en ascenso. El dirigente conservador Alvaro Gómez Hurtado es plagiado por el M-19 y Andrés Pastrana por la mafia. Ambos fueron víctimas de dos de los problemas más graves del país: guerrilla y narcotráfico.&lt;/li&gt;
+  &lt;li&gt;Luis Carlos Galán, el hombre con la mente más brillante y renovadora del Partido Liberal, es asesinado por sicarios en una manifestación política. El país pierde una oportunidad única de transformación.&lt;/li&gt;
+  &lt;li&gt;El 27 de noviembre ocurre lo inimaginable: el cartel de Medellín hace explotar un avión de Avianca en pleno vuelo.&lt;/li&gt;
+  &lt;li&gt;El país no sale de su horror cuando una semana después un bus cargado de dinamita destruye el edificio del DAS en Bogotá.&lt;/li&gt;
+  &lt;li&gt;José Gonzalo Rodríguez Gacha, ‘El Mexicano’, un poderoso narcotraficante, fue muerto por la policía luego de una intensa búsqueda.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El tercer año de S4N fue quizás el más duro. No sabíamos si estabamos haciendo lo correcto. No sabíamos siquiera si alguien nos iba a comprar nuestros servicios. Teníamos una concentración total en un solo cliente. Eramos un puñado de personas con ganas de hacer las cosas y, recuerdo, que varios de esos meses nos tocó priorizar los pagos de nómina, pues estabamos esperando pagos de unas facturas y que llegaran más proyectos.&lt;/p&gt;
+
+&lt;p&gt;Para Don Jorge Aramburo, mientras el país se seguía hundiendo en la eterna crísis, intensa, entre paras, guerrillas, narcotráfico y políticos corruptos, él pensaba en hacer software. Desde Medellín. Desde Colombia y para el mundo; desde PSL.&lt;/p&gt;
+
+&lt;p&gt;¿Qué tenía en la cabeza Don Jorge? No lo he conocido y creo que así he podido contentarme con una imagen basada en lo que ha logrado. El mayor indicador para mi de que se está siendo un buen empresario es qué dicen las personas que pasaron por la empresa, qué cultura persigue, qué valores observan.&lt;/p&gt;
+
+&lt;p&gt;Es gratificante que de PSL he conocido varias personas talentosas que trabajan y trabajaron en S4N y siempre me han confirmado que PSL es una “buena empresa”. Obvio, uno no es monedita de oro para caerle bien a todos, y todos cometemos errores en el camino, pero es refrescante que en Colombia haya una empresa de base tecnológica que lo esté haciendo bien con las personas que trabajan allí.&lt;/p&gt;
+
+&lt;p&gt;La venta de PSL me ha hecho reflexionar sobre a quiénes admiramos y qué buscamos como industria. Si uno se va a Forbes.co o la revista Dinero, el tufillo de Silicon Valley es nauseabundo. Admiramos lo más grande, lo más rápido, lo más superficial.&lt;/p&gt;
+
+&lt;p&gt;¿Está eso bien o mal? No soy quién para emitir un juicio de valor (aunque lo acabo de hacer jajaja). Pero sí me cuestiono si son las empresas y personas que deberíamos tener como roles modelo.&lt;/p&gt;
+
+&lt;p&gt;No sé en lo personal cómo será Don Jorge. No sé si será tiránico como algunos de los &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-Levels&lt;/code&gt; (el tufo es semántico, en como hablan, en como piensan, en lo que esperan de la vida, etc) de nuestra farandula Startup criolla. Solo sé que las personas que pasan por PSL dan buen parte de la empresa, que fue una empresa 100% colombiana, que nació en las condiciones más adversas (quisiera ver un unicornio colombiano naciendo y formarse en plenos 80s), con una visión y &lt;em&gt;EJECUCIÓN&lt;/em&gt; brillantes, una empresa que &lt;em&gt;SÍ&lt;/em&gt; genera utilidad, y que lleva en el mercado 34+ años haciendolo bien.&lt;/p&gt;
+
+&lt;p&gt;Entiendo que el mundo funciona así; rápido, con modelos de negocio inflados por flujos de dinero exorbitantes, globalizado, donde 34 años de historia se pueden convertir en 70 millones de razones. Pero, como me dijeron por ahí, me dió guayabo la noticia de la venta de PSL.&lt;/p&gt;
+
+&lt;p&gt;PSL estuvo en mi imaginario desde la universidad, donde en clase una profesora nos contó de la importancia de la certificación CMMi para las fábricas de software, y cómo una empresa antioqueña tenía el máximo nivel alcanzable.&lt;/p&gt;
+
+&lt;p&gt;Años después uno de mis socios se encontró un &lt;em&gt;review&lt;/em&gt; de Don Jorge a un libro de CMMi en Amazon. Al enterarme de eso supe que leer, estudiar, cuestionar, experimentar, radicalizarse, empujar los límites de lo que se es y de lo que se puede llegar a ser podría ser una forma de salir adelante.&lt;/p&gt;
+
+&lt;p&gt;Pero entiendanme bien. No las ganas de hacer empresa. No las ganas de gastar plata de inversionista. No las ganas de cambiar las cosas con modelos de negocio copiados de otra parte. Cambiar las cosas es cambiar el sistema mismo, los valores que observamos, las costumbres que seguimos y a quienes admiramos o dejamos ser modelos a seguir. Cambiar el sistema de valores no se logra quemando devs a cambio de &lt;em&gt;equity&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Puede ser la educación que recibí de mamá y papá. Puede ser el contexto cultural en el que me crié. En Japón (y no quiero sonar a Yokoi Kenji, mi antítesis) se encuentran las &lt;a href=&quot;https://www.bbc.com/worklife/article/20200211-why-are-so-many-old-companies-in-japan&quot;&gt;empresas más antiguas del mundo&lt;/a&gt;. ¿Por qué?&lt;/p&gt;
+
+&lt;p&gt;PSL hace parte de lo que admiro, y en consecuencia a Don Jorge y su equipo -quienes deben ser unos super tesos-. Sí, tengo guayabo, porque una parte de ese imaginario que me formó como empresario lo pierdo, viendo cómo la lógica de un mundo “nuevo” fue más fuerte que el contexto histórico en el que nacio esa empresa.&lt;/p&gt;
+
+&lt;p&gt;PSL vendió a empresas Fortune 500 años antes que S4N. Nosotros llegamos a las Fortune 150 (jajaja hay que chicanear) en menos de la mitad del tiempo y con un modelo de negocio diferente. Vamos a ver hasta dónde llegamos.&lt;/p&gt;
+
+&lt;p&gt;Gracias Don Jorge por enseñar haciendo. Acá hay alguien que le sigue aprendiendo.&lt;/p&gt;</content><author><name>Yuji Kiriki</name></author><summary type="html">… is a Colombian provider of software services that serves the US, European and Latin American markets. It is also the first Latin American software company to achieve CMMI 5 Status,[1] and the first in the Spanish-speaking world to receive the Software Process Achievement Award granted by the IEEE Computer Society and Carnegie Mellon’s Software Engineering Institute.[2] In 2018, PSL was selected to be part of the Global Outsourcing 100 List by the IOAP (International Association of Outsourcing Professionals) [3].</summary></entry><entry><title type="html">Comparación de aplicaciones para llevar notas</title><link href="http://localhost:4000/2020/01/23/tomar_notas.html" rel="alternate" type="text/html" title="Comparación de aplicaciones para llevar notas" /><published>2020-01-23T00:00:00-05:00</published><updated>2020-01-23T00:00:00-05:00</updated><id>http://localhost:4000/2020/01/23/tomar_notas</id><content type="html" xml:base="http://localhost:4000/2020/01/23/tomar_notas.html">&lt;p&gt;Antes de haber comprado la tableta &lt;a href=&quot;https://remarkable.com/&quot;&gt;Remarkable&lt;/a&gt;, usaba un cuaderno para llevar todas mis notas.&lt;/p&gt;
+
+&lt;p&gt;No obstante, ese cuaderno no estaba siempre conmigo y empecé a escribir ideas o cosas interesantes en Keep de Google.&lt;/p&gt;
+
+&lt;p&gt;Por los serios problemas de privacidad de Google, empecé a investigar qué alternativas existen y, aprovechando mi &lt;em&gt;homelab&lt;/em&gt;, busqué las que se pudieran administrar allí.&lt;/p&gt;
+
+&lt;p&gt;Mi investigación me llevó a dos alternativas que son útiles para llevar las notas de manera privada, con servidor en mi casa, y que tiene aplicación para el teléfono:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/zadam/trilium&quot;&gt;Trilium&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dnote.io/&quot;&gt;dnote&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Otras alternativas que no tienen servidor central pero que pueden ser sincronizadas con un repo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt;, son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://joplin.cozic.net/&quot;&gt;Joplin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://standardnotes.org/&quot;&gt;Standard Notes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://boostnote.io/&quot;&gt;Boostnote&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En medio de mi búsqueda me topé con otros productos, más orientados a la investigación académica; muy útiles cuando se está revisando bibliografía, por ejemplo. No obstante, pueden ser utilizadas para organizar PDFs y dejar notas asociadas.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mendeley.com/&quot;&gt;Mendeley&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.zotero.org&quot;&gt;Zotero&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Una alternativa muy interesante que no he probado es &lt;a href=&quot;https://roamresearch.com/&quot;&gt;Roam&lt;/a&gt;. Es demasiado poderoso el hecho de que puedo construir mi base de conocimiento en términos de grafo. Por alguna razón me hace pensar en &lt;a href=&quot;https://www.categoricaldata.net/&quot;&gt;datos categóricos&lt;/a&gt;, pero eso será el propósito de alguna otra entrada.&lt;/p&gt;
+
+&lt;p&gt;Al final, pienso que nada le gana al lapiz y al papel.&lt;/p&gt;</content><author><name>Yuji Kiriki</name></author><summary type="html">Antes de haber comprado la tableta Remarkable, usaba un cuaderno para llevar todas mis notas.</summary></entry><entry><title type="html">Libros para devs</title><link href="http://localhost:4000/2017/12/07/biblio-para-devs.html" rel="alternate" type="text/html" title="Libros para devs" /><published>2017-12-07T00:00:00-05:00</published><updated>2017-12-07T00:00:00-05:00</updated><id>http://localhost:4000/2017/12/07/biblio-para-devs</id><content type="html" xml:base="http://localhost:4000/2017/12/07/biblio-para-devs.html">&lt;p&gt;Si hace 15 años alguien me hubiera entregado esta lista de libros para aprender sobre desarrollo de software, me hubieran ahorrado mucho tiempo. Por esa razón comparto la que considero hubiera sido la lista que me hubiera gustado que me hubieran recomendado. La lista se encuentra ordenada por mi orden sugerido de lectura.&lt;/p&gt;
+
+&lt;p&gt;Se que hay millones de listas de libros mejores que esta. Se que hay miles de libros mejores a los que estoy sugiriendo. Aún así me tomo el atrevimiento de crea otra, lo más generica posible, sin sesgos de paradigmas o tecnologías.&lt;/p&gt;
+
+&lt;p&gt;Si tienen sugerencias de libros ¡no duden en decirme!&lt;/p&gt;
+
+&lt;h2 id=&quot;sobre-cómo-caracterizar-un-producto&quot;&gt;Sobre cómo caracterizar un producto&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Impact Mapping: Making a big impact with software products and projects&lt;/li&gt;
+  &lt;li&gt;Introducing EventStorming: An act of Deliberate Collective Learning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sobre-cómo-escribir-código&quot;&gt;Sobre cómo escribir código&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Clean Code: A Handbook of Agile Software Craftsmanship&lt;/li&gt;
+  &lt;li&gt;Code Complete: A Practical Handbook of Software Construction&lt;/li&gt;
+  &lt;li&gt;The Pragmatic Programmer: From Journeyman to Master&lt;/li&gt;
+  &lt;li&gt;Working Effectively with Legacy Code&lt;/li&gt;
+  &lt;li&gt;Refactoring: Improving the Design of Existing Code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sobre-cómo-diseñar-software&quot;&gt;Sobre cómo diseñar software&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Design Patterns: Elements of Reusable Object-Oriented Software&lt;/li&gt;
+  &lt;li&gt;Software Architecture: Foundations, Theory, and Practice&lt;/li&gt;
+  &lt;li&gt;Pattern-Oriented Software Architecture (los 5 volumenes de recetas)&lt;/li&gt;
+  &lt;li&gt;Patterns of Enterprise Application Architecture&lt;/li&gt;
+  &lt;li&gt;Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions&lt;/li&gt;
+  &lt;li&gt;Domain-Driven Design: Tackling Complexity in the Heart of Software&lt;/li&gt;
+  &lt;li&gt;SOA Patterns&lt;/li&gt;
+  &lt;li&gt;Service Design Patterns: Fundamental Design Solutions for SOAP/WSDL and RESTful Web Services&lt;/li&gt;
+  &lt;li&gt;REST in Practice: Hypermedia and Systems Architecture&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sobre-cómo-entregar-productos&quot;&gt;Sobre cómo entregar productos&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation&lt;/li&gt;
+  &lt;li&gt;Release It! Design and Deploy Production-Ready Software&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Yuji Kiriki</name></author><summary type="html">Si hace 15 años alguien me hubiera entregado esta lista de libros para aprender sobre desarrollo de software, me hubieran ahorrado mucho tiempo. Por esa razón comparto la que considero hubiera sido la lista que me hubiera gustado que me hubieran recomendado. La lista se encuentra ordenada por mi orden sugerido de lectura.</summary></entry><entry><title type="html">Sinusoide de la entrega de productos</title><link href="http://localhost:4000/2016/12/26/sinusoide_de_la_entrega_de_productos.html" rel="alternate" type="text/html" title="Sinusoide de la entrega de productos" /><published>2016-12-26T00:00:00-05:00</published><updated>2016-12-26T00:00:00-05:00</updated><id>http://localhost:4000/2016/12/26/sinusoide_de_la_entrega_de_productos</id><content type="html" xml:base="http://localhost:4000/2016/12/26/sinusoide_de_la_entrega_de_productos.html">&lt;p&gt;En esta entrada busco describir una forma &lt;strong&gt;eficiente&lt;/strong&gt; de explicar los conceptos que considero relevantes de un proceso de software orientado a &lt;strong&gt;entregar productos&lt;/strong&gt;: cadencia, aprendizaje, predictibilidad, generación de valor, iterativo e incremental.&lt;/p&gt;
+
+&lt;p&gt;Esta forma de explicar los conceptos es una amalgama de muchísimas fuentes que he leído durante los años. Por favor ayúdenme a identificar si estoy fusilando sin crédito a alguien.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-sinusoide&quot;&gt;La sinusoide&lt;/h2&gt;
+
+&lt;p&gt;La gráfica presenta dos dimensiones: generación de valor de negocio (y) y tiempo (x).&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;margin-left: auto; margin-right: auto;&quot; src=&quot;../../../imgs/value-graph.png&quot; width=&quot;637px&quot; height=&quot;393px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cada onda de la sinusoide representa el ciclo de entrega de valor de negocio en el tiempo. Eso quiere decir que a medida que se van completando ciclos, se va generando valor en el tiempo.&lt;/p&gt;
+
+&lt;h3 id=&quot;generación-de-valor&quot;&gt;Generación de valor&lt;/h3&gt;
+
+&lt;p&gt;Cada onda que conforma la sinusoide tiene como punto máximo de generación de valor una salida a producción del producto en construcción. Entre el punto 0 de generación de valor de cada onda y la salida a producción ocurren, podría ser, cada una de las ceremonias de Scrum: planeación, reunión diaria, etc. A medida que va pasando el tiempo, a través de la curva de la onda se va acumulando generación de valor mas no se ha generado valor.&lt;/p&gt;
+
+&lt;p&gt;Esto significa que la planeación tiene una generación de valor igual a cero. Codificar, crear pruebas, hacer reuniones diarias, etc, solo nos llevan a acumular valor mas no a entregarlo. El único punto de entrega tangible de valor se da en el máximo local de la función, es decir, cuando el producto sale a producción.&lt;/p&gt;
+
+&lt;p&gt;Esta representación implica que entre menos tiempo pase entre un &lt;em&gt;commit&lt;/em&gt; de un desarrollador hasta la puesta a producción de esas líneas de código, más rápido se le puede entregar valor al negocio.&lt;/p&gt;
+
+&lt;p&gt;En consecuencia &lt;strong&gt;cualquier mejora que se pueda hacer entre esos dos puntos&lt;/strong&gt; fomentan la rápida generación de valor que es el fin último de un proceso de construcción de productos de software.&lt;/p&gt;
+
+&lt;p&gt;Para acortar la distancia entre un &lt;em&gt;commit&lt;/em&gt; y la puesta a producción se debe propender por automatizar todo tipo de actividades sujetas a ello, tales como: ejecución pruebas unitarias, de aceptación, de capacidad o aprovisionamiento de infraestructura. Recuerden, &lt;a href=&quot;http://martinfowler.com/bliki/FrequencyReducesDifficulty.html&quot;&gt;si duele debe hacerse más seguido&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Esta línea de ideas implica también que prácticas de CI/CD son fundamentales para tener ciclos que generan valor. Y no, tener Jenkins instalado no es igual a estar haciendo CI/CD.&lt;/p&gt;
+
+&lt;p&gt;Según la gráfica, una actividad como el &lt;em&gt;backlog grooming&lt;/em&gt; solo nos ayuda para tomar impulso para la siguiente acumulación de valor mas no genera valor de negocio alguno.&lt;/p&gt;
+
+&lt;p&gt;Otra característica de la gráfica es que permite explicar porqué los ciclos de entrega a producción se deben hacer en ciclos cortos. Entre más tiempo pasa entre paso a producción y paso a producción (entre más grande es el intervalo en x) más acumulación de valor se hace, pero menos se entrega al negocio.&lt;/p&gt;
+
+&lt;p&gt;En este último punto hay una relación bien curiosa: entre más se acumula valor en el tiempo, menos probable es que ese valor sea capitalizado por el negocio.&lt;/p&gt;
+
+&lt;h3 id=&quot;cadencia&quot;&gt;Cadencia&lt;/h3&gt;
+
+&lt;p&gt;Dada la gráfica, es fácil explicar que el objetivo de un proceso de desarrollo valioso es hacer que la generación de valor sea frecuente y que en lo posible genere un valor de negocio incremental.&lt;/p&gt;
+
+&lt;p&gt;Mantener esta frecuencia generando un valor de negocio proporcional nos induce al ritmo que un equipo debe mantener para ser predecible.&lt;/p&gt;
+
+&lt;p&gt;Ser predecible es quizás una de las características más necesarias de un proceso incremental-iterativo, pues permite mitigar riesgos y alinear expectativas de los interesados (&lt;em&gt;stakeholders&lt;/em&gt;) del producto (además de generar mucho aprendizaje).&lt;/p&gt;
+
+&lt;p&gt;Entre más alta sea la frecuencia de la gráfica más frecuentemente se entrega valor al negocio. Al obligar a un equipo a entregar de manera frecuente, el equipo debe desarrollar las habilidades y mecanismos que le permitan llegar alcanzar su inercia. Este “desarrollar” dependerá del aprendizaje que se pueda capitalizar en el ciclo.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo se debe ser sabio a la hora de definir la razón entre generación de valor (dimensión en y) y el tiempo necesario para hacerlo (dimensión x), haciendo la cadencia sea una métrica de salud de un producto y un equipo.&lt;/p&gt;
+
+&lt;p&gt;La cadencia se denota en la gráfica cada vez que la función llega a 0 en el eje y. Si el intervalo de tiempo (&lt;em&gt;timebox&lt;/em&gt;) es el mismo, se fomenta una cadencia comparable entre ciclo y ciclo. Es inclusive posible pensar que se puede medir en términos del periodo de la gráfica.&lt;/p&gt;
+
+&lt;h3 id=&quot;aprendizaje&quot;&gt;Aprendizaje&lt;/h3&gt;
+
+&lt;p&gt;Si cada entrega a producción es el máximo local de generación de valor, cada vez que la gráfica toca 0 se considera que un ciclo de generación de valor ha terminado (muy seguramente con una retrospectiva). El área de cada ciclo puede considerarse el aprendizaje capitalizado por el equipo y su entorno.&lt;/p&gt;
+
+&lt;p&gt;Esto significa que, sí y solo sí es el mismo equipo y el mismo entorno, así como la generación de valor, el aprendizaje se capitalizará con cada puesta a producción.&lt;/p&gt;
+
+&lt;h3 id=&quot;consecuencias-de-la-gráfica&quot;&gt;Consecuencias de la gráfica&lt;/h3&gt;
+
+&lt;p&gt;Como podrán imaginarse, las ondas de la gráfica no deben ser siempre iguales. Esto rompe la definición misma de una sinusoide. Sin embargo el título queda más &lt;a href=&quot;http://www.ibm.com/us-en/&quot;&gt;vendedor&lt;/a&gt; así ¿cierto?&lt;/p&gt;
+
+&lt;p&gt;La amplitud máxima por onda puede determinarse por puntos de esfuerzo obtenidos en el Sprint, por ejemplo. Eso quiere decir que a medida que va pasando el tiempo y la gráfica se va completando, podemos empezar a identificar la cadencia del equipo (y quizás calcularla por su periodo).&lt;/p&gt;
+
+&lt;p&gt;La primera consecuencia es que queda más simple explicarle al negocio porqué se deben automatizar todo tipo de actividades que estén entre la ceremonia de planeación y la salida a producción de la aplicación.&lt;/p&gt;
+
+&lt;p&gt;Cualquier traba (infraestructura, SOX, auditoria, etc) que se le ponga al ciclo va en detrimento de la generación de valor. No estoy diciendo que se deban eliminar, solo que todas esas trabas son altamente automatizables.&lt;/p&gt;
+
+&lt;p&gt;Segunda consecuencia es la necesidad de adquirir cadencia basada en ciclos de tiempo idénticos, capitalizando el aprendizaje generado entre salida y salida a producción.&lt;/p&gt;
+
+&lt;p&gt;La tercera consecuencia es que toda actividad que no sea orientada a desplegar a producción se debe considerar como gasto y no inversión dentro del proceso de desarrollo. Cualquier ceremonia, reunión, actividad, mesa de trabajo, etc, que un proceso de desarrollo se invente va en detrimento de la generación de valor (tal como SAFey sus amigotes).&lt;/p&gt;</content><author><name>Yuji Kiriki</name></author><summary type="html">En esta entrada busco describir una forma eficiente de explicar los conceptos que considero relevantes de un proceso de software orientado a entregar productos: cadencia, aprendizaje, predictibilidad, generación de valor, iterativo e incremental.</summary></entry><entry><title type="html">De adentro hacia afuera</title><link href="http://localhost:4000/2016/12/19/de_adentro_hacia_afuera.html" rel="alternate" type="text/html" title="De adentro hacia afuera" /><published>2016-12-19T00:00:00-05:00</published><updated>2016-12-19T00:00:00-05:00</updated><id>http://localhost:4000/2016/12/19/de_adentro_hacia_afuera</id><content type="html" xml:base="http://localhost:4000/2016/12/19/de_adentro_hacia_afuera.html">&lt;p&gt;Las últimas semanas he tenido la oportunidad de participar activamente en la construcción de un producto estratégico para una &lt;a href=&quot;http://beta.fortune.com/fortune500/&quot;&gt;Fortune 500&lt;/a&gt; (F500). En esta entrada trato de dejar por escrito algunas ideas y hallazgos que pueden ser valiosas para alguien más.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-ecosistema&quot;&gt;1. Ecosistema&lt;/h2&gt;
+&lt;p&gt;Una de las primeras cosas que evidencié fue el cambio de &lt;em&gt;liga&lt;/em&gt;. En Colombia, el cambio de tecnologías y de método ha sido un camino poco agradable de transitar.&lt;/p&gt;
+
+&lt;p&gt;Culturas organizacionales basadas en el miedo han obstaculizado la capacidad de equivocarse y aprender en las empresas colombianas. Cada vez que hablo con un arquitecto “inquieto” lo primero que me dice es: “Es que Yuji, recuerde que esta empresa es muy grande, nosotros no podemos darnos el lujo de improvisar y equivocarnos”.&lt;/p&gt;
+
+&lt;p&gt;Nadie quiere arriesgarse porque lo echan.&lt;/p&gt;
+
+&lt;p&gt;Es comprensible pero, al compararlo con este nuevo cliente, lo más evidente es que precisamente la inexistencia de la “Administración Orientada al Miedo” es lo que les ha permitido a estas empresas ser lo que son. Y, curiosamente, estas F500 pueden ser hasta 10 veces más grandes que la empresa más grande de Colombia.&lt;/p&gt;
+
+&lt;p&gt;Es interesante entonces saber que estas empresas son una apuesta continua a la innovación y a la creación. No a tener miedo porque de pronto mañana les quitan el pan de la boca.&lt;/p&gt;
+
+&lt;h3 id=&quot;oss&quot;&gt;OSS&lt;/h3&gt;
+&lt;p&gt;Esta orientación les facilita la toma de decisiones y la introducción de nuevas ideas. Por ejemplo, si a alguien se le ocurre construir una plataforma tecnológica, lo que quieren es usar sólo &lt;a href=&quot;https://en.wikipedia.org/wiki/Open-source_software&quot;&gt;OSS&lt;/a&gt;, pues amarrarse a una tecnología propietaria les parece un riesgo. ¿Por qué un riesgo? Porque quedan 100% dependientes de un proveedor y no de una comunidad así que, a pesar de ser empresas del sector turístico, saben que deben volverse empresas de tecnología (&lt;a href=&quot;https://github.com/disney&quot;&gt;Disney&lt;/a&gt;, por ejemplo).&lt;/p&gt;
+
+&lt;h3 id=&quot;gestión-de-proyectos&quot;&gt;Gestión de proyectos&lt;/h3&gt;
+&lt;p&gt;Otro ejemplo está en la gestión de proyectos. En Colombia las empresas y los gerentes de proyectos están empecinados en usar la frase “es que la junta nos está pidiendo una fecha”. No les están pidiendo un resultado. No les están pidiendo alcanzar un indicador de éxito medible con &lt;strong&gt;datos reales&lt;/strong&gt; con el producto en producción. Solo les interesa una fecha, lo que quizás, he llegado a pensar, les facilita “gestionar”; que al final del día se convierte en presionar al que toque.&lt;/p&gt;
+
+&lt;p&gt;Pareciera que esta noción de toma de decisiones basada en datos y no fechas de entrega de esta F500, le ha permitido enfocarse en lo fundamental: &lt;strong&gt;crear valor&lt;/strong&gt;. No en cumplir un cronograma para que no los echen y demostrar “un resultado”, culpando a otro si hay problemas.&lt;/p&gt;
+
+&lt;h3 id=&quot;una-hipótesis&quot;&gt;Una hipótesis&lt;/h3&gt;
+&lt;p&gt;Estas empresas que fomentan la toma de riesgos crecen desmesuradamente. En la medida que toman riesgos, aprenden que lo fundamental es la creación de valor y la toma de decisiones basada en datos. Esto las lleva a ser altamente valoradas durante prolongados espacios de tiempo que lleva a que sus modelos de negocio se sofistiquen de manera tal que la escala de los problemas que deben atender son de una altísima complejidad.&lt;/p&gt;
+
+&lt;p&gt;Esta alta complejidad requiere de proveedores y tecnologías a la altura de estas necesidades, lo que lleva a que el mercado de proveedores a su alrededor crezca y madure.&lt;/p&gt;
+
+&lt;p&gt;Al crecer y madurar el mercado, los desarrolladores de software encuentran mejores oportunidades si y solo si están a la altura de esas necesidades, creando así un saludable ecosistema en el que el desarrollador no se la pasa preguntándose por qué no le pagan mejor.&lt;/p&gt;
+
+&lt;p&gt;En Colombia, en este particular, estamos &lt;em&gt;un poco muy jodidos&lt;/em&gt;, pues el incitador de esta lógica es empresas que se orientan a la generación de valor, no a la “Gestión del Miedo”.&lt;/p&gt;
+
+&lt;p&gt;Hay otras entonces que crean elegantes &lt;em&gt;Vicepresidencias de Innovación&lt;/em&gt;, las cuales a veces terminan comprando cajas de nombres &lt;em&gt;trendy&lt;/em&gt; y basadas en OSS y en otros casos, con ejércitos de &lt;em&gt;Homeópatas Ágiles&lt;/em&gt; recomendando que todos los desarrolladores deben estar haciendo TDD, “Clean Code” y Scrum de Scrums basadas en SAFe y Pods. Pero de creación de valor, &lt;em&gt;nanay cucas&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-escala&quot;&gt;2. Escala&lt;/h2&gt;
+
+&lt;p&gt;Empresas F500 pueden tener decenas de tiendas en decenas de países (Walmart por poner un ejemplo). Solo imaginen la complejidad de ese problema. Son decenas de miles de tiendas, con manejo sofisticado de inventarios, distribución y venta. Campañas de mercadeo localizadas, impuestos particularizados por estado y por país. Sólo imaginen la complejidad de crear un sistema de puntos de lealtad para todas esas tiendas con reglas particulares por mercado/ubicación. Obvio, eso no va a correr sobre una base de datos Oracle. Pero vaya uno a decirle eso a un arquitecto gestionado con miedo, por obvias razones se asusta porque de pronto salirse de esa caja implica que lo van a echar; “es que no se puede porque somos muy grandes”.&lt;/p&gt;
+
+&lt;p&gt;Esta realidad me ha llevado a pensar que la escala de problemas que debemos resolver en Colombia son tan triviales que quizás con esa forma de pensar nos da y nos sobra. Por ejemplo, un reconocido banco envió comunicados a sus clientes notificando la indisponibilidad de su plataforma tecnológica tres domingos seguidos. Una obra de ingeniería que muy seguramente no es, necesariamente, colombiana.&lt;/p&gt;
+
+&lt;p&gt;Esta realidad también me ha llevado a pensar que la falta de problemas de alta complejidad y la inexistencia de un ecosistema de empresas proveedoras maduras ha impedido que el contexto mismo en el que se da esta realidad pueda cambiar.&lt;/p&gt;
+
+&lt;p&gt;Todo esto me lleva a concluir que en la medida en la que sigamos resolviendo problemas con mentalidad de país pobre y, en algunos casos, con un capital humano gestionado con el confort de la mediocridad, nos impide crear empresas lo suficientemente grandes que ofrezcan problemas suficientemente complejos que de alguna manera fomenten la creación de un ecosistema sano de oferta de servicios de primer mundo.&lt;/p&gt;
+
+&lt;p&gt;Quizás sea por las restricciones en las que vivimos. Pero también a veces pienso que es una excusa en la que nos revolcamos para no quitarnos la pereza de encima y poder opinar de cualquier tema sin hacer realmente nada al respecto.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-arquitectura-empresarial&quot;&gt;3. Arquitectura empresarial&lt;/h2&gt;
+
+&lt;p&gt;Toda maestría en ingeniería de software que se respete en Colombia dicta una clase de Arquitectura Empresarial. Históricamente esto me ha parecido el esfuerzo académico más inútil de todos.&lt;/p&gt;
+
+&lt;p&gt;Al no tener problemas lo suficientemente complejos como para requerir esta disciplina, estos arquitectos empresariales se dedican entonces a estorbar &lt;em&gt;estratégicamente&lt;/em&gt; los proyectos que necesitan salir a producción con decisiones gaseosas y de poco valor.&lt;/p&gt;
+
+&lt;p&gt;En esta F500 tengo la oportunidad de trabajar de cerca con un equipo de arquitectura empresarial. Los problemas que pueden llegar a resolver tienen la complejidad necesaria como para que este oficio tome valor.
+Sin embargo, todos, empezando por el más veterano y jefe de los demás, escriben código y despliegan componentes a producción, lo que les permite embalarse si llegan a tomar una mala decisión por gaseosa o “pedo-sa”, más bien. Y créanme cuando les digo que Zachmann y TOGAF y demás es en lo último en lo que piensan.&lt;/p&gt;
+
+&lt;h2 id=&quot;notas-finales&quot;&gt;Notas finales&lt;/h2&gt;
+
+&lt;p&gt;Una de las primeras conclusiones que nacen es quizás que debemos cambiar el punto de referencia. Dejar de mirarnos el ombligo podría ser un buen principio, retándonos con lo que hacen las más tesas del mundo y no quedarnos mirando cómo no podemos porque somos “demasiado grandes”.&lt;/p&gt;
+
+&lt;p&gt;También he podido concluir que las empresas colombianas tienen como ventaja haber crecido y haberse desarrollado en un ecosistema adverso, pues de alguna manera desarrollan capacidades que cuando el ecosistema es un poco más favorable, tienen la oportunidad de volverse dominantes de ese nuevo mercado.&lt;/p&gt;
+
+&lt;h3 id=&quot;de-la-responsabilidad-del-colombiano-de-a-pie&quot;&gt;De la responsabilidad del colombiano de a pie&lt;/h3&gt;
+&lt;p&gt;A veces pienso lo emocionante que sería saber que un transbordador espacial va a ser lanzado por la “Comisión Aeroespacial de San Andrés Islas”. O que vamos a llenar de fincas solares las planicies de nuestros Llanos Orientales. O que vamos a llenar de gigantes hélices generadoras de energía eólica toda La Guajira. Y a veces pienso, por qué no, que Panaca logre ser la primera entidad con ánimo de lucro en clonar un chigüiro.&lt;/p&gt;
+
+&lt;p&gt;Estos “sueños húmedos” por el que cualquier colombiano debería sentir orgullo y sentir el corazón henchido, depende completamente de ustedes, cerebros brillantes y maravillosos. Depende de que se queden en Colombia creando, construyendo, cambiando, cuestionando, motivando, escribiendo, criticando, haciendo. Ojalá no solo opinando. Si seguimos esperando que empresas españolas, americanas, argentinas nos vendan su “innovación” no vamos a crear ecosistema, no habrá nunca cambio y no veo entonces cómo salgamos de pobres. Porque ser pobre no es falta de plata, es falta de ganas de demostrar que sí se puede.&lt;/p&gt;
+
+&lt;p&gt;(Si de alguna manera se siente identificado con esta responsabilidad y resulta que es usted un desarrollador de software, no dude en enviar su CV a info@s4n.co).&lt;/p&gt;
+
+&lt;h3 id=&quot;pregunta-frecuente&quot;&gt;Pregunta frecuente&lt;/h3&gt;
+
+&lt;p&gt;Varios me han preguntado cómo llegamos a atender a este cliente. Se puede resumir en tres movimientos: el primero, haber sido lo suficientemente estúpidos como para hace 4 años creer que las tecnologías/lenguajes con las que se construían las aplicaciones empresariales eran insuficientes, grasosas e inocuas. El segundo, tener la suficiente obstinación para seguir expandiendo esa idea y tener clientes que habían llegado a la misma conclusión. El tercero, haber desarrollado métodos y prácticas que fueran sistemáticamente exitosas en contextos adversos en sentido común, método, presupuesto y tiempos.&lt;/p&gt;</content><author><name>Yuji Kiriki</name></author><summary type="html">Las últimas semanas he tenido la oportunidad de participar activamente en la construcción de un producto estratégico para una Fortune 500 (F500). En esta entrada trato de dejar por escrito algunas ideas y hallazgos que pueden ser valiosas para alguien más.</summary></entry><entry><title type="html">Título escandaloso sobre los desarrolladores colombianos*</title><link href="http://localhost:4000/2015/09/01/T%C3%ADtulo-escandaloso_sobre-los_desarrolladores_colombianos.html" rel="alternate" type="text/html" title="Título escandaloso sobre los desarrolladores colombianos*" /><published>2015-09-01T00:00:00-05:00</published><updated>2015-09-01T00:00:00-05:00</updated><id>http://localhost:4000/2015/09/01/T%C3%ADtulo%20escandaloso_sobre%20los_desarrolladores_colombianos</id><content type="html" xml:base="http://localhost:4000/2015/09/01/T%C3%ADtulo-escandaloso_sobre-los_desarrolladores_colombianos.html">&lt;h2 id=&quot;introducción&quot;&gt;Introducción&lt;/h2&gt;
+&lt;p&gt;¿Hay escasez de desarrolladores talentosos en Colombia? Obviamente sí. Es un fenómeno mundial. Por infinidad de razones, y todas están “explicadas” a un &lt;em&gt;google query&lt;/em&gt; de distancia.&lt;/p&gt;
+
+&lt;p&gt;Lo que me motivó a escribir fueron &lt;a href=&quot;http://bunnyinc.com/blog/colombia-doesnt-software-engineers-really-not-even-one&quot;&gt;dos&lt;/a&gt; &lt;a href=&quot;http://bunnyinc.com/blog/?tag=colombia&quot;&gt;blogs&lt;/a&gt; que publicó Alex Torrenegra y la &lt;a href=&quot;https://medium.com/colombia-dev/colombia-doesnt-have-an-engineering-deficit-really-it-doesnt-af60d1cac85c&quot;&gt;respuesta&lt;/a&gt; de Juan Pablo Buriticá.&lt;/p&gt;
+
+&lt;p&gt;Me había negado a escribir sobre eso, tratando de tapar el sol con mis manos. Cuando lo leí sentí que lo único que buscaban era antención gracias a la controversia: títulos rimbombantes y llamativos, rayando en lo escandaloso. Cifras sacadas debajo de la manga. Al leer sentía como cuando un presidente colombiano demuestra gestión después de haberle metido la mano a los artefactos de medición del DANE.&lt;/p&gt;
+
+&lt;p&gt;Luego de un tiempo me dí cuenta que lo que ellos habían escrito sí había hecho un cambio: trajo consigo rumores, chismes y conversaciones de corredor.&lt;/p&gt;
+
+&lt;p&gt;Esta entrada pretende seguir fomentando el chisme, aumentar la cantidad de rumores y conversaciones que podemos tener al calor de un tinto sin que sirva para una posible solución al “problema” de escasez de desarrolladores y sus &lt;em&gt;culpables&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para poder hacerlo, trataré de seguir la misma línea de los icónicos artículos y así, no rayar el parche.&lt;/p&gt;
+
+&lt;h2 id=&quot;tengo-que-demostrar-experiencia-conociendo-desarrolladores-y-la-industria&quot;&gt;Tengo que demostrar experiencia conociendo desarrolladores y la industria&lt;/h2&gt;
+&lt;p&gt;Obviamente, si no ¿cómo justifico que tengo &lt;em&gt;autoridad&lt;/em&gt; para hablar sobre este tema y así poderlos envolver en mi &lt;a href=&quot;https://es.wikipedia.org/wiki/Argumento_ad_verecundiam&quot;&gt;&lt;em&gt;Argumentum Ad Verecundiam&lt;/em&gt;&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;Hace 8 años recluto* desarrolladores de software para una PyME. A la fecha hemos contratado más de 100 desarrolladores. Muchos de ellos aún hacen parte de la empresa. Muchos otros se han ido a otras empresas, han cambiado de profesión, han iniciado su emprendimiento o se han ido a estudiar al exterior.&lt;/p&gt;
+
+&lt;p&gt;Todos los vinculados han pasado por nuestro proceso de reclutamiento: 1) Evaluación de hoja de vida por psicología. 2) Entrevista con psicología. 3) Prueba técnica teórica escrita. 4) Prueba de código para la casa. 5) Entrevista con algún líder de equipo de la empresa.&lt;/p&gt;
+
+&lt;p&gt;La entrevista tiene como objetivo sentarse una hora con el candidato a darle retroalimentación sobre la prueba escrita y hacer un &lt;em&gt;code review&lt;/em&gt; sobre la prueba de código. Explicarle qué consideramos que está bien, qué errores cometió, qué oportunidades de mejora tiene, qué libros debería leer, etc. Tratamos, como sea, de que salga de la sesión motivado a aprender más.&lt;/p&gt;
+
+&lt;p&gt;Hoy en día, el equipo de psicología verifica entre 400 y 500 hojas de vida al mes, de las cuales en promedio se realizan 147 entrevistas y se hacen 57 pruebas escritas y de código. Eso quiere decir que a la fecha me he sentado a charlar por una hora con cerca de 1000 desarrolladores durante estos últimos 8 años (esta cifra es aproximada, pues los primeros años no eramos tan expeditos como hoy).&lt;/p&gt;
+
+&lt;p&gt;Obviamente esa cifra trata de ser escandalosa para que se convenzan de que tengo &lt;em&gt;autoridad&lt;/em&gt; para hablar sobre el estado de los desarrolladores en Colombia y sigan leyendo.&lt;/p&gt;
+
+&lt;p&gt;Durante la existencia de esta PyME, hemos entregado más de 100 productos de software para distintas industrias y el gobierno colombiano. La duración promedio de un proyecto es de 6 meses con equipos de entre 3 a 15 desarrolladores. Para que se hagan una idea, hagan de cuenta que hemos construido, mantenido y evolucionado unos 100 productos del tamaño de una &lt;em&gt;startup&lt;/em&gt; “medianita” (sea lo que sea que eso signifique).&lt;/p&gt;
+
+&lt;p&gt;Esta PyME fue construída de la nada. Sin capital de algún inversionista. Inscribimos la empresa en &lt;a href=&quot;http://www.ccb.org.co/&quot;&gt;CCB&lt;/a&gt; con COP$ 350k (cada socio invirtió COP$50k). A punta de respirar profundo, hoy en día operamos desde Bogotá y Medellín construyendo y entregando productos de software en Latinoamérica. Para resumir: empresa colombiana con talento colombiano (y panas venezolanos) haciendo software colombiano para el mundo. Con esto quiero convencerlos de que conozco un poco la industria (&lt;em&gt;argumentum ad verecundiam&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Para poder entender el “problema”, debemos empezar a encontrar culpables. Bueno, eso ha sido al menos el ejercicio que han hecho los demás.&lt;/p&gt;
+
+&lt;h2 id=&quot;hay-que-culpar-a-la-academia&quot;&gt;Hay que culpar a la academia&lt;/h2&gt;
+&lt;p&gt;El señor Torrenegra culpa a las universidades por no estar produciendo desarrolladores de software calificados o expertos.&lt;/p&gt;
+
+&lt;p&gt;Él ejemplifica que&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;” A lucky Colombian systems engineer gets to study around 70% of the classes that a software engineer gets to study. The other 30% is packed with finance, business, and management. And this is bad”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No veo cómo eso es un problema para los desarrolladores de software.&lt;/p&gt;
+
+&lt;p&gt;¿No es acaso una de las habilidades más codiciadas en un desarrollador, su capacidad de entender dominios de negocio? Si no tiene fundamentos mínimos de economía, administración, contabilidad, etc, ¿cómo pretende un desarrollador entender y entablar una conversación con un experto de negocio/inversionista/cualquier ser humano no técnico para así saber qué solución de tecnología se le puede construir?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Their ultimate professional goal is to manage other people.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esta pregunta va para los más viejitos: ¿no es acaso el reto más grande en un equipo de software lograr crear un ambiente y condiciones propicias para escribir buen código? ¿No son los libros de psicología y comportamiento humano los libros que uno lee con esmero para tratar de entender la condición humana y al individuo para, de alguna manera, poder formar los mejores equipos que en consecuencia construyan un buen producto de software?&lt;/p&gt;
+
+&lt;p&gt;En este punto me dí cuenta que muy seguramente el señor Torrenegra construye software de una manera muy particular pues, si no necesita desarolladores “generalistas” ¿cómo logra que ellos entiendan lo que hay que hacer y cómo ellos pueden aportar a la solución de un reto? ¿Será acaso que él los ve como pega-ladrillos (no peyorativo) que le deben obedecer?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“As we say in Colombia, “tenemos mucho cacique y poco indio,” meaning “we have many chiefs and few Indians.””&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Coincido, pero eso ¿es culpa de la universidad? Acá prefiero esconderme detrás de otra célebre frase:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“En Colombia, &lt;em&gt;doctor&lt;/em&gt; se le dice a cualquier hijueputa”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/Empresas-empresarios-historia-Colombia-Siglos/dp/B0038ASH2C/ref=sr_1_6?s=books&amp;amp;ie=UTF8&amp;amp;qid=1440880638&amp;amp;sr=1-6&amp;amp;pebp=1440880649218&amp;amp;perid=1790YCDW2G08FVQF5T47&quot;&gt;Históricamente&lt;/a&gt; en Colombia, el ascenso social se ha logrado a través de la prosperidad económica, bien sea a través de negocios lícitos o ilícitos, estudio, o unión de capitales familiares a través de matrimonios.&lt;/p&gt;
+
+&lt;p&gt;Con base en ese hecho, no es justo culpar completamente a la formación impartida por la universidad. Hace parte de nuestra idiosincrasia, una relación directamente proporcional entre ingresos y número de personas subalternas, haciendo que ser “doctor” sea preciado.&lt;/p&gt;
+
+&lt;p&gt;Es fácil culpar a la academia. Pero una vez una profesora de la Universidad de lo Andes me preguntó en un panel: ¿qué están haciendo las empresas para convencer a los jóvenes bachilleres de que estudien ingenieria de sistemas y computación?. Me quedé mudo porque no supe responder.&lt;/p&gt;
+
+&lt;p&gt;Por otro lado, no estoy de acuerdo en que una formación generalista impida la formación de buenos desarrolladores. Finalmente, como en cualquier carrera universitaria, la persona y su vida laboral es quien termina definiendo qué hacemos y cómo lo hacemos.&lt;/p&gt;
+
+&lt;p&gt;Si la universidad nos deja con las bases en &lt;em&gt;hard&lt;/em&gt; y &lt;em&gt;soft skills&lt;/em&gt; se puede construir lo que sea, siendo los &lt;em&gt;soft skills&lt;/em&gt; más valiosos: disciplina, auto-apredizaje, resiliencia, tolerancia a la frustración, comunicación escrita y verbal, etc. Adicionalmente si la universidad fomenta los &lt;em&gt;hard skills&lt;/em&gt; como el racionamiento lógico, a través del ciclo básico, quienes estamos desaprovechando el potencial somos las empresas.&lt;/p&gt;
+
+&lt;p&gt;Ahí entra el artículo del señor Buriticá.&lt;/p&gt;
+
+&lt;h2 id=&quot;hay-que-culpar-a-las-empresas&quot;&gt;Hay que culpar a las empresas&lt;/h2&gt;
+&lt;p&gt;El señor Buriticá explica que no hay escasez de desarrolladores. Según él, el problema es que las empresas de la industria de software en Colombia son malas. O con el eufemismo: “Necesitamos mejores empresas”.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“En Colombia tenemos una industria de software que no está lista para contratar personas que están experimentando con Go o Rust”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Si el señor Buriticá puede argumentar que su equipo es una demostración de que no hay déficit de desarrolladores de software, creo yo, que puedo poner a nuestra PyME como contraejemplo de sus aseveraciones pues, desde hace más de dos años, no hemos escatimado esfuerzos en fomentar el uso de diferentes tecnologías en Colombia: &lt;a href=&quot;https://www.typesafe.com/partners/systemintegrator-partners&quot;&gt;Scala, Akka, Play, Apache Spark&lt;/a&gt;, &lt;a href=&quot;http://www.datastax.com/partners&quot;&gt;Apache Cassandra&lt;/a&gt;, Apache Kafka, JS, Docker, chef-solo y muchas más ya hacen parte del ecosistema de las más tradicionales empresas del país. Y no sólo eso. Fomentar &lt;a href=&quot;http://www.meetup.com/ScalaMDE/&quot;&gt;comunidad&lt;/a&gt; y entrenar a nuestros desarrolladores hace parte de la demostración de contraejemplo.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Esta industria definitivamente tiene un déficit y es un problema que ella misma se ha creado. No son un sector atractivo para trabajar, incluso tras haber aumentado los salarios gracias a una afluencia de consultorías extranjeras y empresas near-shoring.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Las condiciones del mercado han permitido que nos volvamos mercenarios. Y eso es bueno. Habla muy bien de qué tan talentosos y valiosos nos hemos vuelto los colombianos. Por otro lado, confirma la escasez.&lt;/p&gt;
+
+&lt;p&gt;Llegan &lt;em&gt;startups&lt;/em&gt; extranjeras o llegan empresas extranjeras con sus grandes billeteras (sumándole la escalada del dolar) a “comprar” talento colombiano. Y eso también es bueno.&lt;/p&gt;
+
+&lt;p&gt;Con una billetera suficientemente grande es posible salir de compras y &lt;strong&gt;especular&lt;/strong&gt; sobre cuánto debería o no debería ser el salario de un desarrollador colombiano. Así el salario mínimo en Colombia para 2015 sea de COP$644.350. Y obvio, acá en Colombia, cualquier persona de cualquier industria por un salario de un orden de magnitud más grande que el mínimo, hasta trabaja en una &lt;em&gt;startup&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lo que demuestra hasta acá el artículo del señor Buriticá es que con la distorsión que una billetera llena de dolares puede causar, no se percibe que sí hay escasez de desarrolladores. Y es entendible pues, las restricciones sobre las que su empresa trabaja son muy diferentes a las nuestras como PyME.&lt;/p&gt;
+
+&lt;p&gt;Al estar él basándose en el hecho de haber formado un equipo a punta de salario y beneficios con capital extranjero, se ha puesto automáticamente por fuera de las condiciones que tenemos en la industria colombiana de software y, desde la barrera, cuestiona a los que estamos lidiando con el toro y dejando la piel en la cancha.&lt;/p&gt;
+
+&lt;p&gt;Lo mismo ocurre con muchas otras &lt;em&gt;startups&lt;/em&gt; y muchas otras empresas argentinas, uruguayas, españolas, indias, chilenas y mexicanas de las cuales me mantengo al día dado que son mi competencia más feroz como PyME que somos.&lt;/p&gt;
+
+&lt;p&gt;Bajo ninguna circunstancia estoy en desacuerdo con que los desarrolladores deban ganar más. Soy el primero que lo &lt;a href=&quot;https://sis-temas.uniandes.edu.co/un-desarrollador-de-20-millones-mensuales/&quot;&gt;cree&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;La distorción en salarios hace que se inflen los precios de los proyectos de software debido a que los desarrolladores ganan más. Luego, estos precios son asumidos por nuestros clientes que, al ver las cifras y compararlas con otros oferentes internacionales, les parecerán ridículo. Ahí es cuando uno como PyME deja de vender y, si deja de vender, deja de pagar salarios, sin importar su cuantía.&lt;/p&gt;
+
+&lt;p&gt;Recuerden que las fábricas de software son invento &lt;a href=&quot;http://dspace.mit.edu/bitstream/handle/1721.1/2345/swp-3268-23661042.pdf?sequence=1&quot;&gt;extranjero&lt;/a&gt; y que es muy fácil contratar equipos en el extranjero por 6 o menos dolares la hora.&lt;/p&gt;
+
+&lt;p&gt;En este punto las personas me cuestionan que lo que los clientes deberían valorar es la “calidad superior”. A estas personas les pido que se documenten sobre cómo funciona en Colombia la compra de proyectos de software.&lt;/p&gt;
+
+&lt;p&gt;Recuerden que quienes toman las decisiones de un proyecto no les interesa si se hizo en COBOL, en SQL, en Ruby o en Scala. Si se están usando las tecnologías más &lt;em&gt;hipsters&lt;/em&gt; y &lt;em&gt;trendy&lt;/em&gt; o no. Lo que les interesa es el resultado financiero del ejercicio y, si alguien me lo promete por la mitad de lo que usted cobra, pues que decisión más sencilla.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“La industria del software empresarial en Colombia necesita poner los pies en la tierra, mejorar su estándares y condiciones laborales generales, si quiere algún día llegar a ser un sector competitivo.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Estoy seguro que esta aseveración se basa en “me han contado”, “supe de alguien que”, etc.&lt;/p&gt;
+
+&lt;p&gt;Esas historias también las he escuchado. De las personas que entrevistamos y de las personas que trabajan conmigo. Y de nuevo, tomando como ejemplo el argumento del equipo talentoso del señor Buriticá, puedo aseverar que nuestra PyME es diferente a lo que él considera como empresas no competitivas. Esto, naturalmente, se ha convertido en nuestro mayor mecanismo de consecución de personas talentosas.&lt;/p&gt;
+
+&lt;p&gt;Pero no solo es encontrarlas. Es darles espacio para el desarrollo de su autonomía y su maestría en el contexto de la ejecución de un propósito aprovechando la inteligencia distribuída. Son estos los fundamentos del “Manual de Identidad” de nuestra PyME.&lt;/p&gt;
+
+&lt;p&gt;Tenemos un equipo de personas dedicadas a fomentar el bienestar de las personas. No solo se trata de que tengan dos pantallas o que puedan tomar cerveza en la oficina. Es estar ahí en caso de fallecimiento de un ser querido, incapacidad, paternidad o maternidad, libranzas, etc. Lo hemos venido haciendo desde que podemos, así no siempre hayamos podido exportar nuestros servicios al exterior y entendiendo las restricciones de no haber iniciado esta empresa con capital nacional o extranjero.&lt;/p&gt;
+
+&lt;p&gt;La excelencia técnica de los equipos de esta PyME es reconocida por nuestros clientes y nuestros pares. Como el señor Buriticá dice, eso depende de la orientación técnica de nuestra empresa. Vale la pena aclarar que esa orientación técnica la tenemos hace rato, por lo que a nuestra PyME hasta este punto el artículo no nos ha generado valor.&lt;/p&gt;
+
+&lt;h2 id=&quot;hay-que-culpar-a-los-desarrolladores&quot;&gt;Hay que culpar a los desarrolladores&lt;/h2&gt;
+&lt;p&gt;Ha sido interesante que en ninguno de los dos artículos se ha mencionado la responsabilidad que tienen lo desarrolladores en este problema.&lt;/p&gt;
+
+&lt;p&gt;Queridos desarrolladores, si quieren valer más, háganse más valiosos. Esta opinión ya la expuse claramente en &lt;a href=&quot;https://sis-temas.uniandes.edu.co/un-desarrollador-de-20-millones-mensuales/&quot;&gt;“Un desarrollador de 20 millones mensuales”&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Si quieren tener mejor salario, hagan un trabajo que sea más valioso. ¿Cómo? Si nos compran por ROI, generen ROI. Así sea usando COBOL, pues eso es lo de menos.&lt;/p&gt;
+
+&lt;p&gt;Aprendan inglés. Estudien mucho. No le tengan miedo a los &lt;em&gt;papers&lt;/em&gt;. Pregunten, equivoquense, aprendan. ¡Lean! Propongan, cuestionen, sacien su curiosidad. No esperen a los proyectos para aprender, lleguen aprendidos. Escriban y lean código todos los días. Aprendan a escribir y hablar asertivamente. Ojo con la ortografía y la redacción. Sean empáticos con los problemas a resolver, pues siempre hay un alguien que se va a beneficiar y no necesariamente es ROI. Recuerden que hacer software es una expresión de amor.&lt;/p&gt;
+
+&lt;h2 id=&quot;hay-que-llegar-a-una-conclusión-que-no-solucione-nada&quot;&gt;Hay que llegar a una conclusión que no solucione nada&lt;/h2&gt;
+&lt;p&gt;Para poder cerrar, quiero cerrar como lo hicieron los autores de los blogs que inspiraron esta respuesta. Seguir opinando y emitiendo juicios de valor sin sentido sobre lo que yo creo que es correcto (a pesar de que estoy seguro que no implica nada).&lt;/p&gt;
+
+&lt;p&gt;La escasez de talento la hemos afrontado con mucho cariño y respeto. Cariño, en cuanto a la paciencia y humildad que hay que tener frente a los desarrolladores que hasta ahora están entrando al mundo laboral o, a aquellos que lamentablemente han pasado por proyectos mal ejecutados. Respeto, por lo que saben, por lo que son y valorándolos por su potencial inmediato.&lt;/p&gt;
+
+&lt;p&gt;Cada vez que alguien se va de nuestra empresa le pregunto: “¿lo que hizo y aprendió en S4N le sirvió para conseguir su nuevo trabajo?” Gracias a todo el esfuerzo de los diferentes equipos de nuestra PyME, esta respuesta &lt;strong&gt;siempre&lt;/strong&gt; ha sido positiva.&lt;/p&gt;
+
+&lt;p&gt;Es un despropósito estar culpando a unos o a otros. No tiene fin y se queda en chisme, rumor y charla de pasillo. Más bien los invito a demostrar a través del ejemplo, en vez de estar hablando tanto de cosas que no entienden, ni viven, ni resuelven.&lt;/p&gt;
+
+&lt;h5 id=&quot;nota-sobre-lenguaje-incluyente&quot;&gt;*Nota sobre lenguaje incluyente&lt;/h5&gt;
+&lt;p&gt;Los conocidos, lamentables y reprochables horrores que viven muchas personas debido a su condición social, sexual, física, moral y/o religiosa, nos ha llevado a cuestionar la forma más correcta de hablar y escribir.&lt;/p&gt;
+
+&lt;p&gt;Después de mucho leer, no he logrado llegar a la conclusión de cuál es la mejor manera de referirse a los desarrolladores de software. ¿Debe ser desarrolladores y desarrolladoras? ¿Desarrolladoras y desarrolladores? ¿Ingenieros e ingenieras de software? ¿ingenieras e ingenieros de software? ¿Debería hacerle caso a la &lt;a href=&quot;http://lema.rae.es/dpd/srv/search?id=Tr5x8MFOuD6DVTlDBg&quot;&gt;RAE&lt;/a&gt;? ¿Debería seguir mi intuición y dejar evolucionar el lenguaje y dejar de seguirle la corriente a la RAE? ¿Debería seguir una fuente diferente y seguir la línea &lt;em&gt;deconstructista&lt;/em&gt; de Derrida sobre el &lt;a href=&quot;http://ruc.udc.es/bitstream/2183/2139/1/AD-5-17.pdf&quot;&gt;género&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;Por facilismo me acojo a las reglas de la RAE, sin desconocer las implicaciones que esto trae, cruzando los dedos para que eventualmente nuestra sociedad se decida a estandarizar la natural evolución del lenguaje (esta &lt;a href=&quot;https://stallman.org/articles/castellano-sin-genero.html&quot;&gt;idea&lt;/a&gt; siempre me ha gustado).&lt;/p&gt;</content><author><name>Yuji Kiriki</name></author><summary type="html">Introducción ¿Hay escasez de desarrolladores talentosos en Colombia? Obviamente sí. Es un fenómeno mundial. Por infinidad de razones, y todas están “explicadas” a un google query de distancia.</summary></entry><entry><title type="html">Futuros y actores en Scala y Akka</title><link href="http://localhost:4000/2014/11/18/futuros_y_actores.html" rel="alternate" type="text/html" title="Futuros y actores en Scala y Akka" /><published>2014-11-18T00:00:00-05:00</published><updated>2014-11-18T00:00:00-05:00</updated><id>http://localhost:4000/2014/11/18/futuros_y_actores</id><content type="html" xml:base="http://localhost:4000/2014/11/18/futuros_y_actores.html">&lt;p&gt;Tradicionalmente, construir aplicaciones que soporten concurrencia en la JVM siempre ha sido problema del servidor de aplicaciones. Pocas veces nos veíamos en la tarea de implementar o de pensar en problemas de semáforos, hilos y procesos y, cuando teníamos que hacerlo, es porque el servidor de aplicaciones no daba más.&lt;/p&gt;
+
+&lt;p&gt;El número de usuarios y de aplicaciones integradas de hoy nos ha llevado a buscar alternativas ligeras y más adecuadas para soportar crecimientos súbitos en la demanda de recursos, de conexiones y de la disponibilidad misma de las aplicaciones; permitiendo dar respuestas correctas en un tiempo tolerable.&lt;/p&gt;
+
+&lt;p&gt;Los Futuros en Scala (implementados &lt;a href=&quot;http://docs.scala-lang.org/overviews/core/futures.html&quot;&gt;en&lt;/a&gt; &lt;a href=&quot;https://github.com/scalaz/scalaz&quot;&gt;varias&lt;/a&gt; &lt;a href=&quot;https://twitter.github.io/finagle/&quot;&gt;librerías&lt;/a&gt;) y el modelo de actores en Akka, permiten modelar e implementar soluciones que aprovechan las características del hardware moderno: múltiples núcleos de procesamiento, centenas de miles de megas de memoria; redundando en la capacidad de soportar concurrencia aumentando su disponibilidad y comportamiento correcto.&lt;/p&gt;
+
+&lt;p&gt;Los beneficios no solo se miden a través del desempeño de una solución. El nivel de abstracción en el que se razona sobre Futuros o actores permite diseñar y escribir código concurrente y paralelo, de fácil lectura, que atiende la concurrencia de manera elegante y digerible.&lt;/p&gt;
+
+&lt;p&gt;Por estos hechos y razones, consideramos compartir una análisis a través de la cual puedan hacer la elección de la herramienta más adecuada para sus escenarios donde se presente concurrencia, proponiendo y promoviendo así el “fin de vida” de lo servidores de aplicaciones.&lt;/p&gt;
+
+&lt;h3 id=&quot;cuándo-actores&quot;&gt;Cuándo Actores&lt;/h3&gt;
+
+&lt;p&gt;La mayor ventaja del modelo de actores sobre los futuros es su capacidad de mantener estado y protegerlo de la concurrencia. Si a esta propiedad se le suma su similitud con la noción de objetos del paradigma orientado a objetos (OO), las soluciones que se pueden implementar son simples y potentes.&lt;/p&gt;
+
+&lt;p&gt;Lo simple nace del fomento de la &lt;a href=&quot;https://s3.amazonaws.com/bitacora/2013/04/13/simpatia_semantica.html&quot;&gt;simpatía semántica&lt;/a&gt; al combinar el modelo de actores con los principios del diseño OO. Esta combinación puede entenderse como un &lt;a href=&quot;http://en.wikipedia.org/wiki/Mutualism_(biology)&quot;&gt;mutualismo&lt;/a&gt; donde, en la solución de software, el modelo de actores se ve fortalecido por OO y OO se ve enriquecido por el modelo de actores.&lt;/p&gt;
+
+&lt;p&gt;El mutualismo se fundamenta en la noción de estado de los actores y de los objetos. Al ser dos ideas análogas, se pueden aplicar los principios de OO en el diseño de los actores, siendo cada uno de ellos interpretados como objetos que protegen su encapsulamiento a través del intercambio de mensajes.&lt;/p&gt;
+
+&lt;p&gt;En una &lt;a href=&quot;http://www.drdobbs.com/architecture-and-design/interview-with-alan-kay/240003442?pgno=3&quot;&gt;entrevista&lt;/a&gt;, Alan Kay (para algunos el fundador del paradigma objetual), admite esta relación:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Binstock:&lt;/strong&gt; How do you view the Actor model?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Kay:&lt;/strong&gt; The first Smalltalk was presented at MIT, and Carl Hewitt and his folks, a few months later, wrote the first Actor paper. The difference between the two systems is that the Actor model retained more of what I thought were the good features of the object idea, whereas at PARC, we used Smalltalk to invent personal computing. It was actually a practical programming language as well as being interesting theoretically. I don’t think there were too many practical systems done in Actors back then.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Cabe notar que OO es un paradigma de programación mientras que los actores son un modelo de computación. No obstante, la noción de estado sirve como articulador entre ellas.&lt;/p&gt;
+
+&lt;p&gt;Ahondando en esta relación por el lado OO, podemos hacer uso de las prácticas de &lt;em&gt;Domain-Driven Design&lt;/em&gt;. Los patrones tácticos son fácilmente implementados en el modelo de actores permitiendo tener grafos de actores que modelan dominios de negocio. No solo ahí se fomenta el mutualismo. Si hacemos uso de los actores como &lt;a href=&quot;http://dspace.mit.edu/handle/1721.1/6952&quot;&gt;modelo de concurrencia para sistemas distribuidos&lt;/a&gt;, podemos escribir aplicaciones de software que implementan modelos de dominio listos para soportar concurrencia y para ser distribuidos en una red. Quizás, esta última, sea la característica de más potencial de los actores sobre los futuros.&lt;/p&gt;
+
+&lt;p&gt;Otra ventaja de los actores sobre los futuros es la capacidad de distribuir trabajo sobre un sistema distribuido. A través de sus principios, el modelo de actores permite distribuir no solo concurrencia sino carga en varios nodos, permitiendo la presencia de procesamiento paralelo. No obstante, hay investigación de cómo tener funciones distribuidas.&lt;/p&gt;
+
+&lt;p&gt;Es necesario recordar que el modelo de actores no es un artefacto de la programación funcional. Sin embrago desde el punto de vista de la programación funcional, los actores adolecen de:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;No determinismo: no hay garantía en la entrega de mensajes entre actores.&lt;/li&gt;
+  &lt;li&gt;Implican side effects y tener una visión no local del sistema, lo que implica que no se puedan componer.&lt;/li&gt;
+  &lt;li&gt;Los actores en Akka rechazan la unidad básica de modularidad: las funciones con efectos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A =&amp;gt; B&lt;/code&gt; por funciones con &lt;em&gt;side effects&lt;/em&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Any =&amp;gt; Unit&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;cuándo-futuros&quot;&gt;Cuándo Futuros&lt;/h3&gt;
+
+&lt;p&gt;Los futuros son una abstracción que sirve para representar acciones asíncronas. Pueden ser vistos como un mecanismo para manejar asincronía &lt;a href=&quot;https://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/&quot;&gt;un nivel de abstracción por encima de usar &lt;em&gt;callbacks&lt;/em&gt;&lt;/a&gt;. Citando a &lt;a href=&quot;http://aboutwhichmorelater.tumblr.com/post/46862769549/futures-arent-ersatz-threads&quot;&gt;Marius Eriksen&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Futures model the real world truthfully: A Future[T] represents a T-typed result, which may or may not be delivered at some time in the future, or which may fail altogether. Like real-world asynchronous operations, a future is always in one of 3 states: incomplete, completed successfully, or completed with a failure.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Existen diversas implementaciones de futuros en Scala: en la &lt;a href=&quot;http://www.scala-lang.org/api/2.11.4/#scala.concurrent.Future&quot;&gt;librería estándar&lt;/a&gt;, y en librerias como akka, finagle y scalaz. Para efectos de esta entrada lo importante es que estas instancias implementan:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Un constructor, que permite ejecutar asíncronamente un bloque de código y envolver su resultado en un futuro.&lt;/li&gt;
+  &lt;li&gt;Las funciones map y flatMap que permiten manipular y componer futuros.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Los futuros presentan varias ventajas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Se pueden componer naturalmente. El API que se deriva de tener las funciones &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flatMap&lt;/code&gt; es bastante rico y permite secuenciar acciones asíncronas casi de la misma forma en la que uno maneja valores en un contexto síncrono (Esto claramente no es tan simple como suena: requiere un buen entendimiento del API de Futuros). La posiblidad de componer fácilmente Futuros parece ser la razón por la cuál Twitter se decantó por ellos y por eso construyó gran parte de su infraestructura en torno a &lt;a href=&quot;http://monkey.org/~marius/funsrv.pdf&quot;&gt;la idea de componer comportamiento a partir de funciones&lt;/a&gt;. En contraste parece que &lt;a href=&quot;http://www.reddit.com/r/IAmA/comments/23s80n/we_work_on_open_source_at_twitter_ask_us_anything/ch03le5&quot;&gt;por ahora el equipo de ingeniería de Twitter no piensa usar actores&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Solo requieren una visión local del sistema: Teniendo un &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Future[A]&lt;/code&gt; solamente puedo crear un nuevo valor con una función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A =&amp;gt; B&lt;/code&gt; o una función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A =&amp;gt; Future[B]&lt;/code&gt;. En cambio los actores requieren razonar como interactúa un sistema de actores, qué mensajes se le debe mandar a otro actor, qué mensajes debe manejar otro actor, etc. La modularidad de un actor depende en gran parte de un conocimiento implícito de como responde a ciertos mensajes. &lt;a href=&quot;http://pchiusano.blogspot.com/2010/01/actors-are-not-good-concurrency-model.html&quot;&gt;Hay quienes piensan que la modularidad de una abstracción depende de que tanto permite&lt;/a&gt; usar &lt;a href=&quot;http://en.wikipedia.org/wiki/Pure_function&quot;&gt;funciones puras&lt;/a&gt;. Para ellos los &lt;em&gt;side effects&lt;/em&gt; perjudican la modularidad. La comunicación entre actores es un &lt;em&gt;side effect&lt;/em&gt; gigante y bajo esa perspectiva no son muy modulares. En cambio los futuros permiten usar funciones puras en sus transformaciones y por lo tanto permiten que sean reutilizados en contextos que no requieren un conocimiento implícito de la implementación.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;En general los futuros están en consonancia con muchas  de las ideas de programación funcional. Empezando por el hecho de que exigen contener algún valor uno siempre se ve obligado a manejar transformaciones de ese valor sea con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map&lt;/code&gt; o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flatMap&lt;/code&gt;. Esto no quiere decir que uno no pueda hacer futuros con &lt;em&gt;side effects&lt;/em&gt;. Uno perfectamente puede crear un &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Future[Unit]&lt;/code&gt;, es decir un &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Future&lt;/code&gt; sin valor dentro, por ejemplo: producto de haber imprimido en pantalla un resultado asíncrono. Entonces, si bien los Futuros no evitan que uno rompa las “reglas” de programación funcional, sí son un mecanismo de concurrencia que, a diferencia de los actores, permiten razonar sobre la transformación de un valor a partir de funciones puras. Adicionalmente los Futuros son inmutables en dos sentidos: por una parte cuando un Futuro se resuelve su valor no puede cambiar, lo que da pie a que una composición de futuros determine un grafo de ejecución y de transformación de valores. Por otra parte la mayoría del API de los Futuros no muta el estado sino que devuelve otro Futuro, lo que facilita razonar sobre ellos. En gran parte estas facilidades se dan por que los Futuros son &lt;a href=&quot;http://www.codecommit.com/blog/ruby/monads-are-not-metaphors&quot;&gt;monadas&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Otra ventaja, un poco relacionada con el anterior punto, es que los Futuros son declarativos. Permiten al usuario combinarlos sin que éste se preocupe de varias cosas: de qué estrategia usa el &lt;em&gt;pool de threads&lt;/em&gt; que lo está ejecutando o en qué momento se ejecuta la función que se pasa por parámetro, o como combinar múltiples Futuros sin importar cuál se resuelva primero, etc… En cambio los actores requieren un mayor grado de coordinación y por lo tanto dan mayor responsabilidad (y también libertad) al usuario.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Por último los futuros tienen una desventaja considerable, que tiene que ver con los casos de uso para los cuales fueron ideados. Los futuros no son adecuados para manejar estado: por ejemplo tener estado mutable que puede ser modificado por dos futuros distintos es una receta para hacer un desastre. En general este es un corolario del consabido consejo de no compartir recursos entre &lt;em&gt;threads&lt;/em&gt; distintos. Por lo tanto es difícil utilizar futuros para modelar aspectos del dominio, aspectos que por lo general requieren algún tipo de estado. En conclusión los futuros sirven para manejar concurrencia y paralelismo de funciones que carecen de estado dentro de una misma JVM. Cuando se quiere realizar distribución entre distintas maquinas o concurrencia protegiendo estado los actores representan una abstracción adecuada.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h3&gt;
+
+&lt;p&gt;Los Actores y los Futuros son dos abstracciones útiles que permiten manejar concurrencia. El uso de uno no excluye automáticamente el uso del otro. Por el contrario, usualmente son colaborativos: e.g. un Actor puede despachar trabajo a un Futuro.&lt;/p&gt;
+
+&lt;p&gt;En esta entrada analizamos las ventajas de cada uno y sus mejores casos de uso, pero cabe aclarar que el mundo de Scala es prolífico en abstracciones y hay muchas alternativas que pueden ser más adecuadas para ciertos casos de uso. Hay muchas que no mencionamos como &lt;a href=&quot;https://www.playframework.com/documentation/2.0/Iteratees&quot;&gt;Iteratees&lt;/a&gt;, &lt;a href=&quot;https://github.com/scalaz/scalaz-stream&quot;&gt;scalaz-streams&lt;/a&gt; y la iniciativa de &lt;a href=&quot;http://www.reactive-streams.org/&quot;&gt;Reactive Streams&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;El mundo de Scala y la JVM es rico, los actores y los Futuros son solo las primeras abstracciones que tenemos para explorar.&lt;/p&gt;
+
+&lt;h3 id=&quot;referencias&quot;&gt;Referencias&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://monkey.org/~marius/funsrv.pdf&quot;&gt;Your server as a function&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://james-iry.blogspot.com/2009/04/erlang-style-actors-are-all-about.html&quot;&gt;Erlang Style Actors Are All About Shared State&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://channel9.msdn.com/Shows/Going+Deep/Hewitt-Meijer-and-Szyperski-The-Actor-Model-everything-you-wanted-to-know-but-were-afraid-to-ask&quot;&gt;The Actor Model (everything you wanted to know, but were afraid to ask)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pchiusano.blogspot.com/2010/01/actors-are-not-good-concurrency-model.html&quot;&gt;Actors are not a good concurrency model&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.chrisstucchio.com/blog/2013/actors_vs_futures.html&quot;&gt;Don’t use Actors for concurrency&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://noelwelsh.com/programming/2013/03/04/why-i-dont-like-akka-actors/&quot;&gt;Why I Don’t Like Akka Actors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://boundary.com/blog/2014/09/03/no-you-cant-have-a-pony/&quot;&gt;Actors, Green Threads and CSP On The JVM – No, You Can’t Have A Pony&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://aboutwhichmorelater.tumblr.com/post/46862769549/futures-arent-ersatz-threads&quot;&gt;Futures aren’t ersatz threads&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Miguel Vila, Yuji Kiriki</name></author><summary type="html">Tradicionalmente, construir aplicaciones que soporten concurrencia en la JVM siempre ha sido problema del servidor de aplicaciones. Pocas veces nos veíamos en la tarea de implementar o de pensar en problemas de semáforos, hilos y procesos y, cuando teníamos que hacerlo, es porque el servidor de aplicaciones no daba más.</summary></entry></feed>
