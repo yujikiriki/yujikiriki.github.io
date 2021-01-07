@@ -60,3 +60,5 @@ El honor y orgullo, queridos devs, está en reconocer con humildad nuestro privi
 No levantarse cada día en tratar de ser mejores en este oficio deshonra a los profesores, insulta a los profesionales de la salud, a nuestros compañeros, nuestros clientes, nuestros empleadores. Es el mínimo higiénico de estar viviendo este privilegio.
 
 El honor y nuestro orgullo está en afilar cada día más nuestros conocimientos y capacidades para ofrecerle a los demás lo máximo de lo que somos capaces de hacer, no por una cifra de un mercado inflado, sino porque es el mínimo que debemos, con humildad, ofrecerle a los demás.
+
+¿No están convencidos? Si se define como front, mire qué hace un buen dev back. Si se define como back mire lo que hace un buen front. Si aún así creen que son full stack, vayan y comparen sus conocimientos con alguien que sí sepa de seguridad. O de infraestructura. O de calidad. O de definir productos o diseñar servicios (de _Service Design_). Dense cuenta que si solo saben _frameworks_ de moda están revolcandose en los dolares de su propia levedad.
