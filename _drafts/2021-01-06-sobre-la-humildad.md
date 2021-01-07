@@ -45,7 +45,7 @@ Pienso que debemos aceptar, con humildad, que lo que hacemos, en la gran mayorí
 
 Pero encima de toda la lógica de cómo funciona el mundo, ahora nosotros los devs nos estamos dando el lujo de estar optimizando el cuánto ganamos. ¿Que tipo de realidad estamos contruyendo o fomentando? ¿Dónde está el honor en eso? ¿Nos debería importar?
 
-¿Honor? ¿Orgullo? "Es que mira mamá, estoy ganando USD$6k ¡soy una persona exitosa y la gente debe admirarme por eso!". 
+¿Honor? ¿Orgullo? "Es que mira mamá, estoy ganando USD$6k ¡soy una persona exitosa y la gente debe admirarme por eso! Es que mamita, tengo el Inbox lleno de mensajes de reclutadores que no saben qué están buscando (risas)".
 
 ¿Dónde podría estar el honor y el orgullo de nuestro oficio si el mercado está tan bueno?
 
