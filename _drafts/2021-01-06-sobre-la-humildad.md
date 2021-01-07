@@ -21,7 +21,7 @@ Como dice el gran filósofo Leandro "somos una industria de mimados". No sé si 
 
 Somos una industria de mimados porque el mercado lo permite. Eso está bien. Debemos aprovechar. Si nos comparamos con otras industrias, por ejemplo la salud, un médico general de EPS hoy se gana entre $2.5M a $3M. Un profesor de secundaria de colegio público ¿cuánto gana?
 
-Una persona, indistinta de profesión u oficio, si sabe balbusear React, puede fácilmente estar en los $3M. De ahí para arriba la cosa se pone aún mejor.
+Una persona, indistinta de profesión u oficio, si sabe balbucear React, puede fácilmente estar en los $3M. De ahí para arriba la cosa se pone aún mejor.
 
 Con el COVID19 suelto, matando personas y cambiando la realidad de todos, fue fácil darnos cuenta que lo mejor que hicimos como devs colombianos fueron _dashboards_ en productos hechos en otra parte, _copy/paste_ de StackOverflow a lo que marca para sacar paginas Web que nadie usó y que no sirvieron sino para sentirse bien con nosotros mismos. Pero no, no hicimos la diferencia más allá de que gracias a los flujos de dinero que esta industra está manejando, pudimos ayudar a familiares o amigos. Pero con el oficio, no hicimos la diferencia.
 
@@ -39,7 +39,7 @@ Si aceptamos que ganamos USD$6k por las condiciones del mercado y no por lo que 
 
 Mi reflexión es sobre qué variable queremos como industria optimizar. Siempre he pensado que nuestro oficio, por lo incipiente, depende demasiado de las manos que lo ejercen.
 
-Pienso que debemos aceptar, con humildad, que lo que hacemos, en la gran mayoría de los casos es para enriquecer a otros. Hay casos de devs que tienen la oprotunidad de estar trabajando para ONG, haciendo ML sobre radiografías de enfermos de COVID, etc. Que putería. Pero sin temor a equivocarme, los demás estamos o haciendo que las personas vean más propagandas o estamos optimizando formas en las que las personas muevan plata. 
+Pienso que debemos aceptar, con humildad, que lo que hacemos, en la gran mayoría de los casos es para enriquecer a otros. Hay casos de devs que tienen la oportunidad de estar trabajando para ONG, haciendo ML sobre radiografías de enfermos de COVID, etc. Que putería. Pero sin temor a equivocarme, los demás estamos o haciendo que las personas vean más propagandas o estamos optimizando formas en las que las personas muevan plata. 
 
 ¿Es eso un problema de esta industria? Nah, eso sería ridículo. Es como funciona el mundo, y pues ... que cagada.
 
