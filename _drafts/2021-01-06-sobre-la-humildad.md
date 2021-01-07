@@ -55,9 +55,7 @@ El honor y el orgullo de este oficio está en, humildemente, reconocer que hace 
 
 El honor y orgullo, queridos devs, está en reconocer con humildad nuestro privilegio y tener la mínima decencia de garantizar, con todo el esfuerzo que nos quepa en el cuerpo, de ser cada día mejores en lo que hacemos, así sea, enriqueciendo a otros.
 
-¿Cómo mejores? Enterrandose en el fundamento. Desarrollado criterio técnico a punta de estudio, experiencia y humildad; humildad en el ayudar y en el pedir ayuda; humildad de reconocer que lo que hacemos lo puede hacer cualquiera. Literalmente *¡CUALQUIERA!* (lo cual es una putería y lo celebro y promuevo todo en cuanto puedo).
-
-Sí, así es, no somos en lo absoluto especiales por saber hacer un _quicksort_ en un tablero.
+¿Cómo mejores? Enterrandose en el fundamento. Desarrollado criterio técnico a punta de estudio, experiencia y humildad; humildad en el ayudar y en el pedir ayuda; humildad de reconocer que lo que hacemos lo puede hacer cualquiera. Literalmente *¡CUALQUIERA!* (lo cual es una putería y lo celebro y promuevo todo en cuanto puedo y sí, así es, no somos en lo absoluto especiales por saber hacer un _quicksort_ en un tablero).
 
 No levantarse cada día en tratar de ser mejores en este oficio deshonra a los profesores, insulta a los profesionales de la salud, a nuestros compañeros, nuestros clientes, nuestros empleadores. Es el mínimo higiénico de estar viviendo este privilegio.
 
