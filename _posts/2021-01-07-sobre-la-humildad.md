@@ -7,7 +7,7 @@ author_url: https://twitter.com/ykiriki
 
 Quizás no sea la persona más indicada para hablar sobre la humildad. No obstante, después de tanto ir y venir, es un valor que cada día trato de entender mejor.
 
-Quizás escribo más esta entrada para mi que para alguien más. Quizás comparto esta reflexión después de muchos años de estar trabajando en esta industria y conocer gente demasiado tesa, sobre todo, fuera de esta industria.
+Quizás escribo más esta entrada para mí que para alguien más. Quizás comparto esta reflexión después de muchos años de estar trabajando en esta industria y conocer gente demasiado tesa, sobre todo, fuera de esta industria.
 
 Vivímos un instante en el que la demanda de conocimientos en construir software es tal, que no es secreto para nadie, se dió la oportunidad para que la mediocridad en el oficio pulule y sea bien compensada. Y eso, eso está bien. 
 
