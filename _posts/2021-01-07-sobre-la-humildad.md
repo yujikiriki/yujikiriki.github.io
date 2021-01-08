@@ -23,7 +23,7 @@ Somos una industria de mimados porque el mercado lo permite. Eso está bien. Deb
 
 Una persona, indistinta de profesión u oficio, si sabe balbucear React, puede fácilmente estar en los $3M. De ahí para arriba la cosa se pone aún mejor.
 
-Con el COVID19 suelto, matando personas y cambiando la realidad de todos, fue fácil darnos cuenta que lo mejor que hicimos como devs colombianos fueron _dashboards_ en productos hechos en otra parte, _copy/paste_ de StackOverflow a lo que marca para sacar paginas Web que nadie usó y que no sirvieron sino para sentirse bien con nosotros mismos. Pero no, no hicimos la diferencia más allá de que gracias a los flujos de dinero que esta industra está manejando, pudimos ayudar a familiares o amigos. Pero con el oficio, no hicimos la diferencia.
+Con el COVID19 suelto, matando personas y cambiando la realidad de todos, fue fácil darnos cuenta que lo mejor que hicimos como devs colombianos fueron _dashboards_ en productos hechos en otra parte, _copy/paste_ de StackOverflow a lo que marca para sacar paginas Web que nadie usó y que no sirvieron sino para sentirse bien con nosotros mismos. Pero no, no hicimos la diferencia más allá de que gracias a los flujos de dinero que esta Industria está manejando, pudimos ayudar a familiares o amigos. Pero con el oficio, no hicimos la diferencia.
 
 Si un familiar se nos enfermó de COVID ¿acudimos al médico de COP$3M y nos quejamos porque solo nos recetó acetaminofén? Pero ojo, yo valgo USD$6k. Si un médico nos atiende, esperamos que sea el mejor, es mi hijo, mi abuelo, mi mamá, pero pagar más de 3 palos por eso nah, ese man no sabe qué es un UUID, GraphQL o no sabe copiar y pegar de StackOverflow. Así están las cosas.
 
