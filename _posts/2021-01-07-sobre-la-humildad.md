@@ -51,7 +51,7 @@ Pero encima de toda la lógica de cómo funciona el mundo, ahora nosotros los de
 
 Puede que el honor y orgullo de este oficio esté en el oficio mismo. La humildad de saber que estamos devengando un valor porque el mercado está inflado, no por la diferencia que hacemos en la sociedad. No la diferencia chimba de estar generando flujos de dinero de allá para acá.
 
-El honor y el orgullo de este oficio está en, humildemente, reconocer que hace más un psicologo por una persona deprimida que un log en la consola del navegador. Reconocer que tiene más impacto un profesor de escuela tratando de en plena pandemia de cumplir un horario (así termine enseñando nada) que un _dashboard_ que parsea datos malos de una entidad del gobierno mediocre para supuestamente hacer la diferencia en la pandemia.
+El honor y el orgullo de este oficio está en, humildemente, reconocer que hace más un psicólogo por una persona deprimida que un _log_ en la consola del navegador. Reconocer que tiene más impacto un profesor de escuela tratando de en plena pandemia de cumplir un horario (así termine enseñando nada) que un _dashboard_ que parsea datos malos de una entidad del gobierno mediocre para supuestamente hacer la diferencia en la pandemia.
 
 El honor y orgullo, queridos devs, está en reconocer con humildad nuestro privilegio y tener la mínima decencia de garantizar, con todo el esfuerzo que nos quepa en el cuerpo, de ser cada día mejores en lo que hacemos, así sea, enriqueciendo a otros.
 
