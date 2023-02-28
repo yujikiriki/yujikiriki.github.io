@@ -1,7 +1,10 @@
-title: bitácora - Yuji Kiriki
+title: bitácora 
 author: Yuji Kiriki
 markdown: kramdown
 url: https://yujikiriki.github.io
 
+plugins:
+  - jekyll-feed
+
 exclude:
-- "jekyll/"
+  - "jekyll/"
