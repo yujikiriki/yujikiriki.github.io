@@ -1,9 +1,7 @@
 title: bitácora - Yuji Kiriki
-description: Bitácora de viaje.
 author: Yuji Kiriki
 markdown: kramdown
-author: Yuji Kiriki
 url: https://yujikiriki.github.io
 
-plugins:
-  - jekyll-feed
+exclude:
+- "jekyll/"

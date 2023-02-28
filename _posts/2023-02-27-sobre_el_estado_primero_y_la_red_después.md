@@ -17,7 +17,7 @@ La caprichosa tendencia de la centralización (quizá perezosa) de la megapolis 
 
 Quizás el problema sea un navegador abusado. Quizás sea la simpleza de centralizar estado que resbala sobre esa superficie ausente de fricción entre el cliente y el servidor. Seguramente es el desgaste intelectual y el tiempo que implica embarcarse en su construcción. Puede ser ese profundo abismo de ignorancia y el perpetuo afán de entregar ya.
 
-Cada vez que mis computadores se ven abandonados de las ricas frecuencias de datos quedo a la merced de la precariedad de una sobre estimada calculadora que no me permite progreso. Jira, Miro, chat, el correo electrónico quedan ausentes de vida. Las noticias y las redes sociales enmudecen. 
+Cada vez que mis computadores se ven abandonados de las ricas frecuencias de datos quedo a la merced de la precariedad de una calculadora glorificada que no me permite progreso. Jira, Miro, chat, el correo electrónico quedan ausentes de vida. Las noticias y las redes sociales enmudecen. 
 
 Como no disfrutar de ese ascetismo que tanto sosiego presta me responderán, pero es insuficiente para muchos esa virtud cuando no se ha optado por la circunstancia.
 
