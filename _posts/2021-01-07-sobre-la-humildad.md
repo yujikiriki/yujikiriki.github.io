@@ -51,11 +51,11 @@ Pero encima de toda la lógica de cómo funciona el mundo, ahora nosotros los de
 
 Puede que el honor y orgullo de este oficio esté en el oficio mismo. La humildad de saber que estamos devengando un valor porque el mercado está inflado, no por la diferencia que hacemos en la sociedad. No la diferencia chimba de estar generando flujos de dinero de allá para acá.
 
-El honor y el orgullo de este oficio está en, humildemente, reconocer que hace más un psicologo por una persona deprimida que un log en la consola del navegador. Reconocer que tiene más impacto un profesor de escuela tratando de en plena pandemia de cumplir un horario (así termine enseñando nada) que un _dashboard_ que parsea datos malos de una entidad del gobierno mediocre para supuestamente hacer la diferencia en la pandemia.
+El honor y el orgullo de este oficio está en, humildemente, reconocer que hace más un psicólogo por una persona deprimida que un _log_ en la consola del navegador. Reconocer que tiene más impacto un profesor de escuela tratando de en plena pandemia de cumplir un horario (así termine enseñando nada) que un _dashboard_ que parsea datos malos de una entidad del gobierno mediocre para supuestamente hacer la diferencia en la pandemia.
 
 El honor y orgullo, queridos devs, está en reconocer con humildad nuestro privilegio y tener la mínima decencia de garantizar, con todo el esfuerzo que nos quepa en el cuerpo, de ser cada día mejores en lo que hacemos, así sea, enriqueciendo a otros.
 
-¿Cómo mejores? Enterrandose en el fundamento. Desarrollado criterio técnico a punta de estudio, experiencia y humildad; humildad en el ayudar y en el pedir ayuda; humildad de reconocer que lo que hacemos lo puede hacer cualquiera. Literalmente *¡CUALQUIERA!* (lo cual es una putería y lo celebro y promuevo todo en cuanto puedo y sí, así es, no somos en lo absoluto especiales por saber hacer un _quicksort_ en un tablero).
+¿Cómo mejores? Enterrandose en el fundamento. Desarrollando criterio técnico a punta de estudio, experiencia y humildad; humildad en el ayudar y en el pedir ayuda; humildad de reconocer que lo que hacemos lo puede hacer cualquiera. Literalmente *¡CUALQUIERA!* (lo cual es una putería y lo celebro y promuevo todo en cuanto puedo y sí, así es, no somos en lo absoluto especiales por saber hacer un _quicksort_ en un tablero).
 
 No levantarse cada día en tratar de ser mejores en este oficio deshonra a los profesores, insulta a los profesionales de la salud, a nuestros compañeros, nuestros clientes, nuestros empleadores. Es el mínimo higiénico de estar viviendo este privilegio.
 
