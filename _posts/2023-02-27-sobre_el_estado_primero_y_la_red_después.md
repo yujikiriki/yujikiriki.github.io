@@ -9,7 +9,7 @@ No tiene sentido que las aplicaciones en un computador, hoy en día completament
 
 El problema de las aplicaciones de software colaborativas y distribuidas es la combinación de versiones de historias de mutacion de estado diferentes, lo cual en algunos escenarios pueden resultar ser problemas demasiado difíciles de resolver, inclusive, en manos expertas.
 
-El cómo manipulamos el estado colaborativo distribuído de pares ocasionalmente conectados, puede ser un vector de evolución valioso para computadores de todo índole, y aún así, es poco promovido o conocido. Esta evolución fomenta la descentralización y reduce la dependencia a recursos remotos y corporaciones sobre dimensionadas y poco reguladas.
+A pesar de ello, el cómo manipulamos el estado colaborativo distribuído de pares ocasionalmente conectados, puede ser un vector de evolución valioso para las aplicaciones que construímos. Esta evolución fomenta la descentralización y reduce la dependencia a recursos remotos y corporaciones sobre dimensionadas y poco reguladas lo cual empuja los límites de lo que hoy hacemos.
  
 Aunque es contraintuitivo que mientras el desarrollo de la capa física, de enlace y de red tiende a la ubicuidad (5G como ejemplo), negamos la existencia de lo remoto, de lo rural, de lo desconectado, de lo nómada y lo pobre. Un territorio rico donde las labores intelectuales pueden ser fértiles pero se ven desprovistas de medios por la gravedad de la centralización. Una fuerza que se redunda en cómo concebimos el software.
 
