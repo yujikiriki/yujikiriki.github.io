@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elogio al software local
+title: Sobre el estado primero y la red después
 author: Yuji Kiriki
 author_url: https://s3.amazonaws.com/bitacora/me.html
 ---
