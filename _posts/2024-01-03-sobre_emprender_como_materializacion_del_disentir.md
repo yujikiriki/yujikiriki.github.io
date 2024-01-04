@@ -5,7 +5,7 @@ author: Yuji Kiriki
 author_url: https://s3.amazonaws.com/bitacora/me.html
 ---
 
-> "Más quiero esa peligrosa libertad que una servidumbre tranquila" Tacito.
+> _"Más quiero esa peligrosa libertad que una servidumbre tranquila" Tacito._
 
 Vivimos tiempos del consenso de masas y la homologación generalizada, donde todos tienden a pensar y sentir del mismo modo, quizás redundado por la cámaras de eco que se forjan alrededor de las bodegas y polarizaciones en las redes sociales, posiblemente alimentadas en el contexto de la frenética obsesión por "lo que quiere el mercado" y "lo pidió la junta directiva"; "sentir diferente" o disentir se siente como el último bastión de la razón, la cordura, la innovación, la diversidad y el pensamiento crítico; todos, elementos fundamentales del acto de emprender.
 
@@ -23,7 +23,7 @@ Como lo presenta [Fusaro](https://www.trotta.es/libros/pensar-diferente/97884136
 
 En este ensayo posiciono el acto de emprender y la innovación en la misma categoría semántica que "la revolución y la rebelión, la defección y la protesta, la revuelta y el motín, el antagonismo y el desacuerdo, la insubordinación y la sedición, la huelga y la desobediencia. la resistencia y el sabotaje, la contestación y la sublevación, la guerrilla y la insurrección, la agitación y el boicot" (Fusaro, 2022); es decir, como una figura protéica del disenso. De ser así, del disenso se parte a innovar y emprender, construyendo alternativas a la realidad más aceptada, alternativas no solo para nosotros mismos sino para beneficio de otros.
 
-> "El rechazo es el primer momento de la dialéctica del disentir, cuyo desarrollo posterior, en positivo, consiste en reconocer lo negado, lo obstaculizado, lo reprimido, lo desatendido y lo ignorado, propuestos como correctivos o como alternativa de la realidad existente" (Fusaro, 2022).
+> _"El rechazo es el primer momento de la dialéctica del disentir, cuyo desarrollo posterior, en positivo, consiste en reconocer lo negado, lo obstaculizado, lo reprimido, lo desatendido y lo ignorado, propuestos como correctivos o como alternativa de la realidad existente"_ (Fusaro, 2022).
 
 Es importante aclarar que el disenso no se presenta como un acto de negación irracional o destructivo. Así como lo define Fusaro, se limita al sentir y luego cómo ese gesto del "sentir diferente" se constituye, en el alcance de este ensayo, en una empresa "diferente".
 
