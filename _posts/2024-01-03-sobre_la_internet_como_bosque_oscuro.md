@@ -5,9 +5,9 @@ author: Yuji Kiriki
 author_url: https://s3.amazonaws.com/bitacora/me.html
 ---
 
-> The dark forest hypothesis is the conjecture that many alien civilizations exist throughout the universe, but they are both silent and hostile, maintaining their undetectability by humanity for fear of being destroyed by another hostile and undetected civilization. ([Wikipedia](https://en.wikipedia.org/wiki/Dark_forest_hypothesis))
+{% epigraph 'The dark forest hypothesis is the conjecture that many alien civilizations exist throughout the universe, but they are both silent and hostile, maintaining their undetectability by humanity for fear of being destroyed by another hostile and undetected civilization.' 'Wikipedia' 'https://en.wikipedia.org/wiki/Dark_forest_hypothesis' %}
 
-La trivalización de la generación de contenido vía modelos de inferencia y la constante regulación de los grandes centralizadores de contenido lleva a una diáspora de comunidades cerradas para ¨solo humanos¨ que, para evitar censuras, control y garantizar calidad y veracidad del contenido generado, apuesta a la confianza construida a partir de los restrictivos procesos de admisión, moderación, y reconocimiento en su comunidad.
+{% newthought 'La trivalización de la generación' %} de contenido vía modelos de inferencia y la constante regulación de los grandes centralizadores de contenido lleva a una diáspora de comunidades cerradas para ¨solo humanos¨ que, para evitar censuras, control y garantizar calidad y veracidad del contenido generado, apuesta a la confianza construida a partir de los restrictivos procesos de admisión, moderación, y reconocimiento en su comunidad.
 
 Son comunidades pequeñas con foco a a sobrevivir la regulación de los gobiernos y de contenido de nicho. Ejemplos como el de Unstable Diffusion, las decenas de _bulletin boards_ en Tor, las redes de piratería en IPFS, las centenas de chat en Telegram o Discord, forman una galaxia de pequeñas comunidades que prefieren pasar desapercibidas, pues entre menos conocidas o localizables sean, mayor es su probabilidad de prosperar.
 
