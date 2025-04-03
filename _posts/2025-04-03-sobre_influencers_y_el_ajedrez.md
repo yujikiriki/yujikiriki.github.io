@@ -29,7 +29,7 @@ Durante este capítulo Wardley busca explicar cómo cuando él leía libros de g
 
 Entonces, Wardley procedía a analizar qué pasaría si él hiciera lo mismo en la empresa que estaba liderando. ¿Lograría el mismo _"bum"_?
 
-> "Es que según la estrategia del océano azul se debe encontrar un mercado nuevo y sin competencia. ¡A por él, mi equipo! — _Ah, es que soy muchos estratega para esta empresa_".
+> "Es que según la estrategia del océano azul se debe encontrar un mercado nuevo y sin competencia. ¡A por él, mi equipo! — _Ah, es que soy mucho estratega para esta empresa_".
 
 Así mismo pasa si uno jugara al ajedrez sin conocer el tablero o sin conocer cómo se mueven las fichas en él. Es como si estos gurús explicaran _"mire, yo moví esta pieza de aquí para allá y ¡kabum! ¡jaque mate!"_.
 
