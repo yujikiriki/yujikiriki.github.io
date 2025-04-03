@@ -36,7 +36,7 @@ Así mismo pasa si uno jugara al ajedrez sin conocer el tablero o sin conocer c�
 Un ejemplo (casi) caricaturesco: 
 > _"Es que yo he encontrado que reclutar personas es mejor si lo hago en la mañana, es que a esa hora tengo una mejor actitud y mente abierta después de haber meditado como todos los días a las 5 a. m., después de haber hecho un cleansing inbox 0"._
 
-De esa manera, salen en redes los _estrategia-gerencia-talento humano-emprendimiento_ influencers inundando las redes sociales de sus grandes descubrimientos, de esos movimientos en unas fichas que les fueron útiles, dando a entender que si los demás lo hacen, van a ser quizás tan exitosos como ellos. Lo más hilarante es que cierran con frases como _"solo lo comparto por si a alguien le sirve"_.
+De esa manera, salen en redes los _estrategia-gerencia-talento humano-emprendimiento_ influencers inundando las redes sociales de sus grandes descubrimientos, de esos movimientos en unas fichas que les fueron útiles, dando a entender que si los demás lo hacen van a ser quizás tan exitosos como ellos. Lo más hilarante es que cierran con frases como _"solo lo comparto por si a alguien le sirve"_.
 
 Lo que ellos callan es, quizás, que ese movimiento de esa ficha de ajedrez, esa "innovación", solo les aplica a ellos en sus contextos, en sus grupos de trabajo, en sus tableros. Nada garantiza o permite asegurar que le vaya a servir a sus seguidores. No obstante, los seguidores vitorean sus hazañas y rezan sus mantras.
 
