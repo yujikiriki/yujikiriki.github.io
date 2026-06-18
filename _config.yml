@@ -1,7 +1,14 @@
-title: bitácora 
-author: Yuji Kiriki
+title: bitácora
+description: "Bitácora personal de Yuji Kiriki sobre software, tecnología y reflexiones de la industria."
+lang: es
+author:
+  name: Yuji Kiriki
+  uri: https://s3.amazonaws.com/bitacora/me.html
 markdown: kramdown
 url: https://yujikiriki.github.io
+
+feed:
+  limit: 0
 
 plugins:
   - jekyll-feed

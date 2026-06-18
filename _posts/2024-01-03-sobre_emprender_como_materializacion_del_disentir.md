@@ -2,7 +2,7 @@
 layout: post
 title: Sobre emprender como materialización del disentir
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+description: "El emprendimiento como acto de disentir: una lectura del pensamiento crítico y la innovación como alternativas constructivas a lo establecido."
 ---
 {% epigraph '"Más quiero esa peligrosa libertad que una servidumbre tranquila"' 'Tacito' 'Desconocido' %}
 

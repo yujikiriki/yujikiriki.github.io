@@ -2,7 +2,7 @@
 layout: post
 title: Sobre la Internet como bosque oscuro
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+description: "Las comunidades cerradas en Internet (Discord, Telegram, IPFS) crean espacios descentralizados y resilientes que anticipan una red fragmentada y local."
 ---
 
 {% epigraph 'The dark forest hypothesis is the conjecture that many alien civilizations exist throughout the universe, but they are both silent and hostile, maintaining their undetectability by humanity for fear of being destroyed by another hostile and undetected civilization.' 'Wikipedia' 'https://en.wikipedia.org/wiki/Dark_forest_hypothesis' %}

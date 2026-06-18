@@ -2,7 +2,7 @@
 layout: post
 title: Sobre influencers y el ajedrez
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+description: "Crítica a los influencers empresariales que comparten movidas que les funcionaron, ignorando que cada sistema complejo es único y requiere contexto propio."
 ---
 
 {% newthought 'Me ha dado curiosidad' %} el fenómeno de los influencers, en particular aquellos que hablan de su experiencia de vida en el emprendimiento como guía espiritual para otros.

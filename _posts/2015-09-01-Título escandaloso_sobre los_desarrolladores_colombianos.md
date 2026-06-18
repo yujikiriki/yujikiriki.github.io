@@ -2,7 +2,7 @@
 layout: post
 title: Título escandaloso sobre los desarrolladores colombianos*
 author: Yuji Kiriki
-author_url: https://twitter.com/ykiriki
+description: "Respuesta crítica a debates sobre escasez de talento: el problema no es de la academia ni de nadie en particular, sino responsabilidad compartida."
 ---
 ## Introducción
 ¿Hay escasez de desarrolladores talentosos en Colombia? Obviamente sí. Es un fenómeno mundial. Por infinidad de razones, y todas están "explicadas" a un _google query_ de distancia.

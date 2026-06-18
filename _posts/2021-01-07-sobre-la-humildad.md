@@ -2,7 +2,7 @@
 layout: post
 title: Sobre la humildad
 author: Yuji Kiriki
-author_url: https://twitter.com/ykiriki
+description: "El mercado tech inflado nos ha desconectado del impacto real que generamos. Una reflexión sobre la humildad y la responsabilidad en la industria."
 ---
 
 Quizás no sea la persona más indicada para hablar sobre la humildad. No obstante, después de tanto ir y venir, es un valor que cada día trato de entender mejor.

@@ -2,7 +2,7 @@
 layout: post
 title: Un desarrollador de 20 millones mensuales
 author: Yuji Kiriki
-author_url: https://twitter.com/ykiriki
+description: "Reflexión sobre la devaluación del oficio de desarrollador en Colombia y por qué el software dejó de ser valorado como profesión."
 ---
 
 Recibí la llamada de una amiga con la que hace años no hablaba. Con ella trabajamos en un proyecto big bang en el que debíamos automatizar cerca de 30 procesos de negocio hace ya más de 7 años.

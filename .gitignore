@@ -5,3 +5,4 @@ jekyll-metadata
 .bundle/
 jekyll/
 Gemfile.lock
+feed.xml

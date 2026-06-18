@@ -2,7 +2,7 @@
 layout: post
 title: Sobre el estado primero y la red después
 author: Yuji Kiriki
-author_url: https://s3.amazonaws.com/bitacora/me.html
+description: "Propuesta arquitectónica donde las aplicaciones priorizan el estado local sobre la conectividad remota, ganando autonomía y favoreciendo la descentralización."
 ---
 
 No tiene sentido que las aplicaciones en un computador, hoy en día completamente portátiles, tengan que depender de una conexión a Internet para ser útiles. Se sienten incompletas, mutiladas de su potencial y negadas a sus posibilidades.
